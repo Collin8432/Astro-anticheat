@@ -1,0 +1,60 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "atomic_gui_main",
+        "npc_name": { "rawtext": [ { "text": "§¶§bAtomic AntiCheat §7[§1v0.1§7]" } ] },
+				"text": { "rawtext": [ { "text": "§¶§cAtomic → §5§lGUI MAIN MENU" } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "text": "§l§5ATOMIC CMDS" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_gui_atomic_commands",
+							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§5EFFECTS" } ] },
+						"commands": [
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui",
+              "/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§5TELEPORTS" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_teleports1",
+							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§5REALM CMDS" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_realm_cmd_gui",
+							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§cEmpty" } ] },
+						"commands": [
+							"/function atomic/test",
+							"/function atomic/test"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§cCLOSE MENU" } ] },
+						"commands": [
+							"/function dialogue_messages/close_message"
+						]
+					}
+				],
+				"on_close_commands": [
+                    " "
+				]
+			}
+		]
+	}
+}

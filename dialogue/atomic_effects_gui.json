@@ -1,0 +1,93 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "atomic_effects_gui",
+        "npc_name": { "rawtext": [ { "text": "§¶§bAtomic AntiCheat §7[§1v0.1§7]" } ] },
+				"text": { "rawtext": [ { "text": "§¶§cAtomic → §5§lGUI EFFECTS MENU" } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "text": "§l§2SPEED" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ effect @s speed 99999999 2 true",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui",
+							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§2REGEN" } ] },
+						"commands": [
+              "/execute @s[tag=stafftag] ~~~ effect @s regeneration 99999999 3 true",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui",
+              "/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§2WATER BREATH" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ effect @s water_breathing 99999999 3 true",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui",
+							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§2NIGHT VIS" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ effect @s night_vision 99999999 3 true",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui",
+							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§2STRENGTH" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ effect @s strength 99999999 2 true",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui",
+							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§9PAGE 2" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui2",
+							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					}
+				],
+				"on_close_commands": [
+                    " "
+				]
+			},
+			{
+				"scene_tag": "welcome_screen",
+				"npc_name": { "rawtext": [ { "text": "§¶§bAtomic AntiCheat §7[§1v0.0§7]" } ] },
+				"text": { "rawtext": [ { "text": "§¶§bAtomic AntiCheat §7[§1v0.0§7]" } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "text": "§5§lClose" } ] },
+						"commands": [
+							" "
+						]
+					}
+				],
+				"on_close_commands": [
+                    " "
+				]
+			},
+			{
+				"scene_tag": "manage_player",
+				"npc_name": { "rawtext": [ { "text": "" } ] },
+				"text": { "rawtext": [ { "text": "" } ] },
+				"buttons": [
+
+				],
+				"on_close_commands": [
+
+				]
+			}
+		]
+	}
+}

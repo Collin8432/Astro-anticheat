@@ -1,0 +1,60 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "atomic_player_options_gui",
+        "npc_name": { "rawtext": [ { "text": "§¶§bAtomic AntiCheat §7[§1v0.1§7]" } ] },
+				"text": { "rawtext": [ { "text": "§¶§cAtomic → §5§lGUI PLAYER OPTIONS MENU" } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "text": "§l§2STATS" } ] },
+						"commands": [
+							"/function atomic/stats",
+							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§2TEST" } ] },
+						"commands": [
+              "/say test",
+              "/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§cEmpty" } ] },
+						"commands": [
+							"/function atomic/test",
+							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§cEmpty" } ] },
+						"commands": [
+							"/function atomic/test",
+							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§cEmpty" } ] },
+						"commands": [
+							"/function atomic/test",
+							"execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§cCLOSE MENU" } ] },
+						"commands": [
+							"/function dialogue_messages/close_message"
+						]
+					}
+				],
+				"on_close_commands": [
+                    " "
+				]
+			}
+		]
+	}
+}
