@@ -5,14 +5,14 @@
 		"scenes":
 		[
 			{
-				"scene_tag": "atomic_player_options_gui",
-        "npc_name": { "rawtext": [ { "text": "§¶§bAtomic AntiCheat §7[§1v0.1§7]" } ] },
-				"text": { "rawtext": [ { "text": "§¶§cAtomic → §5§lGUI PLAYER OPTIONS MENU" } ] },
+				"scene_tag": "Astro_player_options_gui",
+        "npc_name": { "rawtext": [ { "text": "§¶§bAstro AntiCheat §7[§1v0.1§7]" } ] },
+				"text": { "rawtext": [ { "text": "§¶§cAstro → §5§lGUI PLAYER OPTIONS MENU" } ] },
 				"buttons": [
 					{
 						"name": { "rawtext": [ { "text": "§l§2STATS" } ] },
 						"commands": [
-							"/function atomic/stats",
+							"/function Astro/stats",
 							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
@@ -26,21 +26,21 @@
 					{
 						"name": { "rawtext": [ { "text": "§cEmpty" } ] },
 						"commands": [
-							"/function atomic/test",
+							"/function Astro/test",
 							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§cEmpty" } ] },
 						"commands": [
-							"/function atomic/test",
+							"/function Astro/test",
 							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§cEmpty" } ] },
 						"commands": [
-							"/function atomic/test",
+							"/function Astro/test",
 							"execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},

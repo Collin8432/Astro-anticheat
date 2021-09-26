@@ -5,29 +5,29 @@
 		"scenes":
 		[
 			{
-				"scene_tag": "atomic_kit_commands",
-				"npc_name": { "rawtext": [ { "text": "§¶§bAtomic AntiCheat §7[§1v0.1§7]" } ] },
-				"text": { "rawtext": [ { "text": "§¶§c§lAtomic → §5GUI KITS MENU" } ] },
+				"scene_tag": "Astro_kit_commands",
+				"npc_name": { "rawtext": [ { "text": "§¶§bAstro AntiCheat §7[§1v0.1§7]" } ] },
+				"text": { "rawtext": [ { "text": "§¶§c§lAstro → §5GUI KITS MENU" } ] },
 				"buttons": [
 					{
 						"name": { "rawtext": [ { "text": "§l§2IRON" } ] },
 						"commands": [
 							"/execute @s[tag=stafftag] ~~~ function KIT/iron_kit",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_kit_commands"
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_kit_commands"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2DIAMOND" } ] },
 						"commands": [
 							"/execute @s[tag=stafftag] ~~~ function KIT/diamond_kit",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_kit_commands"
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_kit_commands"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2NETHITE" } ] },
 						"commands": [
 							"/execute @s[tag=stafftag] ~~~ function KIT/netherite_kit",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_kit_commands"
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_kit_commands"
 						]
 					},
 					{
@@ -35,13 +35,13 @@
 						"commands": [
 							"/clear",
               "/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_kit_commands"
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_kit_commands"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§5MAIN MENU" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/gui"
+							"/execute @s[tag=stafftag] ~~~ function Astro/gui"
 						]
 					},
 					{

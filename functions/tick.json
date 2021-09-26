@@ -1,6 +1,6 @@
 {
 	"values": [
-		"atomic/packages/welcome",
-		"atomic/modules/randomspawn"
+		"Astro/packages/welcome",
+		"Astro/modules/randomspawn"
 	]
 }

@@ -5,15 +5,15 @@
 		"scenes":
 		[
 			{
-				"scene_tag": "atomic_music_gui2",
-        "npc_name": { "rawtext": [ { "text": "§¶§bAtomic AntiCheat §7[§1v0.1§7]" } ] },
-				"text": { "rawtext": [ { "text": "§¶§cAtomic → §5§lGUI MUSIC MENU PAGE 2" } ] },
+				"scene_tag": "Astro_music_gui2",
+        "npc_name": { "rawtext": [ { "text": "§¶§bAstro AntiCheat §7[§1v0.1§7]" } ] },
+				"text": { "rawtext": [ { "text": "§¶§cAstro → §5§lGUI MUSIC MENU PAGE 2" } ] },
 				"buttons": [
 					{
 						"name": { "rawtext": [ { "text": "§l§2CHIRP" } ] },
 						"commands": [
 							"/execute @s[tag=stafftag] ~~~ execute @a ~~~ music play record.chirp 1 0 play_once",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_music_gui2",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_music_gui2",
 							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
@@ -21,7 +21,7 @@
 						"name": { "rawtext": [ { "text": "§l§2FAR" } ] },
 						"commands": [
               "/execute @s[tag=stafftag] ~~~ execute @a ~~~ music play record.far 1 0 play_once",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_music_gui2",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_music_gui2",
               "/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
@@ -29,7 +29,7 @@
 						"name": { "rawtext": [ { "text": "§l§2MALL" } ] },
 						"commands": [
 							"/execute @s[tag=stafftag] ~~~ execute @a ~~~ music play record.mall 1 0 play_once",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_music_gui2",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_music_gui2",
 							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
@@ -37,7 +37,7 @@
 						"name": { "rawtext": [ { "text": "§l§2MELLOHI" } ] },
 						"commands": [
 							"/execute @s[tag=stafftag] ~~~ execute @a ~~~ music play record.mellohi 1 0 play_once",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_music_gui2",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_music_gui2",
 							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
@@ -45,14 +45,14 @@
 						"name": { "rawtext": [ { "text": "§l§2STRAD" } ] },
 						"commands": [
 							"/execute @s[tag=stafftag] ~~~ execute @a ~~~ music play record.strad 1 0 play_once",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_music_gui2",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_music_gui2",
 							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§9PAGE 3" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_music_gui3",
+							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_music_gui3",
 							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					}
@@ -63,8 +63,8 @@
 			},
 			{
 				"scene_tag": "welcome_screen",
-				"npc_name": { "rawtext": [ { "text": "§¶§bAtomic AntiCheat §7[§1v0.0§7]" } ] },
-				"text": { "rawtext": [ { "text": "§¶§bAtomic AntiCheat §7[§1v0.0§7]" } ] },
+				"npc_name": { "rawtext": [ { "text": "§¶§bAstro AntiCheat §7[§1v0.0§7]" } ] },
+				"text": { "rawtext": [ { "text": "§¶§bAstro AntiCheat §7[§1v0.0§7]" } ] },
 				"buttons": [
 					{
 						"name": { "rawtext": [ { "text": "§5§lClose" } ] },

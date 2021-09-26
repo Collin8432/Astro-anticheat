@@ -68,7 +68,7 @@
       }
     },
     "component_groups": {
-      "atomic:ban": {
+      "Astro:ban": {
         "minecraft:instant_despawn": {}
       },
       "minecraft:spectate": {
@@ -133,7 +133,7 @@
                   }
                 ]
               },
-              "event": "atomic:display_main_stats"
+              "event": "Astro:display_main_stats"
             },
             "use_item": false,
             "interact_text": "See Stats"
@@ -161,7 +161,7 @@
                   }
                 ]
               },
-              "event": "atomic:display_all_stats"
+              "event": "Astro:display_all_stats"
             },
             "use_item": false,
             "interact_text": "Testing Function"
@@ -184,7 +184,7 @@
                   }
                 ]
               },
-              "event": "atomic:display_nonstaff_stats"
+              "event": "Astro:display_nonstaff_stats"
             },
             "use_item": false,
             "interact_text": "View Player Stats"
@@ -207,7 +207,7 @@
                   }
                 ]
               },
-              "event": "atomic:open_player_options_gui"
+              "event": "Astro:open_player_options_gui"
             },
             "use_item": false,
             "interact_text": "Open Player GUI"
@@ -241,7 +241,7 @@
                 }
               ]
             },
-            "event":"atomic:ban_main"
+            "event":"Astro:ban_main"
           },
           {
             "filters": {
@@ -262,7 +262,7 @@
                 }
               ]
             },
-            "event":"atomic:ban_soft"
+            "event":"Astro:ban_soft"
           },
           {
             "filters": {
@@ -275,7 +275,7 @@
                 }
               ]
             },
-            "event":"atomic:smooth_brain"
+            "event":"Astro:smooth_brain"
           },
           {
             "filters": {
@@ -970,7 +970,7 @@
                 }
               ]
             },
-            "event": "atomic:torchlight"
+            "event": "Astro:torchlight"
           },
           {
             "filters": {
@@ -1063,7 +1063,7 @@
                 }
               ]
             },
-            "event": "atomic:cbe_flag"
+            "event": "Astro:cbe_flag"
           },
           {
             "filters": {
@@ -1834,7 +1834,7 @@
                 }
               ]
             },
-            "event": "atomic:illegal_items"
+            "event": "Astro:illegal_items"
           }
         ]
       },
@@ -2000,7 +2000,7 @@
                   }
                 ]
               },
-              "event": "atomic:on_death_by_player"
+              "event": "Astro:on_death_by_player"
             }
           },
           {
@@ -2026,7 +2026,7 @@
                   }
                 ]
               },
-              "event": "atomic:on_death_by_player"
+              "event": "Astro:on_death_by_player"
             }
           },
           {
@@ -2052,7 +2052,7 @@
                   }
                 ]
               },
-              "event": "atomic:on_death_by_player"
+              "event": "Astro:on_death_by_player"
             }
           }
         ]
@@ -2061,18 +2061,18 @@
       }
     },
     "events": {
-      "atomic:illegal_items": {
+      "Astro:illegal_items": {
         "run_command": {
           "target": "self",
           "command": [
             "execute @s[tag=!stafftag,scores={UOIM=1}] ~~~ replaceitem entity @s slot.weapon.mainhand 0 air",
-            "execute @s[tag=!stafftag,scores={UOIM=1}] ~~~ function atomic/asset/clearspawneggasset",
-            "execute @s[tag=!stafftag] ~~~ execute @s[scores={UOIM=1}] ~~~ function atomic/asset/illegalitemkickmsg",
-            "execute @s[tag=!stafftag] ~~~ execute @s[scores={UOIM=1}] ~~~ function atomic/asset/illegalitemwarn"
+            "execute @s[tag=!stafftag,scores={UOIM=1}] ~~~ function Astro/asset/clearspawneggasset",
+            "execute @s[tag=!stafftag] ~~~ execute @s[scores={UOIM=1}] ~~~ function Astro/asset/illegalitemkickmsg",
+            "execute @s[tag=!stafftag] ~~~ execute @s[scores={UOIM=1}] ~~~ function Astro/asset/illegalitemwarn"
           ]
         }
       },
-      "atomic:torchlight": {
+      "Astro:torchlight": {
         "run_command": {
           "target": "self",
           "command": [
@@ -2081,7 +2081,7 @@
           ]
         }
       },
-      "atomic:cbe_flag": {
+      "Astro:cbe_flag": {
         "run_command": {
           "target": "self",
           "command": [
@@ -2089,46 +2089,46 @@
             "execute @s[scores={acmtoggle=1}] ~~~ gamemode s @a[tag=!stafftag]",
             "execute @s[scores={acmtoggle=1}] ~~~ kill @e[type=!player,r=40]",
             "execute @s[scores={acmtoggle=1}] ~~~ tag @a remove PermBan",
-            "execute @s[scores={acmtoggle=1}] ~~~ function atomic/asset/cbeitemwarn",
+            "execute @s[scores={acmtoggle=1}] ~~~ function Astro/asset/cbeitemwarn",
             "execute @s[scores={acmtoggle=1}] ~~~ effect @s clear",
-            "execute @s[scores={acmtoggle=1}] ~~~ function atomic/echestwipe",
+            "execute @s[scores={acmtoggle=1}] ~~~ function Astro/echestwipe",
             "execute @s[scores={acmtoggle=1}] ~~~ tag @s add cbesoft"
           ]
         }
       },
-      "atomic:oneshot_flag": {
+      "Astro:oneshot_flag": {
         "run_command": {
           "target": "self",
           "command": [
-            "function atomic/asset/oneshot_flag_asset"
+            "function Astro/asset/oneshot_flag_asset"
           ]
         }
       },
-      "atomic:display_main_stats": {
+      "Astro:display_main_stats": {
         "run_command": {
           "target": "self",
           "command": [
-            "function atomic/stats"
+            "function Astro/stats"
           ]
         }
       },
-      "atomic:display_all_stats": {
+      "Astro:display_all_stats": {
         "run_command": {
           "target": "self",
           "command": [
-            "function atomic/testing"
+            "function Astro/testing"
           ]
         }
       },
-      "atomic:display_nonstaff_stats": {
+      "Astro:display_nonstaff_stats": {
         "run_command": {
           "target": "self",
           "command": [
-            "function atomic/asset/local_player_stats"
+            "function Astro/asset/local_player_stats"
           ]
         }
       },
-      "atomic:open_player_options_gui": {
+      "Astro:open_player_options_gui": {
         "run_command": {
           "target": "self",
           "command": [
@@ -2136,20 +2136,20 @@
           ]
         }
       },
-      "atomic:ban_main": {
+      "Astro:ban_main": {
         "run_command": {
           "target": "self",
           "command": [
-            "execute @s ~~~ function atomic/asset/ban_disconnect_message"
+            "execute @s ~~~ function Astro/asset/ban_disconnect_message"
           ]
         },
         "add": {
           "component_groups": [
-            "atomic:ban"
+            "Astro:ban"
           ]
         }
       },
-      "atomic:ban_soft": {
+      "Astro:ban_soft": {
         "run_command": {
           "target": "self",
           "command": [
@@ -2158,25 +2158,25 @@
         },
         "add": {
           "component_groups": [
-            "atomic:ban"
+            "Astro:ban"
           ]
         }
       },
-      "atomic:smooth_brain": {
+      "Astro:smooth_brain": {
         "run_command": {
           "target": "self",
           "command": [
-            "execute @s ~~~ function atomic/asset/ban_disconnect_message"
+            "execute @s ~~~ function Astro/asset/ban_disconnect_message"
           ]
         }
       },
-      "atomic:on_death_by_player": {
+      "Astro:on_death_by_player": {
         "run_command": {
           "target": "other",
           "command": [
             "scoreboard players add @s kills 1",
             "scoreboard players add @s killstreak 1",
-            "execute @s[scores={killstreak=10..}] ~~~ function atomic/asset/killstreak-msg"
+            "execute @s[scores={killstreak=10..}] ~~~ function Astro/asset/killstreak-msg"
           ]
         }
       },

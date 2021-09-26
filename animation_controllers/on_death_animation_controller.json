@@ -60,7 +60,7 @@
             "/scoreboard players set @s hometimer 17",
             "/tag @s remove home",
             "/scoreboard players add @s deaths 1",
-            "/execute @s[scores={killstreak=10..}] ~~~ tellraw @a {\"rawtext\":[{\"text\":\"§¶§cAtomic §b→ §d\"},{\"selector\":\"@s\"},{\"text\":\" Has lost their killstreak!\"}]}",
+            "/execute @s[scores={killstreak=10..}] ~~~ tellraw @a {\"rawtext\":[{\"text\":\"§¶§cAstro §b→ §d\"},{\"selector\":\"@s\"},{\"text\":\" Has lost their killstreak!\"}]}",
             "/scoreboard players set @s killstreak 0",
             "/scoreboard players operation @s X_Coord_D = @s X_Coordinate",
             "/scoreboard players operation @s Y_Coord_D = @s Y_Coordinate",

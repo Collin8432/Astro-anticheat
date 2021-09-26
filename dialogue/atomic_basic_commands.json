@@ -5,49 +5,49 @@
 		"scenes":
 		[
 			{
-				"scene_tag": "atomic_basic_commands",
-				"npc_name": { "rawtext": [ { "text": "§l§bAtomic AntiCheat §7[§1v0.1§7]" } ] },
-				"text": { "rawtext": [ { "text": "§l§catomic → §5GUI BASIC COMMANDS MENU" } ] },
+				"scene_tag": "Astro_basic_commands",
+				"npc_name": { "rawtext": [ { "text": "§l§bAstro AntiCheat §7[§1v0.1§7]" } ] },
+				"text": { "rawtext": [ { "text": "§l§cAstro → §5GUI BASIC COMMANDS MENU" } ] },
 				"buttons": [
 					{
 						"name": { "rawtext": [ { "text": "§l§2VANISH" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/vanish",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_basic_commands"
+							"/execute @s[tag=stafftag] ~~~ function Astro/vanish",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_basic_commands"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2TGM" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/tgm",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_basic_commands"
+							"/execute @s[tag=stafftag] ~~~ function Astro/tgm",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_basic_commands"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2LAGCLEAR" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/lagclear",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_basic_commands"
+							"/execute @s[tag=stafftag] ~~~ function Astro/lagclear",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_basic_commands"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2CLEARCHAT" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/clearchat",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_basic_commands"
+							"/execute @s[tag=stafftag] ~~~ function Astro/clearchat",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_basic_commands"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2CREDIT" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/credit",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_basic_commands"
+							"/execute @s[tag=stafftag] ~~~ function Astro/credit",
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s Astro_basic_commands"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§5MAIN MENU" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/gui"
+							"/execute @s[tag=stafftag] ~~~ function Astro/gui"
 						]
 					}
 				],

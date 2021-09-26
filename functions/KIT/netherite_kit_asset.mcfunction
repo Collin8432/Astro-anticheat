@@ -1,6 +1,6 @@
 
-execute @s[tag=!stafftag] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→ Access §cDENIED§7! §bOnly staff can use this command"}]}
-execute @s[tag=stafftag] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §bnetherite Kit has been applied to §d"},{"selector":"@s"}]}
+execute @s[tag=!stafftag] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAstro §¶§b→ Access §cDENIED§7! §bOnly staff can use this command"}]}
+execute @s[tag=stafftag] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAstro §¶§b→ §bnetherite Kit has been applied to §d"},{"selector":"@s"}]}
 execute @s[tag=stafftag}] ~~~ playsound note.pling @s ~ ~ ~
 execute @s[tag=!stafftag] ~~~ playsound note.bass @s ~ ~ ~
 

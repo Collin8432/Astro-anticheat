@@ -17,7 +17,7 @@
             "/scoreboard players reset @s killstreak ",
             "/scoreboard players add @p[tag=!killed] kills 1",
             "/scoreboard players add @p[tag=!killed] killstreak 1",
-            "/execute @p[tag=!killed] ~~~ fucntion atomic/asset/killstreak-msg",
+            "/execute @p[tag=!killed] ~~~ fucntion Astro/asset/killstreak-msg",
             "/scoreboard players set @s hometimer 17",
             "/tag @s remove home",
             "/execute @s[scores={Deathef=1}] ~~~ scoreboard players reset @s timealive",

@@ -11,8 +11,8 @@
 						}
 					],
 					"on_entry": [
-						"/function atomic/modules/timeplayedticker",
-						"/function atomic/settings/settings"
+						"/function Astro/modules/timeplayedticker",
+						"/function Astro/settings/settings"
 					]
 				},
 				"timer": {
@@ -22,8 +22,8 @@
 						}
 					],
 					"on_entry": [
-						"/function atomic/modules/timeplayedticker",
-						"/function atomic/settings/settings"
+						"/function Astro/modules/timeplayedticker",
+						"/function Astro/settings/settings"
 					]
 				}
 			}

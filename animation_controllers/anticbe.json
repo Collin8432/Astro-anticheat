@@ -18,8 +18,8 @@
                     ],
                     "on_entry": [
                         "/clear",
-                        "/me §¶§cAtomic → §bKicked for CBE Exploits",
-                        "/kick @s §¶§cAtomic → §lCBE is for skids. Don't be a skid",
+                        "/me §¶§cAstro → §bKicked for CBE Exploits",
+                        "/kick @s §¶§cAstro → §lCBE is for skids. Don't be a skid",
                         "@s bridge:remove_command_id_1"
                     ]
                 }
