@@ -1,8 +1,8 @@
 {
 	"format_version": 1,
 	"header": {
-		"name": "§¶§c⋰       Astro Anti-Cheat  1.0.1 Official    ⋱",
-		"description": "§¶§c⋮ Made By Astro Studios ",
+		"name": "§¶§c⋰       Astro Anti-Cheat  1.0.0 Official    ⋱",
+		"description": "§¶§c⋮ Made By Atomic Studios Keep Education on, Holiday features, and additonal modding ⋮",
 		"uuid": "2b8cb254-cd98-4542-a67c-af2494ac907f",
 		"version": [
 			1,
@@ -21,8 +21,8 @@
 			"uuid": "3835064e-c7d3-4b02-aff7-d73b9f16ef87",
 			"version": [
 				1,
-				1,
-				7
+				0,
+				0
 			]
 		}
 	]
