@@ -25,6 +25,4 @@ execute @s[tag=stafftag,scores={OPAM=0}] ~~~ execute @s[tag=tgmGodMode,scores={t
 execute @s[tag=stafftag,scores={OPAM=0}] ~~~ execute @s[tag=tgmGodMode,scores={tgmGodMode=1}] ~~~ effect @s instant_health 99999999 255 true
 execute @s[tag=stafftag,scores={OPAM=0}] ~~~ execute @s[tag=tgmGodMode,scores={tgmGodMode=1}] ~~~ effect @s health_boost 99999999 10 true
 execute @s[tag=stafftag,scores={OPAM=0}] ~~~ execute @s[tag=tgmGodMode,scores={tgmGodMode=1}] ~~~ effect @s conduit_power 99999999 255 true
-execute @s[tag=stafftag,scores={OPAM=0}] ~~~ execute @s[tag=tgmGodMode,scores={tgmGodMode=1}] ~~~ effect @s slow_falling 99999999 255 true
-execute @s[tag=stafftag,scores={OPAM=0}] ~~~ execute @s[tag=tgmGodMode,scores={tgmGodMode=1}] ~~~ effect @s strength 99999999 50 true
 execute @s[tag=stafftag,scores={OPAM=0}] ~~~ execute @s[tag=tgmGodMode,scores={tgmGodMode=1}] ~~~ tag @s add godmode

@@ -14,5 +14,9 @@ execute @s[tag=stafftag] ~~~ tellraw @s[scores={wbmtoggle=0}] {"rawtext":[{"text
 execute @s[tag=stafftag,scores={wbmtoggle=0}] ~~~ playsound note.bass @s ~ ~ ~
 
 scoreboard players set @s lstcmd 36
-
-
+49 20's
+1 50
+3 10's
+7 5's
+34 1's
+1,149
