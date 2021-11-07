@@ -1,1 +1,0 @@
-function Astro/asset/pvp_disable_asset

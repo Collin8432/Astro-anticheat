@@ -1,1 +1,0 @@
-function Astro/asset/freeze_player_asset

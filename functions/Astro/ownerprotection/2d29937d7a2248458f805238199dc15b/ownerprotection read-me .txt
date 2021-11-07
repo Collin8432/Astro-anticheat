@@ -1,5 +1,0 @@
-Default Key for Owner Protection is
-/function Astro/ownerprotection/2d29937d7a2248458f805238199dc15b/f6e8cb6b4d42499291d49ca3d0f79a62
-
-Change this key by renaming the File Pathways to different UUIDs
-Then take out all the " - " so that it is only numaric and alphibetic characters.
