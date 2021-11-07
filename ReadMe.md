@@ -10,7 +10,7 @@ Astro AntiCheat
   <img src="https://img.shields.io/tokei/lines/github/Collinmc1228/Astro-anticheat">
   <img src="https://img.shields.io/github/downloads/Collinmc1228/Astro-anticheat/total">
 
-  Join the discord at https://discord.gg/kNNugFva
+  Join the discord at https://discord.gg/6BvgaFryt4
 
 Astro anticheat is made for Astro Anarchy 
 -----------------------------------------------------------------------------------------------
