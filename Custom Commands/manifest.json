@@ -1,8 +1,8 @@
 {
 	"format_version": 1,
 	"header": {
-		"name": "§¶§7⋰ §bUnity Anticheat Scripts §7[§22§7.§23§7] §7⋱",
-		"description": "§6§lExperimental Features §7: §cREQUIRED \n§¶§c⋮ Made By §2NightwalkerLots ",
+		"name": "§¶§7⋰Astro AnriCheat §7⋱",
+		"description": "§6§lExperimental Features §7: §cREQUIRED \n§¶§c⋮ Made By §2NightwalkerLots, Edited by Astro ",
 		"uuid": "b77a1dc3-7a77-4d90-a36c-cdba3f326808",
 		"version": [
 			2,
@@ -17,7 +17,7 @@
 	},
     "modules": [
         {
-            "description": "UAC Gametest Framework",
+            "description": "AAC Gametest Framework",
             "type": "javascript",
             "uuid": "21c183fe-0c37-11ec-82a8-0242ac130003",
             "version": [0, 0, 1],
