@@ -1,4 +1,4 @@
-# Astro Anti-Cheat
+# AAC
 Astro AntiCheat
 
 <div align="center">
