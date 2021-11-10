@@ -1,8 +1,8 @@
-## Welcome to GitHub Pages
+## Welcome to Astro Anti-Cheat 
 
-You can use the [editor on GitHub](https://github.com/Collinmc1228/Astro-anticheat.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+You can use this anti cheat freely, just keep the credits file please
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is just a test for now, ill keep adding later 
 
 ### Markdown
 
