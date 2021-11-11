@@ -1,5 +1,10 @@
 {
 	"values": [
-		"fortniteporn",
+		"astro/asset/ban",
+		"astro/asset/cbe",
+		"astro/asset/cbeitemskickmsg",
+		"astro/asset/cbeitemswarn",
+		"astro/asset/softban",
+		"astro"
 	]
 }
