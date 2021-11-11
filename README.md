@@ -1,4 +1,4 @@
-# AStro Anticheat
+# Astro Anticheat
 Astro AntiCheat
 
 <div align="center">
