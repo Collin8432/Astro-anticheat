@@ -1166,6 +1166,11 @@
 					"command": [
 						"execute @s ~~~ function astro/asset/ban"
 					]
+				},
+				"add": {
+					"component_groups": [
+						"astro:ban"
+					]
 				}
 			},
 			"astro:ban_soft": {
