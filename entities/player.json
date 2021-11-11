@@ -7,9 +7,13 @@
 			"is_summonable": true,
 			"is_experimental": false,
 			"scripts": {
-				"animate": []
+				"animate": [
+					"onTick"
+				]
 			},
-			"animations": {}
+			"animations": {
+				"onTick": "animation.onTick"
+			}
 		},
 		"component_groups": {
 			"astro:ban": {
