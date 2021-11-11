@@ -14,6 +14,6 @@ Astro AntiCheat
 
 Astro anticheat is made for primarily anarchy servers
 -----------------------------------------------------------------------------------------------
-this anti cheat also has very customizable features, functions, and toggleable commands, to be coming soon, and many anti cbe methods added already
+this anti cheat also has very customizable features, functions, and toggleable commands, and many anti cbe methods added already
 
 	
