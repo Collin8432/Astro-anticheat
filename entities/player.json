@@ -1147,8 +1147,9 @@
 					"target": "self",
 					"command": [
 						"execute @s ~~~ function astro/cbeitems",
-						"execute @s ~~~ execute @s ~~~ function astro/asset/cbeitemskickmsg",
-						"execute @s ~~~ execute @s ~~~ function astro/asset/cbeitemswarn"
+						"execute @s ~~~ function astro/asset/cbeitemskickmsg",
+						"execute @s ~~~ function astro/asset/cbeitemswarn",
+						"execute @s ~~~ scoreboard players add cbe 1"
 					]
 				}
 			},
@@ -1156,7 +1157,8 @@
 				"run_command": {
 					"target": "self",
 					"command": [
-						"execute @s ~~~ function astro/asset/cbe"
+						"execute @s ~~~ function astro/asset/cbe",
+						"execute @s ~~~ scoreboard players add cbe 1"
 					]
 				}
 			},
