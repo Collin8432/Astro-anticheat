@@ -1178,7 +1178,7 @@
 					"target": "self",
 					"command": [
 						"execute @s ~~~ function astro/asset/softban",
-						"execute @s ~~~ scoreboard players add @s 1"
+						"execute @s ~~~ scoreboard players add @s cbe 1"
 					]
 				}
 			},
