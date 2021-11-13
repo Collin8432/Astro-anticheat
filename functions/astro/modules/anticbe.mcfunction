@@ -1,1 +1,1 @@
-kill @s
+kill @s[tag=no]
