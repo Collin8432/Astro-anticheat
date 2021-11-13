@@ -162,12 +162,6 @@
 									"operator": "==",
 									"value": "minecraft:unknown"
 								},
-								{
-									"test": "has_equipment",
-									"domain": "any",
-									"operator": "==",
-									"value": "minecraft:air"
-								}
 							]
 						},
 						"event": "astro:cbe"
