@@ -22,8 +22,7 @@
 				"minecraft:instant_despawn": {}
 			},
 			"minecraft:environment_sensor": {
-				"triggers": [
-          {
+				"triggers": [{
 						"filters": {
 							"all_of": [{
 								"test": "has_tag",
@@ -161,7 +160,7 @@
 									"domain": "any",
 									"operator": "==",
 									"value": "minecraft:unknown"
-								},
+								}
 							]
 						},
 						"event": "astro:cbe"
@@ -1167,7 +1166,7 @@
 						"execute @s ~~~ function astro/asset/ban"
 					]
 				},
-				"add": { 
+				"add": {
 					"component_groups": [
 						"astro:ban"
 					]

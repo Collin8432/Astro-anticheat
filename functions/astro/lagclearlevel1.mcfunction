@@ -1,3 +1,4 @@
+
 kill @e[type=item]
 kill @e[type=arrow]
 kill @e[type=minecraft:area_effect_cloud]
