@@ -1151,7 +1151,6 @@
 					"target": "self",
 					"command": [
 						"execute @s ~~~ scoreboard players add cbe 1",
-						"execute @s ~~~ function astro/cbeitems",
 						"execute @s ~~~ function astro/asset/cbeitemskickmsg"
 					]
 				}
@@ -1161,11 +1160,11 @@
 					"target": "self",
 					"command": [
 						"execute @s ~~~ scoreboard players add cbe 1",
-						"execute @s ~~~ function astro/asset/cbe"
+						"execute @s ~~~ function astro/asset/tempkick"
 					]
 				}
 			},
-			"astro:ban": {
+			"astro:ban_main": {
 				"run_command": {
 					"target": "self",
 					"command": [
