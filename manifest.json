@@ -1,0 +1,29 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "Astro Antichear",
+		"description": "Best Bedrock Anticheat \n Made By Astro",
+		"uuid": "b77a1dc3-7a77-4d90-a36c-cdba1e326808",
+		"version": [
+			1,
+			0,
+			8
+		],
+		"min_engine_version": [
+			1,
+			8,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "4c37083f-ff85-4931-bf46-3456a1c338f8",
+			"version": [
+				1,
+				1,
+				7
+			]
+		}
+	]
+}
