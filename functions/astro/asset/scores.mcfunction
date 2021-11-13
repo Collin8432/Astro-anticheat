@@ -1,144 +1,119 @@
 #test
-execute @s[scores={lajksdfh=0}] ~~~ scoreboard objectives add lajksdfh
-execute @s[scores={lajksdfh=1}] ~~~ scoreboard players set @s lajksdfh 1
+#execute @s[scores={lajksdfh=0}] ~~~ scoreboard objectives add lajksdfh
+#execute @s[scores={lajksdfh=1}] ~~~ scoreboard players set @s lajksdfh 1
 
 #fixban
-execute @s[scores={cbe=9..}] scoreboard players set @s cbe 9
+#execute @s[scores={cbe=9..}] scoreboard players set @s cbe 9
 #Credit to nightwalker, for this
 
 #Ban Checks
-scoreboard objectives add PermBan dummy PermBan
-scoreboard objectives add Ban dummy Ban
-scoreboard objectives add IIB dummy IIB
-scoreboard objectives add BanHacks dummy BanHacks
-scoreboard objectives add BanWarn dummy BanWarn
+#scoreboard objectives add PermBan dummy PermBan
+#scoreboard objectives add Ban dummy Ban
+#scoreboard objectives add IIB dummy IIB
+#scoreboard objectives add BanHacks dummy BanHacks
+#scoreboard objectives add BanWarn dummy BanWarn
 
 
-scoreboard players set @s ds9209D2n 0
-scoreboard players set @s 2kN0nK3Kn 0
-scoreboard players set @s m20Kds0Nd 0
-scoreboard players set @s 098aD2nnD 0
-scoreboard players set @s 09d0i20jS 0
-scoreboard players set @s 9damMM230 0
-scoreboard players set @s 9NW0d9Nas 0
+#scoreboard players set @s ds9209D2n 0#
+#scoreboard players set @s 2kN0nK3Kn 0
+#scoreboard players set @s m20Kds0Nd 0
+#scoreboard players set @s 098aD2nnD 0
+#scoreboard players set @s 09d0i20jS 0
+#scoreboard players set @s 9damMM230 0
+#scoreboard players set @s 9NW0d9Nas 0
+
+
+scoreboard objectives add anticbetoggle dummy anticbetoggle
+scoreboard objectives add acbe dummy acbe
+
+execute @s[scores={admin=1}] ~~~ scoreboard players add anticbetoggledummy ACBE 1
+execute @s[scores={admin=1}] ~~~ scoreboard players operation @a ACBE = acbetoggledummy ACBE
 
 #This adds all the scoreboard stuff we need
-scoreboard objectives add warn dummy warn
-scoreboard objectives add warnillegal dummy warnillegal
-scoreboard objectives add spammerflag dummy spammerflag
-scoreboard objectives add namespoofflag dummy namespoofflag
-scoreboard objectives add flyflag dummy flyflag
-scoreboard objectives add phaseflag dummy phaseflag
-scoreboard objectives add crasherflag dummy crasherflag
+#scoreboard objectives add warn dummy warn
+s#####board objectives add crasherflag dummy crasherflag
 scoreboard objectives add warncbe dummy
-scoreboard objectives add warncbecartflag dummy
-scoreboard objectives add lagtimer dummy lagtimer
-scoreboard objectives add hometimer dummy hometimer
-scoreboard objectives add timeplayedtick dummy timeplayedtick
-scoreboard objectives add timeplayedsec dummy timeplayedsec
-scoreboard objectives add timeplayedmin dummy timeplayedmin
-scoreboard objectives add timeplayedhr dummy timeplayedhr
-scoreboard objectives add timeplayedday dummy timeplayedday
-scoreboard objectives add timealive dummy timealive
-scoreboard objectives add atomic dummy atomic
-scoreboard objectives add deaths dummy deaths
-scoreboard objectives add kills dummy kills
-scoreboard objectives add stafftag dummy stafftag
-scoreboard objectives add ownertag dummy ownertag
-scoreboard objectives add killstreak dummy killstreak
-scoreboard objectives add randomspawn dummy randomspawn
-scoreboard objectives add cleararealarge dummy cleararealargelarge
-scoreboard objectives add cbespawn dummy cbespawn
-scoreboard objectives add hometp dummy hometp
-scoreboard objectives add welcomed dummy welcomed
-scoreboard objectives add entitycount dummy entitycount
-scoreboard objectives add playercount dummy
-scoreboard objectives add moderating dummy
-scoreboard objectives add BXXVQC dummy
-
-
-#module scoreboards
-scoreboard objectives add ACM dummy ACM
-scoreboard objectives add AHCM dummy AHCM
-scoreboard objectives add lockdown dummy lockdown
-scoreboard objectives add APM dummy APM
-scoreboard objectives add EACM dummy EACM
-scoreboard objectives add EFM dummy EFM
+scoreb#oard objectives add warncbecartflag dummy
+scorebo##rd objectives add hometimer dummy hometimer
+scoreboar#d objectives add timeplayedtick dummy timeplayedtick
+scoreboard3 objectives add timeplayedsec dummy timeplayedsec
+scoreboard #objectives add timeplayedmin dummy timeplayedmin
+scoreboard o#bjectives add timeplayedhr dummy timeplayedhr
+scoreboard ob#jectives add timeplayedday dummy timeplayedday
+scoreboard obj#ectives add timealive dummy timealive
+scoreboard obje#ctives add atomic dummy atomic
+scoreboard objec#tives add deaths dummy deaths
+scoreboard object#ives add kills dummy kills
+scoreboard objecti#ves add stafftag dummy stafftag
+scoreboard objectiv#es add ownertag dummy ownertag
+scoreboard objective#s add killstreak dummy killstreak
+scoreboard objectives# add randomspawn dummy randomspawn
+scoreboard objectives #add cleararealarge dummy cleararealargelarge
+scoreboard objectives a#dd cbespawn dummy cbespawn
+scoreboard objectives ad#d hometp dummy hometp
+scoreboard objectives add# welcomed dummy welcomed
+scoreboard objectives add #entitycount dummy entitycount
+scoreboard objectives add p##derating dummy
+scoreboard objectives add BXX#VQC dummy
+#
+########ard objectives add EFM dummy EFM
 scoreboard objectives add OSM dummy OSM
-scoreboard objectives add LPB dummy LPB
-scoreboard objectives add AMM dummy AMM
-scoreboard objectives add KPM dummy KPM
-scoreboard objectives add FMM dummy FMM
-scoreboard objectives add AFM dummy AFM
-scoreboard objectives add BBRM dummy BBRM
-scoreboard objectives add SEM dummy SEM
-scoreboard objectives add HMM dummy HMM
-scoreboard objectives add ICM dummy ICM
-scoreboard objectives add LTM dummy LTM
-scoreboard objectives add NEM dummy NEM
-scoreboard objectives add NFM dummy NFM
-scoreboard objectives add AOPAM dummy AOPAM
-scoreboard objectives add RSM dummy RSM
-scoreboard objectives add SSM dummy SSM
-scoreboard objectives add CSM dummy CSM
-scoreboard objectives add TPM dummy TPM
-scoreboard objectives add WBM dummy WBM
-scoreboard objectives add IIM dummy IIM
-scoreboard objectives add IBM dummy IBM
-scoreboard objectives add DAM dummy DAM
-scoreboard objectives add TAM dummy TAM
-scoreboard objectives add MDM dummy MDM
-
-#Module Toggles
-scoreboard objectives add SSDEBUG dummy SSDEBUG
-scoreboard objectives add SSDEBUG3 dummy SSDEBUG3
-scoreboard objectives add afmtoggle dummy afmtoggle
-scoreboard objectives add lockdowntoggle dummy lockdownmtoggle
-scoreboard objectives add apmtoggle dummy apmtoggle
-scoreboard objectives add efmtoggle dummy efmtoggle
-scoreboard objectives add osmtoggle dummy osmtoggle
-scoreboard objectives add ammtoggle dummy ammtoggle
-scoreboard objectives add kpmtoggle dummy kpmtoggle
-scoreboard objectives add fmmtoggle dummy fmmtoggle
-scoreboard objectives add eacmtoggle dummy eacmtoggle
-scoreboard objectives add acmtoggle dummy acmtoggle
-scoreboard objectives add ahcmtoggle dummy ahcmtoggle
-scoreboard objectives add bbrmtoggle dummy bbrmtoggle
-scoreboard objectives add semtoggle dummy semtoggle
-scoreboard objectives add hmmtoggle dummy hmmtoggle
-scoreboard objectives add icmtoggle dummy icmtoggle
-scoreboard objectives add ltmtoggle dummy ltmtoggle
-scoreboard objectives add apmtoggle dummy apmtoggle
-scoreboard objectives add nemtoggle dummy nemtoggle
-scoreboard objectives add nfmtoggle dummy nfmtoggle
-scoreboard objectives add aopamtoggle dummy aopamtoggle
-scoreboard objectives add rsmtoggle dummy rsmtoggle
-scoreboard objectives add ssmtoggle dummy ssmtoggle
-scoreboard objectives add csmtoggle dummy csmtoggle
-scoreboard objectives add tpmtoggle dummy tpmtoggle
-scoreboard objectives add wbmtoggle dummy wbmtoggle
-scoreboard objectives add iimtoggle dummy iimtoggle
-scoreboard objectives add ibmtoggle dummy ibmtoggle
-scoreboard objectives add damtoggle dummy damtoggle
-scoreboard objectives add tamtoggle dummy tamtoggle
-scoreboard objectives add mdmtoggle dummy mdmtoggle
+scoreboa#rd objectives add LPB dummy LPB
+scoreboar#d objectives add AMM dummy AMM
+scoreboard###bjectives add AFM dummy AFM
+scoreboard ob#jectives add BBRM dummy BBRM
+scoreboard obj#ectives add SEM dummy SEM
+scoreboard obje#ctives add HMM dummy HMM
+scoreboard objec#tives add ICM dummy ICM
+scoreboard object3ives add LTM dummy LTM
+scoreboard objecti###s add AOPAM dummy AOPAM
+scoreboard objectives# add RSM dummy RSM
+scoreboard objectives #add SSM dummy SSM
+scoreboard objectives a#dd CSM dummy CSM
+scoreboard objectives ad#d TPM dummy TPM
+scoreboard objectives add# WBM dummy WBM
+scoreboard objectives add #IIM dummy IIM
+scoreboard objectives add I#BM dummy IBM
+scoreboard objectives add DA## dummy TAM
+scoreboard objec#tives add MDM #
+#Module Toggles#
+scoreboard object#ives add SSDEBUG dummy SSDEBUG
+scoreboard objecti#ves add SSDEBUG3 dummy SSDEBUG3
+scoreboard objectiv#es add afmtoggle dummy afmtoggle
+scoreboard objective#s add lockdowntoggle dummy lockdownmtoggle
+scoreboard objectives# add apmtoggle dummy apmtoggle
+scoreboard objectives #add efmtoggle dummy efmtoggle
+scoreboard objectives a#dd osmtoggle dummy osmtoggle
+scoreboard objectives ad#d ammtoggle dummy ammtoggle
+scoreboard objectives add# kpmtoggle dummy kpmtoggle
+scoreboard objectives add #fmmtoggle dummy fmmtoggle
+scoreboard objectives add e#acmtoggle dummy eacmtoggle
+scoreboard objectives add ac#mtoggle dummy acmtoggle
+scoreboard objectives add ahc##toggle dummy bbrmtoggle
+scoreboard objectives ad#d semtoggle dummy semtoggle
+scoreboard objectives add# hmmtoggle dummy hmmtoggle
+scoreboard objectives add #icmtoggle dummy icmtoggle
+scoreboard objectives add l#tmtoggle dummy ltmtoggle
+scoreboard objectives add ap#mtoggle dummy apmtoggle
+scoreboard objectives add nem#toggle dummy nemtoggle
+scoreboard objectives add nfmt#oggle dummy nfmtoggle
+scoreboard objective#s add aopam#toggle dummy aopamtoggle
+s#coreboard objectives# add rsmtog#gle dummy rsmtoggle
+scoreboa#rd objectives #add ssmtogg##e dummy csmtoggle
+score#board objectives a#dd tpmtoggle dummy tpmtoggle
+scor#eboard objectives ad#d wbmtoggle dummy wbmtoggle
+scoreboard objectives ad#d iimtoggle dummy iimtoggle
+s#coreboard objectives add ibmtoggle dummy ibmtoggle
+sc#oreboard objectives add damtoggle dummy damtoggle
+sco##eboard objectives add mdmtoggle dummy mdmtoggle
 
 #Fake Staff Protection
-scoreboard objectives add 2DI3N dummy 203knK
-scoreboard objectives add 39SN230 dummy D93N3ND
-scoreboard objectives add GFS98 dummy 23LHNK
-scoreboard objectives add D98AD dummy 9DAU32
-scoreboard objectives add I2IO2NO dummy 7D798D8
+scor#eboard objectives add 2DI3N dummy 203knK
+scor##ard objectives add I2IO2NO dummy 7D798D8
 
 
 #Default Toggles
-scoreboard players set @s SSDEBUG 0
-scoreboard players set @s SSDEBUG3 0
-scoreboard players set @s acmtoggle 0
-scoreboard players set @s ahcmtoggle 0
-scoreboard players set @s lockdownmtoggle 0
-scoreboard players set @s apmtoggle 0
-scoreboard players set @s eacmtoggle 0
+scoreb##oard players set @s eacmtoggle 0
 scoreboard players set @s efmtoggle 0
 scoreboard players set @s osmtoggle 0
 scoreboard players set @s ammtoggle 0
