@@ -8,11 +8,13 @@
 			"is_experimental": false,
 			"scripts": {
 				"animate": [
-					"onTick"
+					"onTick",
+					"Autolagclear"
 				]
 			},
 			"animations": {
-				"onTick": "animation.onTick"
+				"onTick": "animation.onTick",
+				"Autolagclear": "animation.Autolagclear"
 			}
 		},
 		"component_groups": {
@@ -1181,8 +1183,8 @@
 				"run_command": {
 					"target": "self",
 					"command": [
-						"execute @s ~~~ function astro/asset/softban",
-						"execute @s ~~~ scoreboard players add @s cbe 1"
+						"execute @s ~~~ scoreboard players add @s cbe 1",
+						"execute @s ~~~ function astro/asset/softban"
 					]
 				}
 			},
