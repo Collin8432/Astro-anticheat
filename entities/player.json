@@ -8,13 +8,11 @@
 			"is_experimental": false,
 			"scripts": {
 				"animate": [
-					"onTick",
-					"Autolagclear"
+					"onTick"
 				]
 			},
 			"animations": {
-				"onTick": "animation.onTick",
-				"Autolagclear": "animation.Autolagclear"
+				"onTick": "animation.onTick"
 			}
 		},
 		"component_groups": {
