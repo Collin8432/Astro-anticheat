@@ -31,13 +31,11 @@
 			},
 			"minecraft:add_bad_omen": {
 				"minecraft:spell_effects": {
-					"add_effects": [
-						{
-							"effect": "bad_omen",
-							"duration": 6000,
-							"display_on_screen_animation": true
-						}
-					]
+					"add_effects": [{
+						"effect": "bad_omen",
+						"duration": 6000,
+						"display_on_screen_animation": true
+					}]
 				}
 			},
 			"minecraft:clear_bad_omen_spell_effect": {
@@ -56,19 +54,15 @@
 			}
 		},
 		"minecraft:environment_sensor": {
-			"triggers": [
-				{
+			"triggers": [{
 					"filters": {
-						"all_of": [
-							{
-								"test": "has_tag",
-								"subject": "self",
-								"operator": "!=",
-								"value": "stafftag"
-							}
-						],
-						"any_of": [
-							{
+						"all_of": [{
+							"test": "has_tag",
+							"subject": "self",
+							"operator": "!=",
+							"value": "stafftag"
+						}],
+						"any_of": [{
 								"test": "has_tag",
 								"subject": "self",
 								"operator": "==",
@@ -86,63 +80,52 @@
 				},
 				{
 					"filters": {
-						"all_of": [
-							{
-								"test": "has_tag",
-								"subject": "self",
-								"operator": "!=",
-								"value": "stafftag"
-							}
-						],
-						"any_of": [
-							{
-								"test": "has_tag",
-								"subject": "self",
-								"operator": "==",
-								"value": "cbesoft"
-							}
-						]
+						"all_of": [{
+							"test": "has_tag",
+							"subject": "self",
+							"operator": "!=",
+							"value": "stafftag"
+						}],
+						"any_of": [{
+							"test": "has_tag",
+							"subject": "self",
+							"operator": "==",
+							"value": "cbesoft"
+						}]
 					},
 					"event": "astro:ban_soft"
 				},
 				{
 					"filters": {
-						"all_of": [
-							{
-								"test": "has_tag",
-								"operator": "==",
-								"subject": "self",
-								"value": "spectate"
-							}
-						]
+						"all_of": [{
+							"test": "has_tag",
+							"operator": "==",
+							"subject": "self",
+							"value": "spectate"
+						}]
 					},
 					"event": "minecraft:spectate"
 				},
 				{
 					"filters": {
-						"all_of": [
-							{
-								"test": "has_tag",
-								"operator": "!=",
-								"subject": "self",
-								"value": "spectate"
-							}
-						]
+						"all_of": [{
+							"test": "has_tag",
+							"operator": "!=",
+							"subject": "self",
+							"value": "spectate"
+						}]
 					},
 					"event": "minecraft:no_spectate"
 				},
 				{
 					"filters": {
-						"all_of": [
-							{
-								"test": "has_tag",
-								"subject": "self",
-								"operator": "!=",
-								"value": "admin"
-							}
-						],
-						"any_of": [
-							{
+						"all_of": [{
+							"test": "has_tag",
+							"subject": "self",
+							"operator": "!=",
+							"value": "admin"
+						}],
+						"any_of": [{
 								"test": "has_equipment",
 								"domain": "any",
 								"operator": "==",
@@ -238,16 +221,13 @@
 				},
 				{
 					"filters": {
-						"all_of": [
-							{
-								"test": "has_tag",
-								"subject": "self",
-								"operator": "!=",
-								"value": "stafftag"
-							}
-						],
-						"any_of": [
-							{
+						"all_of": [{
+							"test": "has_tag",
+							"subject": "self",
+							"operator": "!=",
+							"value": "stafftag"
+						}],
+						"any_of": [{
 								"test": "has_equipment",
 								"domain": "any",
 								"operator": "==",
@@ -1057,29 +1037,32 @@
 				}
 			]
 		},
-		"minecraft:experience_reward": {
-			"on_death": "Math.Min(query.player_level * 7, 100)"
-		},
-		"minecraft:type_family": {
-			"family": [
-				"player"
-			]
-		},
-		"minecraft:is_hidden_when_invisible": {},
-		"minecraft:loot": {
-			"table": "loot_tables/empty.json"
-		},
-		"minecraft:collision_box": {
-			"width": 0.6,
-			"height": 1.8
-		},
-		"minecraft:can_climb": {},
-		"minecraft:movement": {
-			"value": 0.1
-		},
-		"minecraft:hurt_on_condition": {
-			"damage_conditions": [
-				{
+		"components": {
+			"minecraft:on_death": {
+				"event": "player:death"
+			},
+			"minecraft:experience_reward": {
+				"on_death": "Math.Min(query.player_level * 7, 100)"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"player"
+				]
+			},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:loot": {
+				"table": "loot_tables/empty.json"
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.8
+			},
+			"minecraft:can_climb": {},
+			"minecraft:movement": {
+				"value": 0.1
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [{
 					"filters": {
 						"test": "in_lava",
 						"subject": "self",
@@ -1088,98 +1071,91 @@
 					},
 					"cause": "lava",
 					"damage_per_tick": 4
-				}
-			]
-		},
-		"minecraft:attack": {
-			"damage": 1
-		},
-		"minecraft:player.saturation": {
-			"value": 20
-		},
-		"minecraft:player.exhaustion": {
-			"value": 0,
-			"max": 4
-		},
-		"minecraft:player.level": {
-			"value": 0,
-			"max": 24791
-		},
-		"minecraft:player.experience": {
-			"value": 0,
-			"max": 1
-		},
-		"minecraft:breathable": {
-			"total_supply": 15,
-			"suffocate_time": -1,
-			"inhale_time": 3.75,
-			"generates_bubbles": false
-		},
-		"minecraft:nameable": {
-			"always_show": true,
-			"allow_name_tag_renaming": false
-		},
-		"minecraft:physics": {},
-		"minecraft:pushable": {
-			"is_pushable": false,
-			"is_pushable_by_piston": true
-		},
-		"minecraft:insomnia": {
-			"days_until_insomnia": 3
-		},
-		"minecraft:rideable": {
-			"seat_count": 2,
-			"family_types": [
-				"parrot_tame"
-			],
-			"pull_in_entities": true,
-			"seats": [
-				{
-					"position": [
-						0.4,
-						-0.2,
-						-0.1
-					],
-					"min_rider_count": 0,
-					"max_rider_count": 0,
-					"lock_rider_rotation": 0
-				},
-				{
-					"position": [
-						-0.4,
-						-0.2,
-						-0.1
-					],
-					"min_rider_count": 1,
-					"max_rider_count": 2,
-					"lock_rider_rotation": 0
-				}
-			]
-		},
-		"minecraft:scaffolding_climber": {},
-		"minecraft:damage_sensor": {
-			"triggers": [
-				{
-					"on_damage": {
-						"filters": [
-							{
+				}]
+			},
+			"minecraft:attack": {
+				"damage": 1
+			},
+			"minecraft:player.saturation": {
+				"value": 20
+			},
+			"minecraft:player.exhaustion": {
+				"value": 0,
+				"max": 4
+			},
+			"minecraft:player.level": {
+				"value": 0,
+				"max": 24791
+			},
+			"minecraft:player.experience": {
+				"value": 0,
+				"max": 1
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": -1,
+				"inhale_time": 3.75,
+				"generates_bubbles": false
+			},
+			"minecraft:nameable": {
+				"always_show": true,
+				"allow_name_tag_renaming": false
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:insomnia": {
+				"days_until_insomnia": 3
+			},
+			"minecraft:rideable": {
+				"seat_count": 2,
+				"family_types": [
+					"parrot_tame"
+				],
+				"pull_in_entities": true,
+				"seats": [{
+						"position": [
+							0.4,
+							-0.2,
+							-0.1
+						],
+						"min_rider_count": 0,
+						"max_rider_count": 0,
+						"lock_rider_rotation": 0
+					},
+					{
+						"position": [
+							-0.4,
+							-0.2,
+							-0.1
+						],
+						"min_rider_count": 1,
+						"max_rider_count": 2,
+						"lock_rider_rotation": 0
+					}
+				]
+			},
+			"minecraft:scaffolding_climber": {},
+			"minecraft:damage_sensor": {
+				"triggers": [{
+						"on_damage": {
+							"filters": [{
 								"test": "has_tag",
 								"operator": "==",
 								"subject": "self",
 								"value": "godmode"
-							}
-						],
-						"cause": "all"
+							}],
+							"cause": "all"
+						},
+						"deals_damage": false
 					},
-					"deals_damage": false
-				},
-				{
-					"on_damage": {
-						"filters": {
-							"any_of": [
-								{
-									"all_of": [
-										{
+					{
+						"on_damage": {
+							"filters": {
+								"any_of": [{
+									"all_of": [{
 											"test": "has_tag",
 											"value": "can_oneshot"
 										},
@@ -1188,212 +1164,202 @@
 											"value": "fatal"
 										}
 									]
-								}
-							]
-						}
-					},
-					"deals_damage": false
-				},
-				{
-					"on_damage": {
-						"filters": {
-							"all_of": [
-								{
-									"test": "has_damage",
-									"operator": "==",
-									"value": "magic"
-								},
-								{
-									"test": "is_family",
-									"operator": "==",
-									"subject": "other",
-									"value": "player"
-								},
-								{
-									"test": "has_damage",
-									"operator": "==",
-									"subject": "self",
-									"value": "fatal"
-								}
-							]
+								}]
+							}
 						},
-						"event": "astro:player_death"
-					}
-				}
-				{
-					"on_damage": {
-						"event": "player:died",
-						"target": "self",
-						"filters": {
-							"all_of": [
-								{
-									"test": "has_damage",
-									"value": "fatal"
-								}
-							]
+						"deals_damage": false
+					},
+					{
+						"on_damage": {
+							"filters": {
+								"all_of": [{
+										"test": "has_damage",
+										"operator": "==",
+										"value": "magic"
+									},
+									{
+										"test": "is_family",
+										"operator": "==",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "has_damage",
+										"operator": "==",
+										"subject": "self",
+										"value": "fatal"
+									}
+								]
+							},
+							"event": "astro:player_death"
 						}
 					},
-					"cause": "entity_attack"
-				},
-				{
-					"on_damage": {
-						"event": "player:died",
-						"target": "self",
-						"filters": {
-							"all_of": [
-								{
+					{
+						"on_damage": {
+							"event": "player:died",
+							"target": "self",
+							"filters": {
+								"all_of": [{
 									"test": "has_damage",
 									"value": "fatal"
-								}
-							]
-						}
+								}]
+							}
+						},
+						"cause": "entity_attack"
 					},
-					"cause": "projectile"
-				},
-				{
-					"on_damage": {
-						"event": "arrow:hit_target",
-						"target": "other",
-						"filters": {
-							"all_of": [
-								{
+					{
+						"on_damage": {
+							"event": "player:died",
+							"target": "self",
+							"filters": {
+								"all_of": [{
+									"test": "has_damage",
+									"value": "fatal"
+								}]
+							}
+						},
+						"cause": "projectile"
+					},
+					{
+						"on_damage": {
+							"event": "arrow:hit_target",
+							"target": "other",
+							"filters": {
+								"all_of": [{
 									"test": "has_damage",
 									"value": "projectile"
-								}
-							]
+								}]
+							}
+						}
+					},
+					{
+						"on_damage": {
+							"event": "player:incombat",
+							"target": "self"
 						}
 					}
-				},
-				{
-					"on_damage": {
-						"event": "player:incombat",
-						"target": "self"
-					}
-				}
-			]
-		},
-		"minecraft:npc": {}
-	},
-	"events": {
-		"astro:cbeitems": {
-			"run_command": {
-				"target": "self",
-				"command": [
-					"execute @s[scores={acbetoggle=1}] ~~~ scoreboard players add cbe 1",
-					"execute @s[scores={acbetoggle=1}] ~~~ function astro/asset/cbeitemskickmsg"
-				]
-			}
-		},
-		"astro:cbe": {
-			"run_command": {
-				"target": "self",
-				"command": [
-					"execute @s[scores={acbetoggle=1}] ~~~ scoreboard players add cbe 1",
-					"execute @s[scores={acbetoggle=1}] ~~~ function astro/asset/tempkick"
-				]
-			}
-		},
-		"astro:ban_main": {
-			"run_command": {
-				"target": "self",
-				"command": [
-					"execute @s ~~~ function astro/asset/ban"
 				]
 			},
-			"add": {
-				"component_groups": [
-					"astro:ban"
-				]
-			}
+			"minecraft:npc": {}
 		},
-		"astro:ban_soft": {
-			"run_command": {
-				"target": "self",
-				"command": [
-					"execute @s ~~~ scoreboard players add @s cbe 1",
-					"execute @s ~~~ function astro/asset/softban"
-				]
-			}
-		},
-		"minecraft:spectate": {
-			"add": {
-				"component_groups": [
-					"minecraft:spectate"
-				]
-			}
-		},
-		"minecraft:no_spectate": {
-			"add": {
-				"component_groups": [
-					"minecraft:no_spectate"
-				]
-			}
-		},
-		"player:death": {
-			"run_command": {
-				"command": [
-					"say I DIED",
-					"execute @p[tag=iKilled] ~~~ say I KILLED"
-				]
-			}
-		},
-		"player:died": {
-			"sequence": [
-				{
+		"events": {
+			"astro:cbeitems": {
+				"run_command": {
+					"target": "self",
+					"command": [
+						"execute @s[scores={acbetoggle=1}] ~~~ scoreboard players add cbe 1",
+						"execute @s[scores={acbetoggle=1}] ~~~ function astro/asset/cbeitemskickmsg"
+					]
+				}
+			},
+			"astro:cbe": {
+				"run_command": {
+					"target": "self",
+					"command": [
+						"execute @s[scores={acbetoggle=1}] ~~~ scoreboard players add cbe 1",
+						"execute @s[scores={acbetoggle=1}] ~~~ function astro/asset/tempkick"
+					]
+				}
+			},
+			"astro:ban_main": {
+				"run_command": {
+					"target": "self",
+					"command": [
+						"execute @s ~~~ function astro/asset/ban"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"astro:ban"
+					]
+				}
+			},
+			"astro:ban_soft": {
+				"run_command": {
+					"target": "self",
+					"command": [
+						"execute @s ~~~ scoreboard players add @s cbe 1",
+						"execute @s ~~~ function astro/asset/softban"
+					]
+				}
+			},
+			"minecraft:spectate": {
+				"add": {
+					"component_groups": [
+						"minecraft:spectate"
+					]
+				}
+			},
+			"minecraft:no_spectate": {
+				"add": {
+					"component_groups": [
+						"minecraft:no_spectate"
+					]
+				}
+			},
+			"player:death": {
+				"run_command": {
+					"command": [
+						"say I DIED",
+						"execute @p[tag=iKilled] ~~~ say I KILLED"
+					]
+				}
+			},
+			"player:died": {
+				"sequence": [{
 					"trigger": {
 						"event": "player:killed",
 						"target": "other"
 					}
-				}
-			]
-		},
-		"player:killed": {
-			"run_command": {
-				"command": [
-					"tag @s add iKilled"
-				]
-			}
-		},
-		"player:incombat": {
-			"run_command": {
-				"command": [
-					"say I TOOK DMG"
-				]
-			}
-		},
-		"arrow:hit_target": {
-			"run_command": {
-				"target": "self",
-				"command": [
-					"playsound random.orb @s",
-					"say ARROW HIT"
-				]
-			}
-		},
-		"minecraft:gain_bad_omen": {
-			"add": {
-				"component_groups": [
-					"minecraft:add_bad_omen"
-				]
-			}
-		},
-		"minecraft:clear_add_bad_omen": {
-			"remove": {
-				"component_groups": [
-					"minecraft:add_bad_omen"
-				]
+				}]
 			},
-			"add": {
-				"component_groups": [
-					"minecraft:clear_bad_omen_spell_effect"
-				]
-			}
-		},
-		"minecraft:remove_raid_trigger": {
-			"remove": {
-				"component_groups": [
-					"minecraft:raid_trigger"
-				]
+			"player:killed": {
+				"run_command": {
+					"command": [
+						"tag @s add iKilled"
+					]
+				}
+			},
+			"player:incombat": {
+				"run_command": {
+					"command": [
+						"say "
+					]
+				}
+			},
+			"arrow:hit_target": {
+				"run_command": {
+					"target": "self",
+					"command": [
+						"playsound random.orb @s"
+					]
+				}
+			},
+			"minecraft:gain_bad_omen": {
+				"add": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				}
+			},
+			"minecraft:clear_add_bad_omen": {
+				"remove": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:clear_bad_omen_spell_effect"
+					]
+				}
+			},
+			"minecraft:remove_raid_trigger": {
+				"remove": {
+					"component_groups": [
+						"minecraft:raid_trigger"
+					]
+				}
 			}
 		}
 	}
