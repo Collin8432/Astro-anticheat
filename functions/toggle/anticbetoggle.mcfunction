@@ -11,5 +11,5 @@ execute @s[scores={admin=1,ACBE=2}] ~~~ scoreboard players set acbetoggledummy a
 execute @s[scores={admin=1,ACBE=2}] ~~~ scoreboard players operation @a acbetoggle = acbetoggledummy acbetoggle
 execute @s[scores={admin=1,ACBE=2}] ~~~ tellraw @a[scores={stafftag=1}] {"rawtext":[{"text":"Astro → Anti-CBE has been toggled off by "},{"selector":"@s"}]}
 execute @s[scores={admin=1,ACBE=2}] ~~~ scoreboard players set acbetoggledummy acbe 0
-#Deny Nonstaff
+#Deny non admins
 execute @s[scores={stafftag=0}] ~~~ tellraw @s {"rawtext":[{"text":"Astro → Access staff can use this command"}]}
