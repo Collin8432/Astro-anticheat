@@ -1,0 +1,1 @@
+effect @s slowness 999999999 255 true
