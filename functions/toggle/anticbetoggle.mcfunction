@@ -1,15 +1,14 @@
-#toggle for anticbe lol
-execute @s[scores={admin=1}] ~~~ scoreboard players add anticbetoggledummy ACBE 1
-execute @s[scores={admin=1}] ~~~ scoreboard players operation @a ACBE = acbetoggledummy ACBE
+scoreboard objectives add cbe dummy cbe
+scoreboard players add @s cbe 0
 
-#turn on
-execute @s[scores={admin=1,ACBE=1}] ~~~ scoreboard players set acbetoggledummy acbetoggle 1
-execute @s[scores={admin=1,ACBE=1}] ~~~ scoreboard players operation @a ahcmtoggle = ahcmtoggledummy ahcmtoggle
-execute @s[scores={admin=1,ACBE=1}] ~~~ tellraw @a[scores={stafftag=1}] {"rawtext":[{"text":"Astro → Anti-CBE has been toggled on by "},{"selector":"@s"}]}
-#turn off
-execute @s[scores={admin=1,ACBE=2}] ~~~ scoreboard players set acbetoggledummy acbetoggle 0
-execute @s[scores={admin=1,ACBE=2}] ~~~ scoreboard players operation @a acbetoggle = acbetoggledummy acbetoggle
-execute @s[scores={admin=1,ACBE=2}] ~~~ tellraw @a[scores={stafftag=1}] {"rawtext":[{"text":"Astro → Anti-CBE has been toggled off by "},{"selector":"@s"}]}
-execute @s[scores={admin=1,ACBE=2}] ~~~ scoreboard players set acbetoggledummy acbe 0
-#Deny non admins
-execute @s[scores={admin=0}] ~~~ tellraw @s {"rawtext":[{"text":"Astro → Access staff can use this command"}]}
+#admintest
+tellraw @s[type=player,tag=!admin] {"rawtext":[{"text":"This is an Admin only Command"}]}
+execute @a[tag=!admin] ~~~ tellraw @a[tag=admin] {"rawtext":[{"text":"Astro → "},{"selector":"@s"},{"text":"Has tried to run Admin Only Functions"}]}
+
+#on
+execute @s[type=player,tag=admin,scores={cbe=..0}] ~~~ scoreboard players set astro:config cbetoggledummy 1
+execute @s[type=player,tag=admin,scores={cbe=..0}] ~~~ tellraw @a[tag=admin] {"rawtext":[{"text":"Astro → "},{"selector":"@s"},{"text":"Had Toggled AntiCbe On"}]}
+
+#off
+execute @s[type=player,tag=admin,scores={cbe=1..}] ~~~ scoreboard players set astro:config cbetoggledummy 0
+execute @s[type=player,tag=admin,scores={cbe=1..}] ~~~ tellraw @a[tag=admin] {"rawtext":[{"text":"Astro → "},{"selector":"@s"},{"text":"Has Toggled AntiCbe Off"}]}

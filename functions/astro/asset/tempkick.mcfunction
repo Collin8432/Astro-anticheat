@@ -1,1 +1,1 @@
-event entity @s astro:ban
+event entity @s astro:ban_main

@@ -1,2 +1,2 @@
 function astro/modules/anticbe
-function astro/antigmc
+function astro/modules/antigmc
