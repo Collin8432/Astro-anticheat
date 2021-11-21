@@ -15,6 +15,8 @@
 
 	Official Astro Anti-Cheat Discord: https://discord.gg/kNNugFva
 
-Astro anticheat is made for primarily anarchy servers
+Astro Anticheat is a MCBE Addon to protect Bedrock Edition Realms.
 -----------------------------------------------------------------------------------------------
-this anti cheat also has very customizable features, functions, and toggleable commands, and many anti cbe methods added already
+The Anticheat has many customizable features. Functions, Toggleable Commands, AntiCBE & More
+	
+##Info	
