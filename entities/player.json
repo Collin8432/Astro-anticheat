@@ -1256,8 +1256,8 @@
 				"run_command": {
 					"target": "self",
 					"command": [
-						"execute @s[scores={acbetoggle=1}] ~~~ scoreboard players add cbeflag 1",
-						"execute @s[scores={acbetoggle=1}] ~~~ function astro/asset/tempkick"
+						"execute @s[scores={cbetoggledummy=1..}] ~~~ scoreboard players add cbeflag 1",
+						"execute @s[scores={cbetoggledummy=1..}] ~~~ function astro/asset/tempkick"
 					]
 				}
 			},
@@ -1265,7 +1265,7 @@
 				"run_command": {
 					"target": "self",
 					"command": [
-						"execute @s ~~~ function astro/asset/ban"
+						"execute @s ~~~ function astro/asset/tempkick"
 					]
 				},
 				"add": {
@@ -1279,7 +1279,7 @@
 					"target": "self",
 					"command": [
 						"execute @s ~~~ scoreboard players add @s cbeflag 1",
-						"execute @s ~~~ function astro/asset/softban"
+						"execute @s ~~~ function astro/asset/tempkick"
 					]
 				}
 			},
@@ -1294,44 +1294,6 @@
 				"add": {
 					"component_groups": [
 						"minecraft:no_spectate"
-					]
-				}
-			},
-			"player:death": {
-				"run_command": {
-					"command": [
-						"say I DIED",
-						"execute @p[tag=iKilled] ~~~ say I KILLED"
-					]
-				}
-			},
-			"player:died": {
-				"sequence": [{
-					"trigger": {
-						"event": "player:killed",
-						"target": "other"
-					}
-				}]
-			},
-			"player:killed": {
-				"run_command": {
-					"command": [
-						"tag @s add iKilled"
-					]
-				}
-			},
-			"player:incombat": {
-				"run_command": {
-					"command": [
-						"scoreboard players add @s incombat 1"
-					]
-				}
-			},
-			"arrow:hit_target": {
-				"run_command": {
-					"target": "self",
-					"command": [
-						"playsound random.orb @s"
 					]
 				}
 			},

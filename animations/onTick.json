@@ -5,7 +5,9 @@
 			"timeline": {
 				"0.0": [
 					"/gamerule functioncommandlimit 10000",
-					"/function utility/main"
+					"/function utility/main",
+					"/gamerule commandfeedback false",
+					"/gamerule chaincommandlimit 10000"
 				]
 			},
 			"animation_length": 0.01,

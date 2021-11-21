@@ -1,2 +1,2 @@
-tellraw @a {"rawtext":[{"text":"Astro → "},{"selector":"@s"},{"text":" got Kicked for CBE, Report this to a Operator"}]}
+tellraw @a {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 Got Kicked For CBE, Report This To A Operator"}]}
 function asset/tempkick

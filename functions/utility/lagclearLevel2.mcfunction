@@ -1,4 +1,4 @@
-tellraw @a{"rawtext":[{"text":"Astro → "},{"selector":"@s"},{"text":"Ran Level 2 Lag Clear"}]}
+tellraw @a{"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 Ran Level 2 Lag Clear"}]}
 kill @e[type=item]
 kill @e[type=arrow]
 kill @e[type=minecraft:area_effect_cloud]
