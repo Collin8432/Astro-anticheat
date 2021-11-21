@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/tokei/lines/github/astroontop/Astro-anticheat">
   <img src="https://img.shields.io/github/downloads/astroontop/Astro-anticheat/total">
 
-	##Contacts Join the discord at https://discord.gg/kNNugFva
+	Official Astro Anti-Cheat Discord: https://discord.gg/kNNugFva
 
 Astro anticheat is made for primarily anarchy servers
 -----------------------------------------------------------------------------------------------
