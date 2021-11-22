@@ -18,5 +18,6 @@
 Astro Anticheat is a MCBE Addon to protect Bedrock Edition Realms.
 -----------------------------------------------------------------------------------------------
 The Anticheat has many customizable features. Functions, Toggleable Commands, AntiCBE & More
-	
-##Info	
+
+
+**THIS ANTI CHEAT HAS PATCHED ALL KNOWN CBE METHODS**
