@@ -1247,9 +1247,9 @@
 				"run_command": {
 					"target": "self",
 					"command": [
-						"clear @s",
-						"execute @s[scores={acbetoggle=1}] ~~~ scoreboard players add cbeflag 1",
-						"execute @s[scores={acbetoggle=1}] ~~~ function astro/asset/cbeitemskickmsg"
+						"execute @s ~~~ function utility/clearall",
+						"execute @s[scores={cbetoggledummy=1..}] ~~~ scoreboard players add cbeflag 1",
+						"execute @s[scores={cbetoggledummy=1..}] ~~~ function astro/asset/cbeitemskickmsg"
 					]
 				}
 			},
@@ -1257,7 +1257,7 @@
 				"run_command": {
 					"target": "self",
 					"command": [
-						"clear @s",
+						"execute @s ~~~ function utility/clearall",
 						"execute @s[scores={cbetoggledummy=1..}] ~~~ scoreboard players add cbeflag 1",
 						"execute @s[scores={cbetoggledummy=1..}] ~~~ function astro/asset/tempkick"
 					]
@@ -1267,7 +1267,7 @@
 				"run_command": {
 					"target": "self",
 					"command": [
-						"clear @s",
+						"execute @s ~~~ function utility/clearall",
 						"execute @s ~~~ function astro/asset/tempkick"
 					]
 				},
@@ -1282,7 +1282,7 @@
 					"target": "self",
 					"command": [
 						"execute @s ~~~ scoreboard players add @s cbeflag 1",
-						"clear @s",
+						"execute @s ~~~ function utility/clearall",
 						"execute @s ~~~ function astro/asset/tempkick"
 					]
 				}
