@@ -19,4 +19,3 @@ scoreboard players add @s admins 0
 
 #welcome
 scoreboard objectives add welcome
-scoreboard players add @s admin 0
