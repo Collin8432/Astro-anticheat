@@ -1,5 +1,9 @@
 #cbe scores
 scoreboard objectives add cbe dummy
+scoreboard objectives add cbetoggledummy
+scoreboard objectives add cbeflag
+scoreboard players add @s cbeflag 0
+scoreboard players add @s cbetoggledummy 0
 scoreboard players add @s cbe 0
 scoreboard players operation @a cbe == astro:config cbetoggledummy
 
