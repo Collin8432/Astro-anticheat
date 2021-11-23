@@ -19,3 +19,9 @@ scoreboard players add @s admins 0
 
 #welcome
 scoreboard objectives add welcome
+
+#bottom bedrock
+scoreboard objectives add bbtoggle
+scoreboard objectives add bb 
+scoreboard players add @s bb 0
+scoreboard players add @s bbtoggle 0
