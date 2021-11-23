@@ -14,4 +14,4 @@ execute @r[scores={welcomed=1}] ~~~ scoreboard players set @s welcome 0
 #This hides this from the in-game function command directory
 execute @f ~~~ hide
 tag @f[tag=""] add hide
-// me hydraontopp added this
+// me hydraontopp added title and subtitle
