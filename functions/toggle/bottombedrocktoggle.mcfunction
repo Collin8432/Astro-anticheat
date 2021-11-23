@@ -1,4 +1,4 @@
-scoreboard objectives add bb dummy bb
+scoreboard objectives add bbtoggledummy dummy bb
 scoreboard players add @s bb 0
 
 #admintest
