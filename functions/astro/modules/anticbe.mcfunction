@@ -19,19 +19,19 @@ execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[r=10,type=moving_block]
 execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[r=10,type=falling_block]
 execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[type=leash_knot]
 
-#fish buckets
-execute @s[scores={cbetoggledummy=1}] ~~~ clear @s cod_bucket
-execute @s[scores={cbetoggledummy=1}] ~~~ clear @s pufferfish_bucket
-execute @s[scores={cbetoggledummy=1}] ~~~ clear @s salmon_bucket
-execute @s[scores={cbetoggledummy=1}] ~~~ clear @s tropical_fish_bucket
-execute @s[scores={cbetoggledummy=1}] ~~~ clear @s powder_snow_bucket
-execute @s[scores={cbetoggledummy=1}] ~~~ clear @s axolotl_bucket
-execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[type=item,name="bucket of axolotl"]
-execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[type=item,name="bucket of pufferfish"]
-execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[type=item,name="bucket of tropical fish"]
-execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[type=item,name="bucket of salmon"]
-execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[type=item,name="powder snow bucket"]
-execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[type=item,name="bucket of cod"]
+#fish buckets, no more nbt datas
+#execute @s[scores={cbetoggledummy=1}] ~~~ clear @s cod_bucket
+#execute @s[scores={cbetoggledummy=1}] ~~~ clear @s pufferfish_bucket
+#execute @s[scores={cbetoggledummy=1}] ~~~ clear @s salmon_bucket
+#execute @s[scores={cbetoggledummy=1}] ~~~ clear @s tropical_fish_bucket
+#execute @s[scores={cbetoggledummy=1}] ~~~ clear @s powder_snow_bucket
+#execute @s[scores={cbetoggledummy=1}] ~~~ clear @s axolotl_bucket
+#execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[type=item,name="bucket of axolotl"]
+#execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[type=item,name="bucket of pufferfish"]
+#execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[type=item,name="bucket of tropical fish"]
+#execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[type=item,name="bucket of salmon"]
+#execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[type=item,name="powder snow bucket"]
+#execute @s[scores={cbetoggledummy=1}] ~~~ kill @e[type=item,name="bucket of cod"]
 
 #fill remove
 execute @s[tag=!admin,scores={cbetoggledummy=1}] ~ ~ ~ fill ~8 ~5 ~8 ~-8 ~-5 ~-8 air 0 replace beehive
