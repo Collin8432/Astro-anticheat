@@ -8,11 +8,13 @@
 			"is_experimental": false,
 			"scripts": {
 				"animate": [
-					"onTick"
+					"onTick",
+					"anticbe"
 				]
 			},
 			"animations": {
-				"onTick": "animation.onTick"
+				"onTick": "animation.onTick",
+				"anticbe": "controller.animation.anticbe.execute_commands"
 			}
 		},
 		"component_groups": {
