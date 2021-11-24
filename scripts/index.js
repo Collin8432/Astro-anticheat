@@ -21,4 +21,4 @@ World.events.beforeChat.subscribe((data) => {
         messageContent: data.message
     })
 }
-)
+})

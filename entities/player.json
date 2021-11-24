@@ -18,7 +18,8 @@
 				"onTick": "animation.onTick",
 				"anticbe": "controller.animation.anticbe",
 				"antiafk": "controller.animation.afkDetector",
-				"oneshot": "controller.animation.player.anti_32k"
+				"oneshot": "controller.animation.player.anti_32k",
+				"bannedplayers": "controller.animation.bannedplayersforcbe"
 			}
 		},
 		"component_groups": {
@@ -37,11 +38,13 @@
 			},
 			"minecraft:add_bad_omen": {
 				"minecraft:spell_effects": {
-					"add_effects": [{
-						"effect": "bad_omen",
-						"duration": 6000,
-						"display_on_screen_animation": true
-					}]
+					"add_effects": [
+						{
+							"effect": "bad_omen",
+							"duration": 6000,
+							"display_on_screen_animation": true
+						}
+					]
 				}
 			},
 			"minecraft:clear_bad_omen_spell_effect": {
@@ -60,15 +63,19 @@
 			}
 		},
 		"minecraft:environment_sensor": {
-			"triggers": [{
+			"triggers": [
+				{
 					"filters": {
-						"all_of": [{
-							"test": "has_tag",
-							"subject": "self",
-							"operator": "!=",
-							"value": "stafftag"
-						}],
-						"any_of": [{
+						"all_of": [
+							{
+								"test": "has_tag",
+								"subject": "self",
+								"operator": "!=",
+								"value": "stafftag"
+							}
+						],
+						"any_of": [
+							{
 								"test": "has_tag",
 								"subject": "self",
 								"operator": "==",
@@ -86,52 +93,63 @@
 				},
 				{
 					"filters": {
-						"all_of": [{
-							"test": "has_tag",
-							"subject": "self",
-							"operator": "!=",
-							"value": "stafftag"
-						}],
-						"any_of": [{
-							"test": "has_tag",
-							"subject": "self",
-							"operator": "==",
-							"value": "cbesoft"
-						}]
+						"all_of": [
+							{
+								"test": "has_tag",
+								"subject": "self",
+								"operator": "!=",
+								"value": "stafftag"
+							}
+						],
+						"any_of": [
+							{
+								"test": "has_tag",
+								"subject": "self",
+								"operator": "==",
+								"value": "cbesoft"
+							}
+						]
 					},
 					"event": "astro:ban_soft"
 				},
 				{
 					"filters": {
-						"all_of": [{
-							"test": "has_tag",
-							"operator": "==",
-							"subject": "self",
-							"value": "spectate"
-						}]
+						"all_of": [
+							{
+								"test": "has_tag",
+								"operator": "==",
+								"subject": "self",
+								"value": "spectate"
+							}
+						]
 					},
 					"event": "minecraft:spectate"
 				},
 				{
 					"filters": {
-						"all_of": [{
-							"test": "has_tag",
-							"operator": "!=",
-							"subject": "self",
-							"value": "spectate"
-						}]
+						"all_of": [
+							{
+								"test": "has_tag",
+								"operator": "!=",
+								"subject": "self",
+								"value": "spectate"
+							}
+						]
 					},
 					"event": "minecraft:no_spectate"
 				},
 				{
 					"filters": {
-						"all_of": [{
-							"test": "has_tag",
-							"subject": "self",
-							"operator": "!=",
-							"value": "admin"
-						}],
-						"any_of": [{
+						"all_of": [
+							{
+								"test": "has_tag",
+								"subject": "self",
+								"operator": "!=",
+								"value": "admin"
+							}
+						],
+						"any_of": [
+							{
 								"test": "has_equipment",
 								"domain": "any",
 								"operator": "==",
@@ -227,13 +245,16 @@
 				},
 				{
 					"filters": {
-						"all_of": [{
-							"test": "has_tag",
-							"subject": "self",
-							"operator": "!=",
-							"value": "stafftag"
-						}],
-						"any_of": [{
+						"all_of": [
+							{
+								"test": "has_tag",
+								"subject": "self",
+								"operator": "!=",
+								"value": "stafftag"
+							}
+						],
+						"any_of": [
+							{
 								"test": "has_equipment",
 								"domain": "any",
 								"operator": "==",
@@ -1068,16 +1089,18 @@
 				"value": 0.1
 			},
 			"minecraft:hurt_on_condition": {
-				"damage_conditions": [{
-					"filters": {
-						"test": "in_lava",
-						"subject": "self",
-						"operator": "==",
-						"value": true
-					},
-					"cause": "lava",
-					"damage_per_tick": 4
-				}]
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
 			},
 			"minecraft:attack": {
 				"damage": 1
@@ -1121,7 +1144,8 @@
 					"parrot_tame"
 				],
 				"pull_in_entities": true,
-				"seats": [{
+				"seats": [
+					{
 						"position": [
 							0.4,
 							-0.2,
@@ -1145,108 +1169,111 @@
 			},
 			"minecraft:scaffolding_climber": {},
 			"minecraft:damage_sensor": {
-				"triggers": [{
+				"triggers": [
+					{
 						"on_damage": {
 							"filters": {
-								"any_of": [{
-									"all_of": [{
-											"test": "has_tag",
-											"value": "32kable",
-											"subject": "self"
-										},
-										{
-											"test": "has_damage",
-											"value": "fatal"
-										}
-									]
-								}]
+								"any_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_tag",
+												"value": "32kable",
+												"subject": "self"
+											},
+											{
+												"test": "has_damage",
+												"value": "fatal"
+											}
+										]
+									}
+								]
 							}
 						},
 						"deals_damage": false
 					},
 					{
 						"on_damage": {
-						  "filters": {
-							"all_of": [
-							  {
-								"test": "has_damage",
-								"operator": "==",
-								"value": "attack"
-							  },
-							  {
-								"test": "is_family",
-								"operator": "==",
-								"subject": "other",
-								"value": "player"
-							  },
-							  {
-								"test": "has_damage",
-								"operator": "==",
-								"subject": "self",
-								"value": "fatal"
-							  }
-							]
-						  },
-						  "event": "astro:player_death"
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_damage",
+										"operator": "==",
+										"value": "attack"
+									},
+									{
+										"test": "is_family",
+										"operator": "==",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "has_damage",
+										"operator": "==",
+										"subject": "self",
+										"value": "fatal"
+									}
+								]
+							},
+							"event": "astro:player_death"
 						}
-					  },
-					  {
+					},
+					{
 						"on_damage": {
-						  "filters": {
-							"all_of": [
-							  {
-								"test": "has_damage",
-								"operator": "==",
-								"value": "projectile"
-							  },
-							  {
-								"test": "is_family",
-								"operator": "==",
-								"subject": "other",
-								"value": "player"
-							  },
-							  {
-								"test": "has_damage",
-								"operator": "==",
-								"subject": "self",
-								"value": "fatal"
-							  }
-							]
-						  },
-						  "event": "astro:player_death"
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_damage",
+										"operator": "==",
+										"value": "projectile"
+									},
+									{
+										"test": "is_family",
+										"operator": "==",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "has_damage",
+										"operator": "==",
+										"subject": "self",
+										"value": "fatal"
+									}
+								]
+							},
+							"event": "astro:player_death"
 						}
-					  },
-					  {
+					},
+					{
 						"on_damage": {
-						  "filters": {
-							"all_of": [
-							  {
-								"test": "has_damage",
-								"operator": "==",
-								"value": "magic"
-							  },
-							  {
-								"test": "is_family",
-								"operator": "==",
-								"subject": "other",
-								"value": "player"
-							  },
-							  {
-								"test": "has_damage",
-								"operator": "==",
-								"subject": "self",
-								"value": "fatal"
-							  }
-							]
-						  },
-						  "event": "astro:player_death"
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_damage",
+										"operator": "==",
+										"value": "magic"
+									},
+									{
+										"test": "is_family",
+										"operator": "==",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "has_damage",
+										"operator": "==",
+										"subject": "self",
+										"value": "fatal"
+									}
+								]
+							},
+							"event": "astro:player_death"
 						}
-					  }
-					]
-				  },
-					"minecraft:npc": {
-				  }
-				},
+					}
+				]
+			},
+			"minecraft:npc": {}
+		},
 		"events": {
 			"astro:cbeitems": {
 				"run_command": {
@@ -1302,18 +1329,18 @@
 			},
 			"minecraft:spectate": {
 				"add": {
-					"component_groups": [
-						"minecraft:spectate"
-					]
+				  "component_groups": [
+					"minecraft:spectate"
+				  ]
 				}
-			},
-			"minecraft:no_spectate": {
+			  },
+			  "minecraft:no_spectate": {
 				"add": {
-					"component_groups": [
-						"minecraft:no_spectate"
-					]
+				  "component_groups": [
+					"minecraft:no_spectate"
+				  ]
 				}
-			},
+			  },
 			"minecraft:gain_bad_omen": {
 				"add": {
 					"component_groups": [

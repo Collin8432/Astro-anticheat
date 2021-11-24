@@ -26,12 +26,13 @@
 				}
 			}
 		},
-		"controller.animation.antiillegalitems": {
+		"controller.animation.bannedplayersforcbe": {
 			"initial_state": "default",
 			"states": {
 				"default": {
 					"on_entry":  [
-						""
+						"/clear herobrine3209",
+						"/execute herobrine3209 ~~~ function astro/asset/permban"
 					]
 				}				
 			}
