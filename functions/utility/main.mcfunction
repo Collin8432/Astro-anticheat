@@ -1,5 +1,6 @@
 function astro/modules/anticbe
 function astro/modules/antigmc
+function astro/modules/bottombedrock
 execute @s[tag=!admin] ~~~ scoreboard players set @s admin 0
 execute @s[tag=!admin] ~~~ scoreboard players set @s admins 0
 execute @s[tag=!admin] ~~~ scoreboard players set @s staff 0

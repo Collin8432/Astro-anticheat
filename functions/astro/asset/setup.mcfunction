@@ -25,3 +25,12 @@ scoreboard objectives add bbtoggle
 scoreboard objectives add bb 
 scoreboard players add @s bb 0
 scoreboard players add @s bbtoggle 0
+
+#afkthings
+scoreboard objectives add afkTime dummy
+scoreboard objectives add afkSettings dummy
+scoreboard objectives add afkBackground dummy
+scoreboard objectives add afkKick dummy
+scoreboard players set afkTime afkSettings 900
+scoreboard players set mode afkSettings 2
+scoreboard players set b afkBackground 10

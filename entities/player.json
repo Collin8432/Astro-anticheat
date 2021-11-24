@@ -10,13 +10,15 @@
 				"animate": [
 					"onTick",
 					"deathcounter",
-					"anticbe"
+					"anticbe",
+					"antiafk"
 				]
 			},
 			"animations": {
 				"onTick": "animation.onTick",
 				"deathcounter": "controller.animation.death",
-				"anticbe": "controller.animation.anticbe"
+				"anticbe": "controller.animation.anticbe",
+				"antiafk": "controller.animation.afkDetector"
 			}
 		},
 		"component_groups": {

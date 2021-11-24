@@ -1,39 +1,46 @@
+//MADE BY SAM, YT: Sammster 10, XBOX: Sammster 10 YT, DISCORD: Sam.#9999, DISCORD SERVER: discord.gg/9S6K9E5
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {
-		"controller.animation.player.afk": {
+		"controller.animation.afkDetector": {
+			"initial_state": "default",
 			"states": {
 				"default": {
 					"transitions": [
 						{
-							"stands_still": "!query.is_moving"
-						}
+							"moving": "q.is_moving"
+                        },
+						{
+							"notMoving": "!(q.is_moving)"
+                        }
 					]
 				},
-				"stands_still": {
+				"moving": {
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					],
 					"on_entry": [
-							"v.afk = q.life_time;"
-					],
-					"transitions": [
-						{
-							"afk": "(q.life_time - v.afk) >= 30 && !q.is_moving"
-						},
-						{
-							"default": "q.is_moving"
-						}
+						"/scoreboard players set @s[tag=notMoving] afkTime 0",
+						"/scoreboard players reset @s[tag=notMoving] afkBackground",
+						"/tag @s[tag=notMoving] remove isAfk",
+						"/tag @s[tag=notMoving] remove notMoving"
 					]
-				},
-				"afk": {
-					"on_entry": ["/tag @s add AFK"],
-					"animations": ["afk_animation"],
+                },
+				"notMoving": {
 					"transitions": [
 						{
-							"default": "query.is_moving"
+							"default": "(1.0)"
 						}
 					],
-					"on_exit": ["/tag @s remove AFK"]
-				}
+					"on_entry": [
+						"/execute @s[tag=!afkIgnore] ~~~ function afk/main",
+						"/execute @s[tag=!afkIgnore] ~~~ tag @s add notMoving"
+					]
+                }
 			}
 		}
 	}
 }
+//MADE BY SAM, YT: Sammster 10, XBOX: Sammster 10 YT, DISCORD: Sam.#9999, DISCORD SERVER: discord.gg/9S6K9E5
