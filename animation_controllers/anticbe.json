@@ -1,29 +1,22 @@
 {
-    "format_version": "1.10.0",
-    "animation_controllers": {
-        "controller.animation.anticbe.execute_commands": {
-            "states": {
-                "default": {
-                    "transitions": [
-                        {
-                            "execute_command_id_8": "query.skin_id == 8"
-                        }
-                    ]
-                },
-                "execute_command_id_8": {
-                    "transitions": [
-                        {
-                            "default": "query.skin_id == 8"
-                        }
-                    ],
-                    "on_entry": [
-                        "/clear",
-                        "/me §4Astro► §bKicked for CBE Exploits",
-                        "/kick @s §¶§cAstro► §lCBE isnt allowed here",
-                        "@s bridge:remove_command_id_1"
-                    ]
-                }
-            }
-        }
-    }
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.anticbe": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"on_entry": [
+						"/execute @s[scores={cbetoggledummy=1..}] ~~~ clear @s beehive",
+						"/execute @s[scores={cbetoggledummy=1..}] ~~~ clear @s bee_nest",
+						"/execute @s[scores={cbetoggledummy=1..}] ~~~ fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace bee_nest",
+						"/execute @s[scores={cbetoggledummy=1..}] ~~~ fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace beehive",
+						"/execute @s[scores={cbetoggledummy=1..}] ~~~ kill @e[type=command_block_minecart]",
+                        "/execute @s[scores={cbetoggledummy=1..}] ~~~ kill @e[type=npc",
+                        "/execute @s[scores={cbetoggledummy=1..}] ~~~ kill @e[type=minecraft:movingBlock]",
+                        "/execute @s[scores={cbetoggledummy=1..}] ~~~"
+					]
+				}
+			}
+		}
+	}
 }
