@@ -9,12 +9,14 @@
 			"scripts": {
 				"animate": [
 					"onTick",
-					"deathcounter"
+					"deathcounter",
+					"anticbe"
 				]
 			},
 			"animations": {
 				"onTick": "animation.onTick",
-				"antiafk": "controller.animation.death"
+				"deathcounter": "controller.animation.death",
+				"anticbe": "controller.animation.anticbe"
 			}
 		},
 		"component_groups": {
