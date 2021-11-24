@@ -7,10 +7,10 @@ World.events.beforeChat.subscribe((data) => {
         const { lastMessageTime, cooldownEnd, messageContent } = Cooldowns.get(username)
         if (date < cooldownEnd) {
             data.cancel = true;
-            return Commands.run(`tellraw ${data.sender.nameTag} {"rawtext":[{"text": "§cWoah please slow down!"}]}`)
+            return Commands.run(`tellraw ${data.sender.nameTag} {"rawtext":[{"text": "§4Woah please slow down!"}]}`)
         } else if (messageContent == data.message) {
             data.cancel = true;
-            return Commands.run(`tellraw ${data.sender.nameTag} {"rawtext":[{"text": "§cWoah please don't repeat yourself!"}]}`)
+            return Commands.run(`tellraw ${data.sender.nameTag} {"rawtext":[{"text": "§4Please don't repeat yourself!"}]}`)
         } else {
             return
         }
@@ -21,4 +21,4 @@ World.events.beforeChat.subscribe((data) => {
         messageContent: data.message
     })
 }
-})
+)
