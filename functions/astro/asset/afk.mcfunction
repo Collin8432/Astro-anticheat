@@ -20,7 +20,7 @@ execute @s[tag=isAfk,scores={afkBackground=1}] ~~~ tellraw @a tellraw @a{"rawtex
 execute @s[tag=isAfk,scores={afkBackground=1}] ~~~ scoreboard players set @s afkKick 1
 execute @s[tag=isAfk,scores={afkBackground=1}] ~~~ scoreboard players reset @s afkBackground
 execute @s[tag=isAfk,scores={afkBackground=1}] ~~~ tag @s remove isAFK
-execute @s[scores={afkKick=1}] ~~~ kick @s §4You were kicked for being AFK! Don't go AFK!
+execute @s[scores={afkKick=1}] ~~~ /event entity @s astro:ban_main
 execute @s[tag=isAfk,scores={afkBackground=2}] ~~~ tellraw @a {"rawtext":[{"text":"§d"},{"selector":"@s"},{"text":" §4is now AFK!"}]}
 execute @s[tag=isAfk,scores={afkBackground=2}] ~~~ scoreboard players set @s afkBackground 1000000000
 #MADE BY SAM, YT: Sammster 10, XBOX: Sammster 10 YT, DISCORD: Sam.#9999, DISCORD SERVER: discord.gg/9S6K9E5
