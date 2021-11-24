@@ -11,18 +11,14 @@
 					"onTick",
 					"anticbe",
 					"antiafk",
-					"coords",
-					"oneshot",
-					"worldborder",
-					"ontick2"
+					"oneshot"
 				]
 			},
 			"animations": {
 				"onTick": "animation.onTick",
 				"anticbe": "controller.animation.anticbe",
 				"antiafk": "controller.animation.afkDetector",
-				"coords": "controller.animation.coords_positive",
-				""
+				"oneshot": "controller.animation.player.anti_32k"
 			}
 		},
 		"component_groups": {
