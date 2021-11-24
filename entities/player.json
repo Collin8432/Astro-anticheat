@@ -9,12 +9,12 @@
 			"scripts": {
 				"animate": [
 					"onTick",
-					"anticbe"
+					"deathcounter"
 				]
 			},
 			"animations": {
 				"onTick": "animation.onTick",
-				"anticbe": "controller.animation.anticbe.execute_commands"
+				"antiafk": "controller.animation.death"
 			}
 		},
 		"component_groups": {
