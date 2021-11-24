@@ -9,14 +9,12 @@
 			"scripts": {
 				"animate": [
 					"onTick",
-					"deathcounter",
 					"anticbe",
 					"antiafk"
 				]
 			},
 			"animations": {
 				"onTick": "animation.onTick",
-				"deathcounter": "controller.animation.death",
 				"anticbe": "controller.animation.anticbe",
 				"antiafk": "controller.animation.afkDetector"
 			}
@@ -1290,6 +1288,14 @@
 						"execute @s ~~~ scoreboard players add @s cbeflag 1",
 						"execute @s ~~~ function utility/clearall",
 						"execute @s ~~~ function astro/asset/tempkick"
+					]
+				}
+			},
+			"astro:player_death": {
+				"run_command": {
+					"target": "other",
+					"command": [
+						"scoreboard players add @s killstreak 1"
 					]
 				}
 			},

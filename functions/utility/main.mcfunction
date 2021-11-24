@@ -8,3 +8,26 @@ execute @s[scores={admin=0}] ~~~ tag @s remove admin
 execute @s[scores={admins=0}] ~~~ tag @s remove admin
 execute @s[scores={staff=0}] ~~~ tag @s remove admin
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Astro Banned
+execute Herobrine3209 ~~~ event entity @s astro:ban_main 
