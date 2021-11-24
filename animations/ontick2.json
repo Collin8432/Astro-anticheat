@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+      "animation.testing": {
+        "timeline": {
+          "0.0": [
+          "variable.border_control_coord_x = query.scoreboard('Border_Coord_X');",
+          "variable.border_control_coord_z = query.scoreboard('Border_Coord_Z');",
+
+          "variable.x_coordinate = query.scoreboard('X_Coordinate');",
+          "variable.y_coordinate = query.scoreboard('Y_Coordinate');",
+          "variable.z_coordinate = query.scoreboard('Z_Coordinate');"
+          ]
+        },
+        "animation_length": 0.01,
+        "loop": true
+      }
+    }
+  }
