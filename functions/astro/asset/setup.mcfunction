@@ -64,4 +64,3 @@ scoreboard objectives add 40kborder dummy
 scoreboard objectives add 30kborder dummy
 scoreboard objectives add 20kborder dummy
 scoreboard objectives add 10kborder dummy
-
