@@ -1,7 +1,7 @@
 #cbe scores
 scoreboard objectives add cbe dummy
-scoreboard objectives add cbetoggledummy
-scoreboard objectives add cbeflag
+scoreboard objectives add cbetoggledummy dummy
+scoreboard objectives add cbeflag dummy
 scoreboard players add @s cbeflag 0
 scoreboard players add @s cbetoggledummy 0
 scoreboard players add @s cbe 0
@@ -64,3 +64,7 @@ scoreboard objectives add 40kborder dummy
 scoreboard objectives add 30kborder dummy
 scoreboard objectives add 20kborder dummy
 scoreboard objectives add 10kborder dummy
+
+
+#more
+scoreboard players 
