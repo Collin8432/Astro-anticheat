@@ -54,3 +54,14 @@ scoreboard objectives add zCoord dummy
 scoreboard players add @s xCoord 0
 scoreboard players add @s yCoord 0
 scoreboard players add @s zCoord 0 
+scoreboard objectives add 100kborder dummy
+scoreboard objectives add 90kborder dummy
+scoreboard objectives add 80kborder dummy
+scoreboard objectives add 70kborder dummy
+scoreboard objectives add 60kborder dummy
+scoreboard objectives add 50kborder dummy
+scoreboard objectives add 40kborder dummy
+scoreboard objectives add 30kborder dummy
+scoreboard objectives add 20kborder dummy
+scoreboard objectives add 10kborder dummy
+

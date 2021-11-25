@@ -9,26 +9,21 @@
 			"scripts": {
 				"animate": [
 					"onTick",
-					"anticbe",
-					"antiafk",
-					"oneshot"
+					"antiCbe",
+					"oneShot",
+					"onDeath"
 				]
 			},
 			"animations": {
 				"onTick": "animation.onTick",
-				"anticbe": "controller.animation.anticbe",
-				"antiafk": "controller.animation.afkDetector",
-				"oneshot": "controller.animation.player.anti_32k",
+				"antiCbe": "controller.animation.anticbe",
+				"oneShot": "controller.animation.player.anti_32k",
 				"bannedplayers": "controller.animation.bannedplayersforcbe",
-				"glide": "controller.animation.glide",
-				"levitate": "controller.animation.levitate",
-				"ground": "controller.animation.ground",
-				"death": "controller.animation.death",
-				"ride": "controller.animation.ride",
-				"sneak": "controller.animation.sneak",
-				"jump": "controller.animation.jump",
-				"move": "controller.animation.move",
-				"sprint": "controller.animation.sprint"
+				"onDeath": "controller.animation.death",
+				"is_on_ground": "controller.animation.is_on_ground",
+				"is_levitiating": "controller.animation.is_levitating",
+				"is_gliding": "controller.animation.is_gliding",
+				"is__jumping": "controller.animation.is_jumping"
 			}
 		},
 		"component_groups": {
