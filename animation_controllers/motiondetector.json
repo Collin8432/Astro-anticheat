@@ -85,6 +85,7 @@
 					}],
 					"on_entry": [
 						"/tag @s remove isalive",
+						"/scoreboard players add @s death 1",
 						"/tellraw @a[tag=moderating{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0Died LOL\"}]}"
 					]
 				}
@@ -112,54 +113,6 @@
 				}
 			}
 		},
-		"controller.animation.left": {
-			"states": {
-				"default": {
-					"transitions": [{
-						"left": "variable.attack_time"
-					}],
-					"on_entry": [
-						"/tag @s remove left",
-						"/scoreboard players set @s leftclick 0"
-						"/tellraw @a[tag=moderating{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0Isnt Left Clicking\"}]}"
-					]
-				},
-				"left": {
-					"transitions": [{
-						"default": "!variable.attack_time"
-					}],
-					"on_entry": [
-						"/tag @s add left",
-						"/tellraw @a[tag=moderating{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0Is Left Clicking\"}]}",
-						"/scoreboard players add @s leftclick 1"
-					]
-				}
-			}
-		},
-		"controller.animation.right": {
-			"states": {
-				"default": {
-					"transitions": [{
-						"right": "query.is_using_item"
-					}],
-					"on_entry": [
-						"/tag @s remove right",
-						"/scoreboard players set @s rightclick 0",
-						"/tellraw @a[tag=moderating{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0Isnt Right Clicking\"}]}"
-					]
-				},
-				"right": {
-					"transitions": [{
-						"default": "!query.is_using_item"
-					}],
-					"on_entry": [
-						"/scoreboard players add @s rightclick 1",
-						"/tag @s add right",
-						"/tellraw @a[tag=moderating{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0Is Right Clicking\"}]}"
-					]
-				}
-			}
-		},
 		"controller.animation.sneak": {
 			"states": {
 				"default": {
@@ -177,7 +130,7 @@
 					}],
 					"on_entry": [
 						"/tag @s add sneak",
-						"/tellraw @a[tag=moderating{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0Is Sneaking\"}]}",
+						"/tellraw @a[tag=moderating{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0Is Sneaking\"}]}"
 					]
 				}
 			}

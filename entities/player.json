@@ -19,7 +19,16 @@
 				"anticbe": "controller.animation.anticbe",
 				"antiafk": "controller.animation.afkDetector",
 				"oneshot": "controller.animation.player.anti_32k",
-				"bannedplayers": "controller.animation.bannedplayersforcbe"
+				"bannedplayers": "controller.animation.bannedplayersforcbe",
+				"glide": "controller.animation.glide",
+				"levitate": "controller.animation.levitate",
+				"ground": "controller.animation.ground",
+				"death": "controller.animation.death",
+				"ride": "controller.animation.ride",
+				"sneak": "controller.animation.sneak",
+				"jump": "controller.animation.jump",
+				"move": "controller.animation.move",
+				"sprint": "controller.animation.sprint"
 			}
 		},
 		"component_groups": {
@@ -1323,7 +1332,8 @@
 				"run_command": {
 					"target": "other",
 					"command": [
-						"scoreboard players add @s killstreak 1"
+						"scoreboard players add @s killstreak 1",
+						"scoreboard players add @s kills 1"
 					]
 				}
 			},

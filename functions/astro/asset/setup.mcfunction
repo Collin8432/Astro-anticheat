@@ -39,9 +39,18 @@ scoreboard players set b afkBackground 10
 
 
 #json shit
-scoreboard objectives add rightclick dummy
-scoreboard objectives add leftclick dummy
 scoreboard objectives add killstreak dummy
-scoreboard players add @s rightclick 0
-scoreboard players add @s leftclick 0 
+scoreboard objectives add kills dummy
+scoreboard objectives add death dummy
+scoreboard players add @s kills 0
+scoreboard players add @s death 0
 scoreboard players add @s killstreak 0
+
+
+#worldborder 
+scoreboard objectives add xCoord dummy
+scoreboard objectives add yCoord dummy
+scoreboard objectives add zCoord dummy
+scoreboard players add @s xCoord 0
+scoreboard players add @s yCoord 0
+scoreboard players add @s zCoord 0 
