@@ -1,8 +1,13 @@
-World.events.tick.subscribe(() => {
-    const players = World.getPlayers();
-      for (const player of players) {
-        const name = player.name ?? player.nameTag
-        const location = player.location;
-        console.warn(name, JSON.stringify(location))
-    }
-  })
+import { World, Commands } from 'mojang-minecraft';
+import * as GameTest from "mojang-gametest"; 
+
+World.events.tick.subscribe(()=>{
+  World:getPlayers().forEach(player=>{
+let playerPosX = player.location.x;
+let playerPosY = player.location.y;
+let playerPosZ = player.location.z;  
+Commands.run(`scoreboard players set "${player.nameTag}" xCoord ${Math.floor(playerPosX)}`, World.getDimension("overworld"));
+Commands.run(`scoreboard players set "${player.nameTag}" yCoord ${Math.floor(playerPosY)}`, World.getDimension("overworld"));
+Commands.run(`scoreboard players set "${player.nameTag}" zCoord ${Math.floor(playerPosZ)}`, World.getDimension("overworld"));
+})
+})
