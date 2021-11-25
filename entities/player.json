@@ -42,13 +42,11 @@
 			},
 			"minecraft:add_bad_omen": {
 				"minecraft:spell_effects": {
-					"add_effects": [
-						{
-							"effect": "bad_omen",
-							"duration": 6000,
-							"display_on_screen_animation": true
-						}
-					]
+					"add_effects": [{
+						"effect": "bad_omen",
+						"duration": 6000,
+						"display_on_screen_animation": true
+					}]
 				}
 			},
 			"minecraft:clear_bad_omen_spell_effect": {
@@ -67,19 +65,15 @@
 			}
 		},
 		"minecraft:environment_sensor": {
-			"triggers": [
-				{
+			"triggers": [{
 					"filters": {
-						"all_of": [
-							{
-								"test": "has_tag",
-								"subject": "self",
-								"operator": "!=",
-								"value": "stafftag"
-							}
-						],
-						"any_of": [
-							{
+						"all_of": [{
+							"test": "has_tag",
+							"subject": "self",
+							"operator": "!=",
+							"value": "admin"
+						}],
+						"any_of": [{
 								"test": "has_tag",
 								"subject": "self",
 								"operator": "==",
@@ -97,63 +91,52 @@
 				},
 				{
 					"filters": {
-						"all_of": [
-							{
-								"test": "has_tag",
-								"subject": "self",
-								"operator": "!=",
-								"value": "stafftag"
-							}
-						],
-						"any_of": [
-							{
-								"test": "has_tag",
-								"subject": "self",
-								"operator": "==",
-								"value": "cbesoft"
-							}
-						]
+						"all_of": [{
+							"test": "has_tag",
+							"subject": "self",
+							"operator": "!=",
+							"value": "admin"
+						}],
+						"any_of": [{
+							"test": "has_tag",
+							"subject": "self",
+							"operator": "==",
+							"value": "cbesoft"
+						}]
 					},
 					"event": "astro:ban_soft"
 				},
 				{
 					"filters": {
-						"all_of": [
-							{
-								"test": "has_tag",
-								"operator": "==",
-								"subject": "self",
-								"value": "spectate"
-							}
-						]
+						"all_of": [{
+							"test": "has_tag",
+							"operator": "==",
+							"subject": "self",
+							"value": "spectate"
+						}]
 					},
 					"event": "minecraft:spectate"
 				},
 				{
 					"filters": {
-						"all_of": [
-							{
-								"test": "has_tag",
-								"operator": "!=",
-								"subject": "self",
-								"value": "spectate"
-							}
-						]
+						"all_of": [{
+							"test": "has_tag",
+							"operator": "!=",
+							"subject": "self",
+							"value": "spectate"
+						}]
 					},
 					"event": "minecraft:no_spectate"
 				},
 				{
 					"filters": {
-						"all_of": [
-							{
-								"test": "has_tag",
-								"subject": "self",
-								"operator": "!=",
-								"value": "admin"
-							}
-						],
-						"any_of": [
-							{
+						"all_of": [{
+							"test": "has_tag",
+							"subject": "self",
+							"operator": "!=",
+							"value": "admin"
+						}],
+						"any_of": [{
 								"test": "has_equipment",
 								"domain": "any",
 								"operator": "==",
@@ -249,16 +232,13 @@
 				},
 				{
 					"filters": {
-						"all_of": [
-							{
-								"test": "has_tag",
-								"subject": "self",
-								"operator": "!=",
-								"value": "stafftag"
-							}
-						],
-						"any_of": [
-							{
+						"all_of": [{
+							"test": "has_tag",
+							"subject": "self",
+							"operator": "!=",
+							"value": "admin"
+						}],
+						"any_of": [{
 								"test": "has_equipment",
 								"domain": "any",
 								"operator": "==",
@@ -1093,18 +1073,16 @@
 				"value": 0.1
 			},
 			"minecraft:hurt_on_condition": {
-				"damage_conditions": [
-					{
-						"filters": {
-							"test": "in_lava",
-							"subject": "self",
-							"operator": "==",
-							"value": true
-						},
-						"cause": "lava",
-						"damage_per_tick": 4
-					}
-				]
+				"damage_conditions": [{
+					"filters": {
+						"test": "in_lava",
+						"subject": "self",
+						"operator": "==",
+						"value": true
+					},
+					"cause": "lava",
+					"damage_per_tick": 4
+				}]
 			},
 			"minecraft:attack": {
 				"damage": 1
@@ -1148,8 +1126,7 @@
 					"parrot_tame"
 				],
 				"pull_in_entities": true,
-				"seats": [
-					{
+				"seats": [{
 						"position": [
 							0.4,
 							-0.2,
@@ -1173,25 +1150,21 @@
 			},
 			"minecraft:scaffolding_climber": {},
 			"minecraft:damage_sensor": {
-				"triggers": [
-					{
+				"triggers": [{
 						"on_damage": {
 							"filters": {
-								"any_of": [
-									{
-										"all_of": [
-											{
-												"test": "has_tag",
-												"value": "32kable",
-												"subject": "self"
-											},
-											{
-												"test": "has_damage",
-												"value": "fatal"
-											}
-										]
-									}
-								]
+								"any_of": [{
+									"all_of": [{
+											"test": "has_tag",
+											"value": "32kable",
+											"subject": "self"
+										},
+										{
+											"test": "has_damage",
+											"value": "fatal"
+										}
+									]
+								}]
 							}
 						},
 						"deals_damage": false
@@ -1199,8 +1172,7 @@
 					{
 						"on_damage": {
 							"filters": {
-								"all_of": [
-									{
+								"all_of": [{
 										"test": "has_damage",
 										"operator": "==",
 										"value": "attack"
@@ -1225,8 +1197,7 @@
 					{
 						"on_damage": {
 							"filters": {
-								"all_of": [
-									{
+								"all_of": [{
 										"test": "has_damage",
 										"operator": "==",
 										"value": "projectile"
@@ -1251,8 +1222,7 @@
 					{
 						"on_damage": {
 							"filters": {
-								"all_of": [
-									{
+								"all_of": [{
 										"test": "has_damage",
 										"operator": "==",
 										"value": "magic"
@@ -1276,100 +1246,99 @@
 					}
 				]
 			},
-			"minecraft:npc": {}
-		},
-		"events": {
-			"astro:cbeitems": {
-				"run_command": {
-					"target": "self",
-					"command": [
-						"execute @s ~~~ function utility/clearall",
-						"execute @s[scores={cbetoggledummy=1..}] ~~~ scoreboard players add cbeflag 1",
-						"execute @s[scores={cbetoggledummy=1..}] ~~~ function astro/asset/cbeitemskickmsg"
-					]
-				}
-			},
-			"astro:cbe": {
-				"run_command": {
-					"target": "self",
-					"command": [
-						"execute @s ~~~ function utility/clearall",
-						"execute @s[scores={cbetoggledummy=1..}] ~~~ scoreboard players add cbeflag 1",
-						"execute @s[scores={cbetoggledummy=1..}] ~~~ function astro/asset/tempkick"
-					]
-				}
-			},
-			"astro:ban_main": {
-				"run_command": {
-					"target": "self",
-					"command": [
-						"execute @s ~~~ function utility/clearall",
-						"execute @s ~~~ function astro/asset/tempkick"
-					]
+			"events": {
+				"astro:cbeitems": {
+					"run_command": {
+						"target": "self",
+						"command": [
+							"execute @s ~~~ function utility/clearall",
+							"execute @s[scores={cbetoggledummy=1..}] ~~~ scoreboard players add cbeflag 1",
+							"execute @s[scores={cbetoggledummy=1..}] ~~~ function astro/asset/cbeitemskickmsg"
+						]
+					}
 				},
-				"add": {
-					"component_groups": [
-						"astro:ban"
-					]
-				}
-			},
-			"astro:ban_soft": {
-				"run_command": {
-					"target": "self",
-					"command": [
-						"execute @s ~~~ scoreboard players add @s cbeflag 1",
-						"execute @s ~~~ function utility/clearall",
-						"execute @s ~~~ function astro/asset/tempkick"
-					]
-				}
-			},
-			"astro:player_death": {
-				"run_command": {
-					"target": "other",
-					"command": [
-						"scoreboard players add @s killstreak 1",
-						"scoreboard players add @s kills 1"
-					]
-				}
-			},
-			"minecraft:spectate": {
-				"add": {
-				  "component_groups": [
-					"minecraft:spectate"
-				  ]
-				}
-			  },
-			  "minecraft:no_spectate": {
-				"add": {
-				  "component_groups": [
-					"minecraft:no_spectate"
-				  ]
-				}
-			  },
-			"minecraft:gain_bad_omen": {
-				"add": {
-					"component_groups": [
-						"minecraft:add_bad_omen"
-					]
-				}
-			},
-			"minecraft:clear_add_bad_omen": {
-				"remove": {
-					"component_groups": [
-						"minecraft:add_bad_omen"
-					]
+				"astro:cbe": {
+					"run_command": {
+						"target": "self",
+						"command": [
+							"execute @s ~~~ function utility/clearall",
+							"execute @s[scores={cbetoggledummy=1..}] ~~~ scoreboard players add cbeflag 1",
+							"execute @s[scores={cbetoggledummy=1..}] ~~~ function astro/asset/tempkick"
+						]
+					}
 				},
-				"add": {
-					"component_groups": [
-						"minecraft:clear_bad_omen_spell_effect"
-					]
-				}
-			},
-			"minecraft:remove_raid_trigger": {
-				"remove": {
-					"component_groups": [
-						"minecraft:raid_trigger"
-					]
+				"astro:ban_main": {
+					"run_command": {
+						"target": "self",
+						"command": [
+							"execute @s ~~~ function utility/clearall",
+							"execute @s ~~~ function astro/asset/tempkick"
+						]
+					},
+					"add": {
+						"component_groups": [
+							"astro:ban"
+						]
+					}
+				},
+				"astro:ban_soft": {
+					"run_command": {
+						"target": "self",
+						"command": [
+							"execute @s ~~~ scoreboard players add @s cbeflag 1",
+							"execute @s ~~~ function utility/clearall",
+							"execute @s ~~~ function astro/asset/tempkick"
+						]
+					}
+				},
+				"astro:player_death": {
+					"run_command": {
+						"target": "other",
+						"command": [
+							"scoreboard players add @s killstreak 1",
+							"scoreboard players add @s kills 1"
+						]
+					}
+				},
+				"minecraft:spectate": {
+					"add": {
+						"component_groups": [
+							"minecraft:spectate"
+						]
+					}
+				},
+				"minecraft:no_spectate": {
+					"add": {
+						"component_groups": [
+							"minecraft:no_spectate"
+						]
+					}
+				},
+				"minecraft:gain_bad_omen": {
+					"add": {
+						"component_groups": [
+							"minecraft:add_bad_omen"
+						]
+					}
+				},
+				"minecraft:clear_add_bad_omen": {
+					"remove": {
+						"component_groups": [
+							"minecraft:add_bad_omen"
+						]
+					},
+					"add": {
+						"component_groups": [
+							"minecraft:clear_bad_omen_spell_effect"
+						]
+					}
+				},
+				"minecraft:remove_raid_trigger": {
+					"remove": {
+						"component_groups": [
+							"minecraft:raid_trigger"
+						]
+					}
 				}
 			}
 		}
