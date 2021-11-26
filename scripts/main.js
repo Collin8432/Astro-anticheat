@@ -1,12 +1,17 @@
-import { World, Commands } from 'mojang-minecraft';
+import * as Minecraft from "mojang-minecraft";
 
-World.events.tick.subscribe(()=>{
-  World.getPlayers().forEach(player=>{
-let playerPosX = player.location.x;
-let playerPosY = player.location.y;
-let playerPosZ = player.location.z;  
-   Commands.run(`scoreboard players set "${player.nameTag}" xCoord ${Math.floor(playerPosX)}`, World.getDimension("overworld"));
-   Commands.run(`scoreboard players set "${player.nameTag}" yCoord ${Math.floor(playerPosY)}`, World.getDimension("overworld"));
-   Commands.run(`scoreboard players set "${player.nameTag}" zCoord ${Math.floor(playerPosZ)}`, World.getDimension("overworld"));
-})
-})
+const World = Minecraft.World;
+const Commands = Minecraft.Commands;
+
+World.events.tick.subscribe(() => {
+    ticks++;
+    if (ticks >= 20) ticks = 0;
+
+    // run as each player
+    for (let player of World.getPlayers()) { 
+
+        // player position shit
+        Commands.run(`scoreboard players set "${player.nameTag}" xCoord ${Math.floor(player.location.x)}`, World.getDimension("overworld"));
+        Commands.run(`scoreboard players set "${player.nameTag}" yCoord ${Math.floor(player.location.y)}`, World.getDimension("overworld"));
+        Commands.run(`scoreboard players set "${player.nameTag}" zCoord ${Math.floor(player.location.z)}`, World.getDimension("overworld"));
+}});
