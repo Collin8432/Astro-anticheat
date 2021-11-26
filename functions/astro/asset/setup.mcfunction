@@ -22,8 +22,8 @@ scoreboard objectives add welcome
 
 
 #bottom bedrock
-scoreboard objectives add bbtoggle
-scoreboard objectives add bb 
+scoreboard objectives add bbtoggle dummy
+scoreboard objectives add bb dummy 
 scoreboard players add @s bb 0
 scoreboard players add @s bbtoggle 0
 
@@ -66,5 +66,11 @@ scoreboard objectives add 20kborder dummy
 scoreboard objectives add 10kborder dummy
 
 
-#more
-scoreboard players 
+#admin
+scoreboard objectives add astrodummy dummy
+scoreboard objectives add asstro dummy
+scoreboard objectives add 39SN230 dummy
+scoreboard objectives add GFS98 dummy
+scoreboard objectives add D98AD dummy
+scoreboard objectives add I2IO2NO dummy
+scoreboard objectives add staff dummy
