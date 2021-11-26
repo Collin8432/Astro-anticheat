@@ -61,3 +61,9 @@ scoreboard objectives add GFS98 dummy
 scoreboard objectives add D98AD dummy
 scoreboard objectives add I2IO2NO dummy
 scoreboard objectives add staff dummy
+
+
+
+#ban shit
+scoreboard objectives add cbeflag dummy cbeflag
+scoreboard players add @s cbeflag 0
