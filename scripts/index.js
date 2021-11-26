@@ -1,4 +1,5 @@
 import { World, Commands } from 'mojang-minecraft'
+import { getPos } from './main'
 const Cooldowns = new Map()
 World.events.beforeChat.subscribe((data) => {
     const username = data.sender.nameTag
