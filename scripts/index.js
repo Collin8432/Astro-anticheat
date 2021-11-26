@@ -1,5 +1,5 @@
-import { World, Commands } from 'mojang-minecraft'
-import { getPos } from './main'
+import * as Minecraft from "mojang-minecraft";
+export function nochatspam(player);
 const Cooldowns = new Map()
 World.events.beforeChat.subscribe((data) => {
     const username = data.sender.nameTag
@@ -20,6 +20,4 @@ World.events.beforeChat.subscribe((data) => {
         lastMessageTime: time,
         cooldownEnd: time + 500,
         messageContent: data.message
-    })
-}
-})
+    })})
