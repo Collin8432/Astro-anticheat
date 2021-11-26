@@ -2,11 +2,8 @@ function astro/modules/anticbe
 function astro/modules/antigmc
 function astro/modules/bottombedrock
 function astro/asset/scoreboards
-
-
-
-
-
+function astro/modules/worldborder
+function astro/modules/moderating
 
 
 

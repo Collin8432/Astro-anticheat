@@ -1,20 +1,15 @@
 #cbe scores
-scoreboard objectives add cbe dummy
-scoreboard objectives add cbetoggledummy dummy
-scoreboard objectives add cbeflag dummy
-scoreboard players add @s cbeflag 0
+scoreboard objectives add ACBE dummy ACBE
+scoreboard objectives add cbetoggle dummy cbetoggle
+scoreboard objectives add cbetoggledummy dummy cbetoggledummy
+scoreboard players add @s ACBE 0
+scoreboard players add @s cbetoggle 0
 scoreboard players add @s cbetoggledummy 0
-scoreboard players add @s cbe 0
-scoreboard players operation @a cbe == astro:config cbetoggledummy
 
 
-#admin scores 
-scoreboard objectives add admin dummy 
-scoreboard objectives add admins dummy
-scoreboard objectives add staff dummy
-scoreboard players add @s admin 0
-scoreboard players add @s staff 0
-scoreboard players add @s admins 0
+#moderating
+scoreboard objectives add moderatingtoggle dummy moderatingtoggle
+scoreboard players add @s moderatingtoggle 0
 
 
 #welcome
@@ -22,20 +17,12 @@ scoreboard objectives add welcome
 
 
 #bottom bedrock
-scoreboard objectives add bbtoggle dummy
-scoreboard objectives add bb dummy 
+scoreboard objectives add bb dummy bb
+scoreboard objectives add bbtoggledummy dummy
+scoreboard objectives add bbtoggle dummy bbtoggle
 scoreboard players add @s bb 0
-scoreboard players add @s bbtoggle 0
-
-
-#afkthings
-scoreboard objectives add afkTime dummy
-scoreboard objectives add afkSettings dummy
-scoreboard objectives add afkBackground dummy
-scoreboard objectives add afkKick dummy
-scoreboard players set afkTime afkSettings 900
-scoreboard players set mode afkSettings 2
-scoreboard players set b afkBackground 10
+scoreboard players add @s bbtoggledummy 0
+scoreboard players add @s bbtoggle 0 
 
 
 #json shit

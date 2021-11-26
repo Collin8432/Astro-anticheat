@@ -1,14 +1,17 @@
-scoreboard objectives add moderatingtoggledummy dummy moderatingtoggledummy
-scoreboard players add @s moderating 0
+#Scores
+execute @s[tag=admin] ~~~ scoreboard players add @s moderatingtoggle 1
 
-#admintest
-tellraw @s[type=player,tag=!admin] {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 This Is An Admin Only Command"}]}
-execute @a[tag=!admin] ~~~ tellraw @a[tag=admin] {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 Tried To Run A Staff Function - Moderating"}]}
 
 #on
-execute @s[type=player,tag=admin,scores={moderatingtoggledummy=..0}] ~~~ scoreboard players set astro:config moderating 1
-execute @s[type=player,tag=admin,scores={cbetoggledummy=..0}] ~~~ tellraw @a[tag=admin] {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 Has Toggled Moderating ON"}]}
+execute @s[tag=admin,scores={moderatingtoggle=1}] ~~~ tag @s add moderating
+execute @s[tag=admin,scores={moderatingtoggle=1}] ~~~ tellraw @s{"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 Turned Moderating ON"}]}
 
 #off
-execute @s[type=player,tag=admin,scores={moderatingtoggledummy=1..}] ~~~ scoreboard players set astro:config moderating 0
-execute @s[type=player,tag=admin,scores={moderatingtoggledummy=1..}] ~~~ tellraw @a[tag=admin] {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 Has Toggled Moderating OFF"}]}
+execute @s[tag=admin,scores={moderatingtoggle=2}] ~~~ tag @s remove moderating
+execute @s[tag=admin,scores={moderatingtoggle=2}] ~~~ tellraw @s{"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 Turned Moderating Off"}]}
+execute @s[tag=admin,scores={moderatingtoggle=2}] ~~~ scoreboard players set @s moderatingtoggle 0
+
+
+#NoNonAdmin
+execute @s[tag=!admin] ~~~ tellraw @s{"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 This Is A Admin Only Function"}]}
+execute @s[tag=!admin] ~~~ tellraw @a[tag=admin] {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 Tried Running An Admin Function - Moderating"}]}
