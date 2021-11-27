@@ -6,7 +6,8 @@
 				"0.0": [
 					"/gamerule functioncommandlimit 10000",
 					"/function utility/main",
-					"/gamerule commandfeedback false",
+					"/gamerule commandblockoutput false",
+					"/gamerule showcommandfeedback false",
 					"/gamerule chaincommandlimit 10000"
 				]
 			},

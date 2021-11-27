@@ -4,8 +4,10 @@ function astro/modules/bottombedrock
 function astro/asset/scoreboards
 function astro/modules/worldborder
 function astro/modules/moderating
-
-
+function astro/asset/ban
+function astro/modules/timeplayed
+function astro/modules/timeplayedtrackerconverter
+function astro/modules/antinonstaff
 
 
 

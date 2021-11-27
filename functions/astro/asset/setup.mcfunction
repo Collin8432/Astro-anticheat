@@ -67,3 +67,11 @@ scoreboard objectives add staff dummy
 #ban shit
 scoreboard objectives add cbeflag dummy cbeflag
 scoreboard players add @s cbeflag 0
+
+
+#timeplayed
+scoreboard objectives add timealive
+scoreboard objectives add timeplayedsec
+scoreboard objectives add timeplayedmin
+scoreboard objectives add timeplayedhr
+scoreboard objectives add timeplayedday 
