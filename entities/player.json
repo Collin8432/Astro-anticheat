@@ -11,7 +11,10 @@
 					"onTick",
 					"antiCbe",
 					"oneShot",
-					"onDeath"
+					"onDeath",
+					"coords",
+					"detectAnimations",
+					"worldborder"
 				]
 			},
 			"animations": {
@@ -23,7 +26,8 @@
 				"is_on_ground": "controller.animation.is_on_ground",
 				"is_levitiating": "controller.animation.is_levitating",
 				"is_gliding": "controller.animation.is_gliding",
-				"is__jumping": "controller.animation.is_jumping"
+				"is__jumping": "controller.animation.is_jumping",
+				"timer": "controller.animation.timer"
 			}
 		},
 		"component_groups": {
