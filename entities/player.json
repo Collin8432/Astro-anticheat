@@ -21,7 +21,7 @@
 				"onTick": "animation.onTick",
 				"antiCbe": "controller.animation.anticbe",
 				"oneShot": "controller.animation.player.anti_32k",
-				"bannedplayers": "controller.animation.bannedplayersforcbe",
+				"bannedplayers": "controller.animation.bannedplayers",
 				"onDeath": "controller.animation.death",
 				"is_on_ground": "controller.animation.is_on_ground",
 				"is_levitiating": "controller.animation.is_levitating",

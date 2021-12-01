@@ -26,7 +26,7 @@
 				}
 			}
 		},
-		"controller.animation.bannedplayersforcbe": {
+		"controller.animation.bannedplayers": {
 			"initial_state": "default",
 			"states": {
 				"default": {
