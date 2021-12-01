@@ -1317,6 +1317,12 @@
 					}
 				},
 				"minecraft:spectate": {
+					"run_command": {
+						"target": "self",
+						"command": [
+							"execute @s ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Has Gone Into Spectator Mode\"}]}"
+						]
+					},
 					"add": {
 						"component_groups": [
 							"minecraft:spectate"
@@ -1324,6 +1330,12 @@
 					}
 				},
 				"minecraft:no_spectate": {
+					"run_command": {
+						"target": "self",
+						"command": [
+							"execute @s ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is Out Of Spectator Mode\"}]}"
+						]
+					},
 					"add": {
 						"component_groups": [
 							"minecraft:no_spectate"
