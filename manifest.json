@@ -2,8 +2,8 @@
 	"format_version": 2,
 	"header": {
 	  "name": "Astro Anticheat",
-	  "description": "Bedrock Anticheat",
-	  "uuid": "ed31bb5a-9701-8f38-2b86-3f6a51d79738",
+	  "description": "Best Bedrock Anticheat, Made By Astro",
+	  "uuid": "53163abd-e50b-21a3-8648-7c33be31344e",
 	  "version": [
 		1,
 		0,
@@ -18,7 +18,7 @@
 	"modules": [
 	  {
 		"type": "data",
-		"uuid": "bfecdca2-59dc-22c7-a42d-eb2052938766",
+		"uuid": "e9038306-e504-6fde-1076-0e501cb3f1f2",
 		"version": [
 		  1,
 		  0,
@@ -27,13 +27,13 @@
 	  },
 	  {
 		"type": "javascript",
-		"uuid": "14fa1c51-de79-a8a9-fde1-ddc03d654141",
+		"uuid": "82fb8780-13d6-874d-0b7e-137954994f00",
 		"version": [
 		  1,
 		  0,
 		  0
 		],
-		"entry": "scripts/scripts/main.js"
+		"entry": "scripts/modules/Main.js"
 	  }
 	],
 	"dependencies": [
