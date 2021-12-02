@@ -8,5 +8,8 @@ World.events.tick.subscribe(() => {
     let coordinateZ = Math.floor(player.location.z);
 
     Commands.run(`title @a[name="${player.nameTag}",tag=coordinate] actionbar X: ${coordinateX} Y: ${coordinateY} Z: ${coordinateZ}`, World.getDimension("overworld"));
+    Commands.run(`scoreboard players set "${player.nameTag}" xCoord ${coordinateX}`, World.getDimension("overworld"));
+    Commands.run(`scoreboard players set "${player.nameTag}" yCoord ${coordinateY}`, World.getDimension("overworld"));
+    Commands.run(`scoreboard players set "${player.nameTag}" zCoord ${coordinateZ}`, World.getDimension("overworld"));
   });
 });
