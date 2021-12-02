@@ -1,58 +1,59 @@
 {
-	"format_version": 1,
-	"dependencies": [
-		{
-			"uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
-			"version": [
-				1,
-				0,
-				0
-			]
-		},
-		{
-			"uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
-			"version": [
-				1,
-				0,
-				0
-			]
-		}
-	],
+	"format_version": 2,
 	"header": {
-		"name": "Astro Anticheat",
-		"description": "Bedrock Anticheat\nMade By Astro",
-		"uuid": "b77a1dc3-7a77-4d90-a36c-cdba1e326808",
-		"version": [
-			1,
-			0,
-			0
-		],
-		"min_engine_version": [
-			1,
-			8,
-			0
-		]
+	  "name": "Astro Anticheat",
+	  "description": "Bedrock Anticheat",
+	  "uuid": "ed31bb5a-9701-8f38-2b86-3f6a51d79738",
+	  "version": [
+		1,
+		0,
+		0
+	  ],
+	  "min_engine_version": [
+		1,
+		17,
+		0
+	  ]
 	},
 	"modules": [
-		{
-			"type": "data",
-			"uuid": "4c37083f-ff85-4931-bf46-3456a1c338f8",
-			"version": [
-				1,
-				1,
-				7
-			]
-		},
-		{
-			"description": "Script that implements basic starter tests.",
-			"type": "javascript",
-			"uuid": "1A1B53FC-5653-4A76-91B7-9CDF027674AE",
-			"version": [
-				0,
-				0,
-				1
-			],
-			"entry": "scripts/main.js"
-		}
+	  {
+		"type": "data",
+		"uuid": "bfecdca2-59dc-22c7-a42d-eb2052938766",
+		"version": [
+		  1,
+		  0,
+		  0
+		]
+	  },
+	  {
+		"type": "javascript",
+		"uuid": "14fa1c51-de79-a8a9-fde1-ddc03d654141",
+		"version": [
+		  1,
+		  0,
+		  0
+		],
+		"entry": "scripts/scripts/main.js"
+	  }
+	],
+	"dependencies": [
+	  {
+		"description": "Minecraft module, required to use the Minecraft module",
+		"uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
+		"version": [
+		  0,
+		  1,
+		  0
+		]
+	  },
+	  {
+		"description": "GameTest module, required to use the GameTest module",
+		"uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
+		"version": [
+		  0,
+		  1,
+		  0
+		]
+	  }
 	]
-}
+  }
