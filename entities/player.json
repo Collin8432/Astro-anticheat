@@ -46,11 +46,13 @@
 			},
 			"minecraft:add_bad_omen": {
 				"minecraft:spell_effects": {
-					"add_effects": [{
-						"effect": "bad_omen",
-						"duration": 6000,
-						"display_on_screen_animation": true
-					}]
+					"add_effects": [
+						{
+							"effect": "bad_omen",
+							"duration": 6000,
+							"display_on_screen_animation": true
+						}
+					]
 				}
 			},
 			"minecraft:clear_bad_omen_spell_effect": {
@@ -69,15 +71,19 @@
 			}
 		},
 		"minecraft:environment_sensor": {
-			"triggers": [{
+			"triggers": [
+				{
 					"filters": {
-						"all_of": [{
-							"test": "has_tag",
-							"subject": "self",
-							"operator": "!=",
-							"value": "admin"
-						}],
-						"any_of": [{
+						"all_of": [
+							{
+								"test": "has_tag",
+								"subject": "self",
+								"operator": "!=",
+								"value": "admin"
+							}
+						],
+						"any_of": [
+							{
 								"test": "has_tag",
 								"subject": "self",
 								"operator": "==",
@@ -95,52 +101,63 @@
 				},
 				{
 					"filters": {
-						"all_of": [{
-							"test": "has_tag",
-							"subject": "self",
-							"operator": "!=",
-							"value": "admin"
-						}],
-						"any_of": [{
-							"test": "has_tag",
-							"subject": "self",
-							"operator": "==",
-							"value": "cbesoft"
-						}]
+						"all_of": [
+							{
+								"test": "has_tag",
+								"subject": "self",
+								"operator": "!=",
+								"value": "admin"
+							}
+						],
+						"any_of": [
+							{
+								"test": "has_tag",
+								"subject": "self",
+								"operator": "==",
+								"value": "cbesoft"
+							}
+						]
 					},
 					"event": "astro:ban_soft"
 				},
 				{
 					"filters": {
-						"all_of": [{
-							"test": "has_tag",
-							"operator": "==",
-							"subject": "self",
-							"value": "spectate"
-						}]
+						"all_of": [
+							{
+								"test": "has_tag",
+								"operator": "==",
+								"subject": "self",
+								"value": "spectate"
+							}
+						]
 					},
 					"event": "minecraft:spectate"
 				},
 				{
 					"filters": {
-						"all_of": [{
-							"test": "has_tag",
-							"operator": "!=",
-							"subject": "self",
-							"value": "spectate"
-						}]
+						"all_of": [
+							{
+								"test": "has_tag",
+								"operator": "!=",
+								"subject": "self",
+								"value": "spectate"
+							}
+						]
 					},
 					"event": "minecraft:no_spectate"
 				},
 				{
 					"filters": {
-						"all_of": [{
-							"test": "has_tag",
-							"subject": "self",
-							"operator": "!=",
-							"value": "admin"
-						}],
-						"any_of": [{
+						"all_of": [
+							{
+								"test": "has_tag",
+								"subject": "self",
+								"operator": "!=",
+								"value": "admin"
+							}
+						],
+						"any_of": [
+							{
 								"test": "has_equipment",
 								"domain": "any",
 								"operator": "==",
@@ -236,13 +253,16 @@
 				},
 				{
 					"filters": {
-						"all_of": [{
-							"test": "has_tag",
-							"subject": "self",
-							"operator": "!=",
-							"value": "admin"
-						}],
-						"any_of": [{
+						"all_of": [
+							{
+								"test": "has_tag",
+								"subject": "self",
+								"operator": "!=",
+								"value": "admin"
+							}
+						],
+						"any_of": [
+							{
 								"test": "has_equipment",
 								"domain": "any",
 								"operator": "==",
@@ -1077,16 +1097,18 @@
 				"value": 0.1
 			},
 			"minecraft:hurt_on_condition": {
-				"damage_conditions": [{
-					"filters": {
-						"test": "in_lava",
-						"subject": "self",
-						"operator": "==",
-						"value": true
-					},
-					"cause": "lava",
-					"damage_per_tick": 4
-				}]
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
 			},
 			"minecraft:attack": {
 				"damage": 1
@@ -1130,7 +1152,8 @@
 					"parrot_tame"
 				],
 				"pull_in_entities": true,
-				"seats": [{
+				"seats": [
+					{
 						"position": [
 							0.4,
 							-0.2,
@@ -1154,21 +1177,25 @@
 			},
 			"minecraft:scaffolding_climber": {},
 			"minecraft:damage_sensor": {
-				"triggers": [{
+				"triggers": [
+					{
 						"on_damage": {
 							"filters": {
-								"any_of": [{
-									"all_of": [{
-											"test": "has_tag",
-											"value": "32kable",
-											"subject": "self"
-										},
-										{
-											"test": "has_damage",
-											"value": "fatal"
-										}
-									]
-								}]
+								"any_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_tag",
+												"value": "32kable",
+												"subject": "self"
+											},
+											{
+												"test": "has_damage",
+												"value": "fatal"
+											}
+										]
+									}
+								]
 							}
 						},
 						"deals_damage": false
@@ -1176,7 +1203,8 @@
 					{
 						"on_damage": {
 							"filters": {
-								"all_of": [{
+								"all_of": [
+									{
 										"test": "has_damage",
 										"operator": "==",
 										"value": "attack"
@@ -1201,7 +1229,8 @@
 					{
 						"on_damage": {
 							"filters": {
-								"all_of": [{
+								"all_of": [
+									{
 										"test": "has_damage",
 										"operator": "==",
 										"value": "projectile"
@@ -1226,7 +1255,8 @@
 					{
 						"on_damage": {
 							"filters": {
-								"all_of": [{
+								"all_of": [
+									{
 										"test": "has_damage",
 										"operator": "==",
 										"value": "magic"
@@ -1302,7 +1332,7 @@
 						"command": [
 							"scoreboard players add @s killstreak 1",
 							"scoreboard players add @s kills 1",
-							"execute @s[scores={killstreak=5} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 5 KillStreak\"}]}",							
+							"execute @s[scores={killstreak=5} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 5 KillStreak\"}]}",
 							"execute @s[scores={killstreak=10} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 10 KillStreak\"}]}",
 							"execute @s[scores={killstreak=15} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 15 KillStreak\"}]}",
 							"execute @s[scores={killstreak=20} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 20 KillStreak\"}]}",
@@ -1310,7 +1340,7 @@
 							"execute @s[scores={killstreak=30} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 30 KillStreak\"}]}",
 							"execute @s[scores={killstreak=35} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 35 KillStreak\"}]}",
 							"execute @s[scores={killstreak=40} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 40 KillStreak\"}]}",
-							"execute @s[scores={killstreak=45} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 45 KillStreak\"}]}", 
+							"execute @s[scores={killstreak=45} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 45 KillStreak\"}]}",
 							"execute @s[scores={killstreak=50} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 50 KillStreak\"}]}",
 							"execute @s[scores={killstreak=51..} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 50+ KillStreak\"}]}"
 						]
