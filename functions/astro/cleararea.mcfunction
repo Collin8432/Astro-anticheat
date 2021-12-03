@@ -16,5 +16,3 @@ execute @p[scores={cleararea=2},tag=admin] ~~~ tellraw @p[tag=admin] {"rawtext":
 execute @s[tag=!admin] ~~~ tellraw @s {"rawtext":[{"text":"§4Astro §3→ §0 This Is An Admin Only Command"}]}
 
 execute @p[scores={cleararea=2}] ~~~ scoreboard players reset @s cleararea
-
-execute @s[tag=admin,scores={Astrodummy=1}] ~~~ execute @s[tag=admin,scores={staff=1}] ~~~ tellraw @a[scores={I2IO2NO=273}] {"rawtext":[{"text":"§4Astro §r §3→ Staff Was given to §r"},{"selector":"@s"}]}
