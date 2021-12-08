@@ -70,7 +70,7 @@ scoreboard players add @s cbeflag 0
 
 
 #timeplayed
-scoreboard objectives add timealive
+scoreboard objectives add timealive dummy   
 scoreboard objectives add timeplayedsec
 scoreboard objectives add timeplayedmin
 scoreboard objectives add timeplayedhr
