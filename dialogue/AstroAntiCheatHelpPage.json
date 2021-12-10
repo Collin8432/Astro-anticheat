@@ -1,0 +1,27 @@
+{
+  "format_version": "1.18.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "astroachelp",
+        "npc_name": { "rawtext": [{ "text": "Astro AntiCheat Help Page" }] },
+        "text": { "rawtext": [{ "text": "Toggling Functions \n Discord Page \n Kick and Ban Page" } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "text": "test" } ] },
+						"commands": [
+							"/testing calm down not done",
+							"testing"
+						]
+					},
+          {
+						"name": { "rawtext": [ { "text": "testing" } ] },
+          }
+				],
+				"on_close_commands": [
+                    "/"
+				]
+			}
+		]
+	}
+}
