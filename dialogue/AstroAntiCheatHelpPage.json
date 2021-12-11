@@ -22,13 +22,13 @@
 		           {
 			            "name": { "rawtext": [ { "text": "Toggle Function Pages"} ] },
 						"commands": [
-							"/execute @a[tag=admin] /dialouge open @s @s AstroAntiCheatTogglePage1"
+							"/execute @a[tag=admin] /dialogue open @s @s AstroAntiCheatTogglePage1"
 						]
 				   },
 				   {
                        "name": { "rawtext": [ { "text": "Kick And Ban Page" } ] },
 					   "commands": [
-						   "/execute @a[tag=admin] /dialouge open @s @s AstroAntiCheatKickBanPage"
+						   "/execute @a[tag=admin] /dialogue open @s @s AstroAntiCheatKickBanPage"
 					   ]
 				   }
 				],

@@ -26,4 +26,3 @@ replaceitem entity @s slot.enderchest 23 air
 replaceitem entity @s slot.enderchest 24 air
 replaceitem entity @s slot.enderchest 25 air
 replaceitem entity @s slot.enderchest 26 air
-tellraw @a{"rawtext":[{"text":"§4Astro §r §3→ §r"},{"selector":"@s"},{"text":"§0 Was Cleared"}]}
