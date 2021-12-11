@@ -75,3 +75,8 @@ scoreboard objectives add timeplayedsec dummy
 scoreboard objectives add timeplayedmin dummy
 scoreboard objectives add timeplayedhr dummy
 scoreboard objectives add timeplayedday dummy
+
+
+#entity shit
+scoreboard objectives add ec dummy 
+scoreboard objectives add ed dummy 

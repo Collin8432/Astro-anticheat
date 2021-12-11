@@ -1,2 +1,2 @@
 titleraw @a[m=s] actionbar {"rawtext":[{"text":"§4Astro Anticheat"},{"text":"\n§3 Kills :"},{"score":{"name":"@s","objective":"kills"}},{"text":"Deaths :"},{"score":{"name":"@s","objective":"deaths"}},{"text":"Killstreak :"},{"score":{"name":"@s","objective":"kilstreak"}}]}
-titleraw @a[m=c] actionbar {"rawtext":[{"text":"§4Astro Anticheat"},{"text":"§3/function astro/help§r"},{"text":"\n§4Entities :"},{"score":{"name":"ed","objective":"ec"}}]}
+titleraw @a[m=c] actionbar {"rawtext":[{"text":"§4Astro Anticheat"},{"text":"§3/function astro/help§r"},{"text":"\n§4Entities :"},{"score":{"name":"entity","objective":"entity"}}]}

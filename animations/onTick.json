@@ -5,6 +5,7 @@
             "timeline": {
                 "0.0": [
                     "/gamerule functioncommandlimit 10000",
+                    "/function astro/asset/setup",
                     "/function bannedplayers",
                     "/gamerule commandblockoutput false",
                     "/gamerule showcommandfeedback false",
