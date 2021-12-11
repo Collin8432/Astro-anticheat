@@ -19,7 +19,3 @@ tag @s[tag=!admin] remove gamemode
 tag @s[tag=!admin] remove creative
 tag @s[tag=!admin] remove friend
 
-
-#This hides this from the in-game function command directory
-execute @f ~~~ hide
-tag @f[tag=""] add hide

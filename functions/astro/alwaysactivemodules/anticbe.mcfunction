@@ -130,7 +130,3 @@ execute @s[scores={cbeflag=9..}] ~~~ function astro/permban
 execute @s[scores={cbeflag=9..}] ~~~ event entity @s astro:ban_main
 
 
-
-#This hides this from the in-game function command directory
-execute @f ~~~ hide
-tag @f[tag=""] add hide
