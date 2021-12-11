@@ -13,7 +13,7 @@ scoreboard players add @s moderatingtoggle 0
 
 
 #welcome
-scoreboard objectives add welcome
+scoreboard objectives add welcome dummy
 
 
 #bottom bedrock

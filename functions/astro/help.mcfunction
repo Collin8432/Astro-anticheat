@@ -1,1 +1,1 @@
-/dialogue open @s @s AstroAntiCheatHelpPage
+dialogue open @s @s AstroAntiCheatHelpPage
