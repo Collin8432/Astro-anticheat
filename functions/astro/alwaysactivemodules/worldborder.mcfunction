@@ -71,7 +71,6 @@ execute @s[scores={80kborder=1..}] ~~~ tp @s[scores={yCoord=..-80000}] 0 90 0
 execute @s[scores={80kborder=1..}] ~~~ tp @s[scores={zCoord=..-80000}] 0 90 0
 
 
-
 #90k
 execute @s[scores={90kborder=1..}] ~~~ tp @s[scores={xCoord=90000..}] 0 90 0
 execute @s[scores={90kborder=1..}] ~~~ tp @s[scores={yCoord=90000..}] 0 90 0

@@ -1,0 +1,29 @@
+{
+    "format_version": "1.18.0",
+    "minecraft:npc_dialogue": {
+      "scenes": [
+        {
+          "scene_tag": "AstroAntiKickBanPage",
+          "npc_name": { "rawtext": [{ "text": "Astro AntiCheat Kick And Ban Page" }] },
+          "text": { "rawtext": [{ "text": "Kick and Ban Page, If You Want To Ban/Kick A Player, Run /execute playername ~~~ function astro/help\n, Navigate To The Kick/Ban Page And Then Choose You Option" } ] },
+                  "buttons": [
+                      {
+                          "name": { "rawtext": [ { "text":"Perm Ban Player" } ] },
+                          "commands": [
+                              "/function astro/permban"
+                          ]
+                      },
+                      {
+                          "name": { "rawtext": [ { "text": "Kick Player" } ] },
+                          "commands": [
+                              "/event entity @s astro:ban_main"
+                          ]
+                     }
+                  ],
+                  "on_close_commands": [
+                      "/"
+                  ]
+              }
+          ]
+      }
+  }

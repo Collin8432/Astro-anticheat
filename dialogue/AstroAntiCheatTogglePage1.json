@@ -1,1 +1,35 @@
-//fix9ing later
+{
+    "format_version": "1.18.0",
+    "minecraft:npc_dialogue": {
+      "scenes": [
+        {
+          "scene_tag": "AstroAntiCheatTogglePage1",
+          "npc_name": { "rawtext": [{ "text": "Astro AntiCheat Toggle Page" }] },
+          "text": { "rawtext": [{ "text": "Toggleable Functions"} ] },
+                  "buttons": [
+                      {
+                          "name": { "rawtext": [ { "text": "AntiCbe" } ] },
+                          "commands": [
+                              "/function toggle/anticbe"
+                          ]
+                      },
+                      {
+                          "name": { "rawtext": [ { "text": "Auto Lag Clear" } ] },
+                          "commands": [
+                              "/function toggle/autolagclear"
+                          ]
+                     },
+                     {
+                          "name": { "rawtext": [ { "text": "Bottom Bedrock"} ] },
+                          "commands": [
+                              "/function toggle/bottombedrock"
+                          ]
+                     }
+                  ],
+                  "on_close_commands": [
+                      "/"
+                  ]
+              }
+          ]
+      }
+  }

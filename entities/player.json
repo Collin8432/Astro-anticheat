@@ -12,7 +12,8 @@
 					"antiCbe",
 					"oneShot",
 					"onDeath",
-					"detectAnimations"
+					"detectAnimations",
+					"PopAnimations"
 				]
 			},
 			"animations": {
@@ -25,7 +26,8 @@
 				"is_levitiating": "controller.animation.is_levitating",
 				"is_gliding": "controller.animation.is_gliding",
 				"is__jumping": "controller.animation.is_jumping",
-				"timer": "controller.animation.timer"
+				"timer": "controller.animation.timer",
+				"PopAnimations": "controller.animation.totempop"
 			}
 		},
 		"component_groups": {
@@ -1249,14 +1251,13 @@
 				}
 			],
 			"minceraft:npc": {}
-
 		},
 		"events": {
 			"astro:cbeitems": {
 				"run_command": {
 					"target": "self",
 					"command": [
-						"execute @s ~~~ function utility/clearall",
+						"execute @s ~~~ function astro/clearall",
 						"execute @s[scores={cbetoggle}] ~~~ scoreboard players add cbeflag 1",
 						"tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Got Kicked For CBE, Report This To A Operator\"}]}"
 					]
@@ -1266,9 +1267,9 @@
 				"run_command": {
 					"target": "self",
 					"command": [
-						"execute @s[] ~~~ function utility/clearall",
-						"execute @s[scores={cbetoggledummy=1}] ~~~ scoreboard players add cbeflag 1",
-						"execute @s[scores={cbetoggledummy=1}] ~~~ function astro/asset/tempkick"
+						"execute @s ~~~ function astro/clearall",
+						"execute @s[scores={cbetoggle=1}] ~~~ scoreboard players add cbeflag 1",
+						"execute @s[scores={cbetoggle=1}] ~~~ function astro/tempkick"
 					]
 				}
 			},
@@ -1276,9 +1277,9 @@
 				"run_command": {
 					"target": "self",
 					"command": [
-						"execute @s ~~~ function utility/clearall",
+						"execute @s ~~~ function astro/clearall",
 						"scoreboard players set @s cbeflag 9",
-						"execute @s ~~~ function astro/asset/tempkick"
+						"execute @s ~~~ function astro/tempkick"
 					]
 				},
 				"add": {
@@ -1293,7 +1294,7 @@
 					"command": [
 						"execute @s ~~~ scoreboard players add @s cbeflag 1",
 						"execute @s ~~~ function utility/clearall",
-						"execute @s ~~~ function astro/asset/tempkick"
+						"execute @s ~~~ function astro/tempkick"
 					]
 				}
 			},
@@ -1302,18 +1303,7 @@
 					"target": "other",
 					"command": [
 						"scoreboard players add @s killstreak 1",
-						"scoreboard players add @s kills 1",
-						"execute @s[scores={killstreak=5} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 5 KillStreak\"}]}",
-						"execute @s[scores={killstreak=10} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 10 KillStreak\"}]}",
-						"execute @s[scores={killstreak=15} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 15 KillStreak\"}]}",
-						"execute @s[scores={killstreak=20} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 20 KillStreak\"}]}",
-						"execute @s[scores={killstreak=25} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 25 KillStreak\"}]}",
-						"execute @s[scores={killstreak=30} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 30 KillStreak\"}]}",
-						"execute @s[scores={killstreak=35} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 35 KillStreak\"}]}",
-						"execute @s[scores={killstreak=40} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 40 KillStreak\"}]}",
-						"execute @s[scores={killstreak=45} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 45 KillStreak\"}]}",
-						"execute @s[scores={killstreak=50} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 50 KillStreak\"}]}",
-						"execute @s[scores={killstreak=51..} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 50+ KillStreak\"}]}"
+						"scoreboard players add @s kills 1"
 					]
 				}
 			},

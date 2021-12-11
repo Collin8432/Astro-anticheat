@@ -1,20 +1,18 @@
-scoreboard objectives add xCoord dummy xCoord
-scoreboard players add @s xCoord 0
-scoreboard objectives add yCoord dummy xCoord
-scoreboard players add @s yCoord 0
-scoreboard objectives add zCoord dummy xCoord
-scoreboard players add @s zCoord 0
-scoreboard objectives add 50kborder
-scoreboard players add @s 50kborder 0
+#Setting scores properly
+execute @s[tag=admin] ~~~ scoreboard players add 10ktoggledummy 10k 1
+execute @s[tag=admin] ~~~ scoreboard players operation @a 10k = 10ktoggledummy 10k
 
-#admintest
-tellraw @s[type=player,tag=!admin] {"rawtext":[{"text":"§5Astro §r §5→ "},{"selector":"@s"},{"text":"§0 This Is An Admin Only Command"}]}
-execute @a[tag=!admin] ~~~ tellraw @a[tag=admin] {"rawtext":[{"text":"§5Astro §r §5→ "},{"selector":"@s"},{"text":"§0 Tried To Run A Staff Function - WorldBorderToggle 50k"}]}
+#On
+execute @s[tag=admin,scores={ACBE=1}] ~~~ scoreboard players set cbetoggledummy cbetoggle 1
+execute @s[tag=admin,scores={ACBE=1}] ~~~ scoreboard players operation @a cbetoggle = cbetoggledummy cbetoggle
+execute @s[tag=admin,scores={ACBE=1}] ~~~ tellraw @a {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 Has Toggled 10k Worldborder ON"}]}
 
-#on
-execute @s[type=player,tag=admin,scores={50kborder=..0}] ~~~ scoreboard players set astro:config 50kborder 1
-execute @s[type=player,tag=admin,scores={50kborder=..0}] ~~~ tellraw @a {"rawtext":[{"text":"§5Astro §r §5→ "},{"selector":"@s"},{"text":"§0 Has Toggled The WorldBorder To 50k"}]}
+#Off 
+execute @s[tag=admin,scores={ACBE=2}] ~~~ scoreboard players set cbetoggledummy cbetoggle 0
+execute @s[tag=admin,scores={ACBE=2}] ~~~ scoreboard players operation @a cbetoggle = cbetoggledummy cbetoggle
+execute @s[tag=admin,scores={ACBE=2}] ~~~ tellraw @a {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 Has Toggled 10k Worldborder OFF"}]}
+execute @s[tag=admin,scores={ACBE=2}] ~~~ scoreboard players set cbetoggledummy ACBE 0
 
-#off
-execute @s[type=player,tag=admin,scores={50kborder=1..}] ~~~ scoreboard players set astro:config 50kborder 0
-execute @s[type=player,tag=admin,scores={50kborder=1..}] ~~~ tellraw @a {"rawtext":[{"text":"§5Astro §r §5→ "},{"selector":"@s"},{"text":"§0 Has Toggled The 50k Worldborder OFF"}]}
+#DenyNonAdmin
+execute @s[tag=!admin] ~~~ tellraw @a[tag=admin] {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 Has Tried To Toggle A Admin Function - 10k Worldborder Toggle"}]}
+execute @s[tag=!admin] ~~~ tellraw @s{"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 This Is An Admin Only Function"}]}
