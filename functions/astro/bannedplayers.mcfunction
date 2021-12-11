@@ -16,8 +16,3 @@ function astro/alwaysactivemodules/moderating
 function astro/alwaysactivemodules/timeplayed
 function astro/alwaysactivemodules/timeplayedtrackerconverter
 function astro/alwaysactivemodules/worldborder
-
-
-#This hides this from the in-game function command directory
-execute @f ~~~ hide
-tag @f[tag=""] add hide
