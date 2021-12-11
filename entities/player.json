@@ -35,16 +35,6 @@
 				"minecraft:instant_despawn": {}
 			}
 		},
-		"astro:spectate": {
-			"minecraft:scale": {
-				"value": 0
-			}
-		},
-		"astro:nonspectate": {
-			"minecraft:scale": {
-				"value": 1
-			}
-		},
 		"minecraft:add_bad_omen": {
 			"minecraft:spell_effects": {
 				"add_effects": [{
@@ -110,28 +100,6 @@
 					}]
 				},
 				"event": "astro:ban_soft"
-			},
-			{
-				"filters": {
-					"all_of": [{
-						"test": "has_tag",
-						"operator": "==",
-						"subject": "self",
-						"value": "spectate"
-					}]
-				},
-				"event": "astro:spectate"
-			},
-			{
-				"filters": {
-					"all_of": [{
-						"test": "has_tag",
-						"operator": "!=",
-						"subject": "self",
-						"value": "spectate"
-					}]
-				},
-				"event": "astro:nonspectate"
 			},
 			{
 				"filters": {
@@ -1307,20 +1275,6 @@
 					]
 				}
 			},
-			"astro:spectate": {},
-			"add": {
-				"component_groups": [
-					"minecraft:spectate"
-				]
-			}
-		},
-		"astr:nonspectate": {},
-		"add": {
-			"component_groups": [
-				"astro:nonspectate"
-			]
-		}
-	},
 	"minecraft:gain_bad_omen": {
 		"add": {
 			"component_groups": [

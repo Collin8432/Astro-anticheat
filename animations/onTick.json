@@ -9,6 +9,7 @@
 					"/gamerule commandblockoutput false",
 					"/gamerule showcommandfeedback false",
 					"/gamerule chaincommandlimit 10000",
+					"/scoreboard objectives add welcome dummy welcome",
 					"scoreboard players add @a welcome 1",
 					"/scoreboard objectives add welcome dummy welcome",
 					"/execute @a[scores={welcome=120}] ~~~ /title @r title §cThis Realm Is Protected By §4Astro AntiCheat",
