@@ -35,6 +35,7 @@
 				"minecraft:instant_despawn": {}
 			}
 		},
+		"minecraft:npc": {},
 		"minecraft:add_bad_omen": {
 			"minecraft:spell_effects": {
 				"add_effects": [{
@@ -1275,30 +1276,32 @@
 					]
 				}
 			},
-	"minecraft:gain_bad_omen": {
-		"add": {
-			"component_groups": [
-				"minecraft:add_bad_omen"
-			]
-		}
-	},
-	"minecraft:clear_add_bad_omen": {
-		"remove": {
-			"component_groups": [
-				"minecraft:add_bad_omen"
-			]
-		},
-		"add": {
-			"component_groups": [
-				"minecraft:clear_bad_omen_spell_effect"
-			]
-		}
-	},
-	"minecraft:remove_raid_trigger": {
-		"remove": {
-			"component_groups": [
-				"minecraft:raid_trigger"
-			]
+			"minecraft:gain_bad_omen": {
+				"add": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				}
+			},
+			"minecraft:clear_add_bad_omen": {
+				"remove": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:clear_bad_omen_spell_effect"
+					]
+				}
+			},
+			"minecraft:remove_raid_trigger": {
+				"remove": {
+					"component_groups": [
+						"minecraft:raid_trigger"
+					]
+				}
+			}
 		}
 	}
 }
