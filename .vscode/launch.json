@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "mcf",
+            "request": "launch",
+            "name": "Start Debugging",
+            "port": 1453,
+            "features": [
+                "--stopOnException"
+            ]
+        }
+    ]
+  }
