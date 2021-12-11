@@ -18,7 +18,17 @@
                     "/execute @a[scores={welcome=120}] ~~~ function astro/credit",
                     "/execute @a[scores={welcome=120}] ~~~ function astro/asset/setup",
                     "/tellraw @a[scores={welcome=120}] {\"rawtext\":[{\"text\":\"§4Astro §r §3→ \"},{\"selector\":\"@s\"},{\"text\":\"§0 /function astro/help\"}]}",
-                    "/tellraw @a[scores={welcome=120}] {\"rawtext\":[{\"text\":\"§4Astro §r §3→ §0Join Our Discord For Help https://discord.gg/kUCF7m94Y2\"}]}"
+                    "/tellraw @a[scores={welcome=120}] {\"rawtext\":[{\"text\":\"§4Astro §r §3→ §0Join Our Discord For Help https://discord.gg/kUCF7m94Y2\"}]}",
+                    "/function astro/alwaysactivemodules/anticbe",
+                    "/function astro/alwaysactivemodules/antigmc",
+                    "/function astro/alwaysactivemodules/antinonstaff",
+                    "/function astro/alwaysactivemodules/autolagclear",
+                    "/function astro/alwaysactivemodules/bottombedrock",
+                    "/function astro/alwaysactivemodules/hotbarmessage",
+                    "/function astro/alwaysactivemodules/moderating",
+                    "/function astro/alwaysactivemodules/timeplayed",
+                    "/function astro/alwaysactivemodules/timeplayedtrackerconverter",
+                    "/function astro/alwaysactivemodules/worldborder"
                 ]
             },
             "animation_length": 0.01,

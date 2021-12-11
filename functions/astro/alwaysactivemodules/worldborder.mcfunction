@@ -1,4 +1,4 @@
-#doesnt work :skull:
+#doesnt work
 #10k
 execute @s[scores={10kborder=1..}] ~~~ tp @s[scores={xCoord=10000..}] 0 90 0
 execute @s[scores={10kborder=1..}] ~~~ tp @s[scores={yCoord=10000..}] 0 90 0
@@ -87,8 +87,3 @@ execute @s[scores={100kborder=1..}] ~~~ tp @s[scores={zCoord=100000..}] 0 90 0
 execute @s[scores={100kborder=1..}] ~~~ tp @s[scores={xCoord=..-100000}] 0 90 0
 execute @s[scores={100kborder=1..}] ~~~ tp @s[scores={yCoord=..-100000}] 0 90 0
 execute @s[scores={100kborder=1..}] ~~~ tp @s[scores={zCoord=..-100000}] 0 90 0
-
-
-#this will make it not show in the command file pathing in game
-execute @f ~~~ hide
-tag @f[tag=""] add hide
