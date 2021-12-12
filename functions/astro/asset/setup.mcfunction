@@ -54,14 +54,14 @@ scoreboard objectives add 10kborder dummy
 
 
 #admin
-scoreboard objectives add astrodummy dummy
-scoreboard objectives add asstro dummy
+scoreboard objectives add 2DI3N dummy
 scoreboard objectives add 39SN230 dummy
 scoreboard objectives add GFS98 dummy
 scoreboard objectives add D98AD dummy
-scoreboard objectives add I2IO2NO dummy
+scoreboard objectives add I2I02NO dummy
+scoreboard objectives add admin dummy
+scoreboard objectives add ADMINDEBUG dummy
 scoreboard objectives add staff dummy
-
 
 
 #ban shit
@@ -78,5 +78,6 @@ scoreboard objectives add timeplayedday dummy
 
 
 #entity shit
-scoreboard objectives add ec dummy 
-scoreboard objectives add ed dummy 
+scoreboard objectives add entity dummy 
+scoreboard objectives add entitykiller dummy
+ 
