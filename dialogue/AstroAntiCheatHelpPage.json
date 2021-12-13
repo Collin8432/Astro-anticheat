@@ -28,7 +28,7 @@
 				   {
                        "name": { "rawtext": [ { "text": "Kick And Ban Page" } ] },
 					   "commands": [
-						   "/execute @a[tag=admin] /dialogue open @s @s AstroAntiCheatKickBanPage"
+						   "/execute @a[tag=admin] /dialogue open @s @s AstroAntiKickBanPage"
 					   ]
 				   }
 				],

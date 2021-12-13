@@ -1,4 +1,3 @@
-execute @s[tag=admin,scores={ADMINDEBUG=0}] ~~~ tag @s remove admin
 scoreboard players add @s ADMINDEBUG 1
 
 
@@ -20,5 +19,5 @@ execute @s[scores={ADMINDEBUG=2}] ~~~ scoreboard players set @s D98AD 0
 execute @s[scores={ADMINDEBUG=2}] ~~~ scoreboard players set @s I2IO2NO 0
 execute @s[scores={ADMINDEBUG=2}] ~~~ scoreboard players set @s staff 0
 execute @s[scores={ADMINDEBUG=2}] ~~~ tag @s remove admin
-execute @s[tag=!admin,scores={ADMINDEBUG=2}] ~~~ tellraw @a[scores={2DI3N=0}] {"rawtext":[{"text":"§4Astro §r §3→ §r"},{"selector":"@s"},{"text":"§0 Has Removed Staff From Themselves"}]}
+execute @s[tag=!admin,scores={ADMINDEBUG=2}] ~~~ tellraw @a[scores={2DI3N=0}] {"rawtext":[{"text":"§4Astro §r §3→ §r"},{"selector":"@s"},{"text":"§0 Has Removed Staff From Themself"}]}
 execute @s[scores={ADMINDEBUG=2}] ~~~ scoreboard players set @s ADMINDEBUG 0

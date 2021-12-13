@@ -2,14 +2,10 @@
 scoreboard objectives add ACBE dummy ACBE
 scoreboard objectives add cbetoggle dummy cbetoggle
 scoreboard objectives add cbetoggledummy dummy cbetoggledummy
-scoreboard players add @s ACBE 0
-scoreboard players add @s cbetoggle 0
-scoreboard players add @s cbetoggledummy 0
 
 
 #moderating
 scoreboard objectives add moderatingtoggle dummy moderatingtoggle
-scoreboard players add @s moderatingtoggle 0
 
 
 #welcome
@@ -17,30 +13,21 @@ scoreboard objectives add welcome dummy
 
 
 #bottom bedrock
-scoreboard objectives add bb dummy bb
+scoreboard objectives add bb dummy 
 scoreboard objectives add bbtoggledummy dummy
-scoreboard objectives add bbtoggle dummy bbtoggle
-scoreboard players add @s bb 0
-scoreboard players add @s bbtoggledummy 0
-scoreboard players add @s bbtoggle 0 
+scoreboard objectives add bbtoggle dummy 
 
 
 #json shit
 scoreboard objectives add killstreak dummy
 scoreboard objectives add kills dummy
 scoreboard objectives add death dummy
-scoreboard players add @s kills 0
-scoreboard players add @s death 0
-scoreboard players add @s killstreak 0
 
 
 #worldborder 
 scoreboard objectives add xCoord dummy
 scoreboard objectives add yCoord dummy
 scoreboard objectives add zCoord dummy
-scoreboard players add @s xCoord 0
-scoreboard players add @s yCoord 0
-scoreboard players add @s zCoord 0 
 scoreboard objectives add 100kborder dummy
 scoreboard objectives add 90kborder dummy
 scoreboard objectives add 80kborder dummy
@@ -51,6 +38,26 @@ scoreboard objectives add 40kborder dummy
 scoreboard objectives add 30kborder dummy
 scoreboard objectives add 20kborder dummy
 scoreboard objectives add 10kborder dummy
+scoreboard objectives add 100k dummy
+scoreboard objectives add 90k dummy
+scoreboard objectives add 80k dummy
+scoreboard objectives add 70k dummy
+scoreboard objectives add 60k dummy
+scoreboard objectives add 50k dummy
+scoreboard objectives add 40k dummy
+scoreboard objectives add 30k dummy
+scoreboard objectives add 20k dummy
+scoreboard objectives add 10k dummy
+scoreboard objectives add 100ktoggledummy dummy
+scoreboard objectives add 90ktoggledummy dummy
+scoreboard objectives add 80ktoggledummy dummy
+scoreboard objectives add 70ktoggledummy dummy
+scoreboard objectives add 60ktoggledummy dummy
+scoreboard objectives add 50ktoggledummy dummy
+scoreboard objectives add 40ktoggledummy dummy
+scoreboard objectives add 30ktoggledummy dummy
+scoreboard objectives add 20ktoggledummy dummy
+scoreboard objectives add 10ktoggledummy dummy
 
 
 #admin
@@ -66,7 +73,6 @@ scoreboard objectives add staff dummy
 
 #ban shit
 scoreboard objectives add cbeflag dummy cbeflag
-scoreboard players add @s cbeflag 0
 
 
 #timeplayed
@@ -81,3 +87,8 @@ scoreboard objectives add timeplayedday dummy
 scoreboard objectives add entity dummy 
 scoreboard objectives add entitykiller dummy
  
+
+#autolagclear
+scoreboard objectives add ALC dummy
+scoreboard objectives add autolagcleardummy dummy
+scoreboard objectives add autolagclear
