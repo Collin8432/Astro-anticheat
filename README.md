@@ -6,7 +6,7 @@
 
 <div align="center">
 	
-  <a href="https://github.com/Collinastroontopmc1228/Astro-anticheat/releases/latest"><img src="https://img.shields.io/github/v/release/astroontop/Astro-anticheat"></a>
+  <a href="https://github.com/astroontop/Astro-anticheat/releases/latest"><img src="https://img.shields.io/github/v/release/astroontop/Astro-anticheat"></a>
   <img src="https://img.shields.io/github/last-commit/astroontop/Astro-anticheat">
   <img src="https://img.shields.io/github/commit-activity/m/astroontop/Astro-anticheat">
   <img src="https://img.shields.io/github/languages/code-size/astroontop/Astro-anticheat">
