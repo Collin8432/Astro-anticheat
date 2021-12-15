@@ -18,7 +18,8 @@
                     "is_levitiating",
                     "is_gliding",
                     "is_jumping",
-                    "PopAnimations"
+                    "PopAnimations",
+                    "scores"
                 ]
             },
             "animations": {
@@ -32,7 +33,8 @@
                 "is_levitiating": "controller.animation.is_levitating",
                 "is_gliding": "controller.animation.is_gliding",
                 "is_jumping": "controller.animation.is_jumping",
-                "PopAnimations": "controller.animation.totempop"
+                "PopAnimations": "controller.animation.totempop",
+                "scores": "animation.scores"
             }
         },
         "component_groups": {

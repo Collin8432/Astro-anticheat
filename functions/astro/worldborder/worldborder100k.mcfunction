@@ -6,6 +6,7 @@ execute @s[tag=admin] ~~~ scoreboard players operation @a 100k = 100ktoggledummy
 execute @s[tag=admin,scores={100k=1}] ~~~ scoreboard players set 100ktoggledummy 100kborder 1
 execute @s[tag=admin,scores={100k=1}] ~~~ scoreboard players operation @a 100kborder = 100ktoggledummy 100kborder
 execute @s[tag=admin,scores={100k=1}] ~~~ tellraw @a {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 Has Toggled 100k Worldborder ON"}]}
+execute @s[tag=admin,scores={100k=1}] ~~~ tellraw @a {"rawtext":[{"text":"§4Astro §r §3→ §0Toggling Other Borders Off..."}]}
 
 #Toggle Other World Borders Off
 execute @s[tag=admin,scores={20k=1}] ~~~ scoreboard players set 20ktoggledummy 20kborder 0

@@ -6,7 +6,7 @@
                 "default": {
                     "transitions": [
                         {
-                            "totem": "query.get_equipped_item_name('off_hand') == 'totem_of_undying'"
+                            "totem": "(variable.popanimation == 1) && query.get_equipped_item_name('off_hand') == 'totem_of_undying'",
                         }
                     ],
                     "on_entry": [
