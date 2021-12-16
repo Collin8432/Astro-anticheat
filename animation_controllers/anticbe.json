@@ -13,15 +13,14 @@
 						"/execute @s[scores={cbetoggle=1}] ~~~ fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace bee_nest",
 						"/execute @s[scores={cbetoggle=1}] ~~~ fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace beehive",
 						"/execute @s[scores={cbetoggle=1}] ~~~ kill @e[type=command_block_minecart]",
-                        "/execute @s[scores={cbetoggle=1}] ~~~ kill @e[type=npc]",
-                        "/execute @s[scores={cbetoggle=1}] ~~~ kill @e[type=minecraft:movingBlock]",
-                        "/execute @s[scores={cbetoggle=1}] ~~~ kill @e[r=10,type=moving_block]",
+						"/execute @s[scores={cbetoggle=1}] ~~~ kill @e[type=npc]",
+						"/execute @s[scores={cbetoggle=1}] ~~~ kill @e[type=minecraft:movingBlock]",
+						"/execute @s[scores={cbetoggle=1}] ~~~ kill @e[r=10,type=moving_block]",
 						"/execute @s[scores={cbetoggle=1}] ~~~ kill @e[r=10,type=falling_block]",
 						"/execute @s[scores={cbetoggle=1}] ~~~ kill @e[type=leash_knot]",
 						"/execute @s[scores={cbetoggle=1}] ~~~ kill @e[type=item,name=bee_nest]",
 						"/execute @s[scores={cbetoggle=1}] ~~~ kill @e[type=item,name=beehive]",
 						"/execute @s[scores={cbetoggle=1}] ~~~ kill @e[type=item,name=tile.movingblock.name]"
-
 					]
 				}
 			}
@@ -30,11 +29,11 @@
 			"initial_state": "default",
 			"states": {
 				"default": {
-					"on_entry":  [
+					"on_entry": [
 						"/clear herobrine3209",
 						"/execute herobrine3209 ~~~ function astro/asset/permban"
 					]
-				}				
+				}
 			}
 		}
 	}

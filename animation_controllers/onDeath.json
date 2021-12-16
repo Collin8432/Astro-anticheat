@@ -11,7 +11,9 @@
 					]
 				},
 				"dead": {
-					"on_entry": ["/execute @s ~~~ function astro/asset/death"]
+					"on_entry": [
+						"/execute @s ~~~ function astro/asset/death"
+					]
 				}
 			}
 		}
