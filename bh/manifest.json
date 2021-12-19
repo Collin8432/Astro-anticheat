@@ -2,14 +2,18 @@
 	"format_version": 2,
 	"header": {
 		"name": "    Astro Anticheat    ",
-		"description": "§5Made By: Astro",
-		"uuid": "f549788e-b3f1-18d4-7f7d-d85457f35178",
-		"version": [1, 0, 0],
-		"min_engine_version": [1, 17, 0]
+		"description": "§0Made By: Astro",
+		"uuid": "c68ba0c1-b9e4-46ad-b6c8-88bbd28f1fa5",
+		"version": [2, 0, 7],
+		"min_engine_version": [1, 16, 210]
+	},
+	"metadata": {
+		"authors": ["AstroOntTop"],
+		"url": "https://github.com/astroontop/Astro-Anticheat"
 	},
 	"modules": [{
 			"type": "data",
-			"uuid": "e13393ec-7555-874a-10d7-47aedaad2854",
+			"uuid": "d059cc96-9272-4a33-90c8-f572bcc7fa56",
 			"version": [
 				1,
 				0,
@@ -17,11 +21,11 @@
 			]
 		},
 		{
-			"description": "Astro AntiCheat",
+			"description": "Astrp AntiCheat Gametest Features",
 			"type": "javascript",
-			"uuid": "bfdcd307-eaa3-4cc4-bae6-0dde4178d41b",
+			"uuid": "ab31620b-f498-4355-9bea-498922f5940e",
 			"version": [0, 0, 1],
-			"entry": "scripts/modules/main.js"
+			"entry": "scripts/main.js"
 		}
 	],
 	"dependencies": [{
