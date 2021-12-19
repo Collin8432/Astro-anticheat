@@ -1,5 +1,5 @@
 {
-    "format_version": "1.16.0",
+    "format_version": "1.16.100",
     "minecraft:entity": {
         "description": {
             "identifier": "minecraft:player",
@@ -37,32 +37,7 @@
         },
         "component_groups": {
             "astro:ban": {
-                "minecraft:instant_despawn": {}
-            },
-            "minecraft:add_bad_omen": {
-                "minecraft:spell_effects": {
-                    "add_effects": [
-                        {
-                            "effect": "bad_omen",
-                            "duration": 6000,
-                            "display_on_screen_animation": true
-                        }
-                    ]
-                }
-            },
-            "minecraft:clear_bad_omen_spell_effect": {
-                "minecraft:spell_effects": {}
-            },
-            "minecraft:raid_trigger": {
-                "minecraft:raid_trigger": {
-                    "triggered_event": {
-                        "event": "minecraft:remove_raid_trigger",
-                        "target": "self"
-                    }
-                },
-                "minecraft:spell_effects": {
-                    "remove_effects": "bad_omen"
-                }
+                "minecraft:instant_despawn": true
             }
         },
         "components": {
@@ -70,98 +45,30 @@
                 "triggers": [
                     {
                         "filters": {
-                            "all_of": [
-                                {
-                                    "test": "has_tag",
-                                    "subject": "self",
-                                    "operator": "!=",
-                                    "value": "§k§9♀"
-                                }
-                            ],
-                            "any_of": [
-                                {
-                                    "test": "has_tag",
-                                    "subject": "self",
-                                    "operator": "==",
-                                    "value": "Ban"
-                                },
-                                {
-                                    "test": "has_tag",
-                                    "subject": "self",
-                                    "operator": "==",
-                                    "value": "PermBan"
-                                }
-                            ]
-                        },
-                        "event": "astro:ban_main"
-                    },
-                    {
-                        "filters": {
-                            "all_of": [
-                                {
-                                    "test": "has_tag",
-                                    "subject": "self",
-                                    "operator": "!=",
-                                    "value": "§k§9♀"
-                                }
-                            ],
-                            "any_of": [
-                                {
-                                    "test": "has_tag",
-                                    "subject": "self",
-                                    "operator": "==",
-                                    "value": "cbesoft"
-                                }
-                            ]
-                        },
-                        "event": "astro:ban_soft"
-                    },
-                    {
-                        "filters": {
-                            "all_of": [
-                                {
-                                    "test": "has_tag",
-                                    "subject": "self",
-                                    "operator": "!=",
-                                    "value": "§k§9♀"
-                                }
-                            ],
                             "any_of": [
                                 {
                                     "test": "has_equipment",
                                     "domain": "any",
                                     "operator": "==",
-                                    "value": "minecraft:pufferfish_bucket"
+                                    "value": "minecraft:movingBlock"
                                 },
                                 {
                                     "test": "has_equipment",
                                     "domain": "any",
                                     "operator": "==",
-                                    "value": "minecraft:salmon_bucket"
+                                    "value": "minecraft:portal"
                                 },
                                 {
                                     "test": "has_equipment",
                                     "domain": "any",
                                     "operator": "==",
-                                    "value": "minecraft:tropical_fish_bucket"
+                                    "value": "minecraft:end_portal"
                                 },
                                 {
                                     "test": "has_equipment",
                                     "domain": "any",
                                     "operator": "==",
-                                    "value": "minecraft:cod_bucket"
-                                },
-                                {
-                                    "test": "has_equipment",
-                                    "domain": "any",
-                                    "operator": "==",
-                                    "value": "minecraft:powder_snow_bucket"
-                                },
-                                {
-                                    "test": "has_equipment",
-                                    "domain": "any",
-                                    "operator": "==",
-                                    "value": "minecraft:axolotl_bucket"
+                                    "value": "minecraft:pistonarmcollision"
                                 },
                                 {
                                     "test": "has_equipment",
@@ -174,12 +81,6 @@
                                     "domain": "any",
                                     "operator": "==",
                                     "value": "minecraft:beehive"
-                                },
-                                {
-                                    "test": "has_equipment",
-                                    "domain": "any",
-                                    "operator": "==",
-                                    "value": "minecraft:movingBlock"
                                 },
                                 {
                                     "test": "has_equipment",
@@ -220,6 +121,28 @@
                             ]
                         },
                         "event": "astro:cbe"
+                    },
+                    {
+                        "filters": {
+                            "any_of": [
+                                {
+                                    "test": "has_tag",
+                                    "value": "ban"
+                                }
+                            ]
+                        },
+                        "event": "astro:ban"
+                    },
+                    {
+                        "filters": {
+                            "any_of": [
+                                {
+                                    "test": "has_tag",
+                                    "value": "kick"
+                                }
+                            ]
+                        },
+                        "event": "astro:kick"
                     },
                     {
                         "filters": {
@@ -1038,7 +961,7 @@
                                 }
                             ]
                         },
-                        "event": "astro:cbeitems"
+                        "event": "astro:kick"
                     }
                 ]
             },
@@ -1252,27 +1175,7 @@
             }
         },
         "events": {
-            "astro:cbeitems": {
-                "run_command": {
-                    "target": "self",
-                    "command": [
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s[scores={cbetoggle}] ~~~ scoreboard players add cbeflag 1",
-                        "tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Got Kicked For CBE, Report This To A Operator\"}]}"
-                    ]
-                }
-            },
-            "astro:cbe": {
-                "run_command": {
-                    "target": "self",
-                    "command": [
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s[scores={cbetoggle=1}] ~~~ scoreboard players add cbeflag 1",
-                        "execute @s[scores={cbetoggle=1}] ~~~ function astro/asset/tempkick"
-                    ]
-                }
-            },
-            "astro:ban_main": {
+            "astro:ban": {
                 "run_command": {
                     "target": "self",
                     "command": [
@@ -1287,7 +1190,7 @@
                     ]
                 }
             },
-            "astro:ban_soft": {
+            "astro:kick": {
                 "run_command": {
                     "target": "self",
                     "command": [
@@ -1314,58 +1217,6 @@
                         "execute @s[scores={killstreak=45} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 45 KillStreak\"}]}",
                         "execute @s[scores={killstreak=50} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 50 KillStreak\"}]}",
                         "execute @s[scores={killstreak=51..} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 50+ KillStreak\"}]}"
-                    ]
-                }
-            },
-            "minecraft:spectate": {
-                "run_command": {
-                    "target": "self",
-                    "command": [
-                        "execute @s ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Has Gone Into Spectator Mode\"}]}"
-                    ]
-                },
-                "add": {
-                    "component_groups": [
-                        "minecraft:spectate"
-                    ]
-                }
-            },
-            "minecraft:no_spectate": {
-                "run_command": {
-                    "target": "self",
-                    "command": [
-                        "execute @s ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is Out Of Spectator Mode\"}]}"
-                    ]
-                },
-                "add": {
-                    "component_groups": [
-                        "minecraft:no_spectate"
-                    ]
-                }
-            },
-            "minecraft:gain_bad_omen": {
-                "add": {
-                    "component_groups": [
-                        "minecraft:add_bad_omen"
-                    ]
-                }
-            },
-            "minecraft:clear_add_bad_omen": {
-                "remove": {
-                    "component_groups": [
-                        "minecraft:add_bad_omen"
-                    ]
-                },
-                "add": {
-                    "component_groups": [
-                        "minecraft:clear_bad_omen_spell_effect"
-                    ]
-                }
-            },
-            "minecraft:remove_raid_trigger": {
-                "remove": {
-                    "component_groups": [
-                        "minecraft:raid_trigger"
                     ]
                 }
             }
