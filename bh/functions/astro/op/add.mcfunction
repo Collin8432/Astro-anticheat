@@ -1,7 +1,8 @@
 tag @s add §k§9♀
 gamemode c @s
 playsound random.fuse @s
-execute @s ~~~ tellraw @a {"rawtext":[{"text":"§l§9Welcome §a"},{"selector":"@s"},{"text":" §r§l§9AS §eSTAFF"}]}
+execute @s ~~~ tellraw @a{"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§5 Has Banned Added As Staff"}]}
+execute @s ~~~ tellraw @s{"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§5 "}]}
 scoreboard objectives add realmname1 dummy §l§1AstroAntiCheat§r
 scoreboard objectives add realmname2 dummy §l§9AstroAntiCheat§r
 scoreboard objectives add realmname3 dummy §l§bAstroAntiCheat§r
