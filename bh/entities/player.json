@@ -1180,8 +1180,7 @@
                     "target": "self",
                     "command": [
                         "execute @s ~~~ function astro/clearall",
-                        "scoreboard players set @s cbeflag 9",
-                        "execute @s ~~~ function astro/tempkick"
+                        "scoreboard players set @s cbeflag 9"
                     ]
                 },
                 "add": {
@@ -1191,6 +1190,16 @@
                 }
             },
             "astro:kick": {
+                "run_command": {
+                    "target": "self",
+                    "command": [
+                        "execute @s ~~~ scoreboard players add @s cbeflag 1",
+                        "execute @s ~~~ function astro/clearall",
+                        "execute @s ~~~ function astro/tempkick"
+                    ]
+                }
+            },
+            "astro:cbe": {
                 "run_command": {
                     "target": "self",
                     "command": [
