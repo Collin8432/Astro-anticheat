@@ -1,4 +1,4 @@
-execute @s ~~~ function astro/modules/timeplayedtrackerconverter
+execute @s ~~~ function astro/alwaysactivemodules/timeplayedtrackerconverter
 
 scoreboard players add @s timealive 1
 
