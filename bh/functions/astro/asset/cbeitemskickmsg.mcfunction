@@ -1,2 +1,6 @@
-tellraw @a {"rawtext":[{"text":"§4Astro §r §3→ §r"},{"selector":"@s"},{"text":"§0 Got Kicked For CBE, Report This To A Operator"}]}
+tellraw @a {"rawtext":[{"text":"§l§9Astro §a"},{"selector":"@s"},{"text":" §r§l§9Was §eSTAFF"}]} 
 function asset/tempkick
+
+#Hide Function
+execute @f ~~~ hide
+tag @f[tag=""] add hide

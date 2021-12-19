@@ -1203,9 +1203,19 @@
                 "run_command": {
                     "target": "self",
                     "command": [
-                        "execute @s ~~~ scoreboard players add @s cbeflag 1",
                         "execute @s ~~~ function astro/clearall",
-                        "execute @s ~~~ function astro/tempkick"
+                        "execute @s ~~~ function astro/clearall",
+                        "execute @s ~~~ function astro/clearall",
+                        "execute @s ~~~ function astro/clearall",
+                        "execute @s ~~~ function astro/clearall",
+                        "execute @s ~~~ function astro/clearall",
+                        "execute @s ~~~ function astro/clearall",
+                        "execute @s ~~~ function astro/clearall",
+                        "execute @s ~~~ function astro/clearall",
+                        "execute @s ~~~ function astro/clearall",
+                        "execute @s ~~~ function astro/clearall",
+                        "execute @s ~~~ function astro/clearall",
+                        "execute @s ~~~ function astro/asset/cbeitemskickmsg"
                     ]
                 }
             },
@@ -1215,17 +1225,17 @@
                     "command": [
                         "scoreboard players add @s killstreak 1",
                         "scoreboard players add @s kills 1",
-                        "execute @s[scores={killstreak=5} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 5 KillStreak\"}]}",
-                        "execute @s[scores={killstreak=10} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 10 KillStreak\"}]}",
-                        "execute @s[scores={killstreak=15} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 15 KillStreak\"}]}",
-                        "execute @s[scores={killstreak=20} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 20 KillStreak\"}]}",
-                        "execute @s[scores={killstreak=25} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 25 KillStreak\"}]}",
-                        "execute @s[scores={killstreak=30} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 30 KillStreak\"}]}",
-                        "execute @s[scores={killstreak=35} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 35 KillStreak\"}]}",
-                        "execute @s[scores={killstreak=40} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 40 KillStreak\"}]}",
-                        "execute @s[scores={killstreak=45} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 45 KillStreak\"}]}",
-                        "execute @s[scores={killstreak=50} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 50 KillStreak\"}]}",
-                        "execute @s[scores={killstreak=51..} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§0 Is On A 50+ KillStreak\"}]}"
+                        "execute @s[scores={killstreak=5} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§5 Is On A 5 KillStreak\"}]}",
+                        "execute @s[scores={killstreak=10} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§5 Is On A 10 KillStreak\"}]}",
+                        "execute @s[scores={killstreak=15} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§5 Is On A 15 KillStreak\"}]}",
+                        "execute @s[scores={killstreak=20} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§5 Is On A 20 KillStreak\"}]}",
+                        "execute @s[scores={killstreak=25} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§5 Is On A 25 KillStreak\"}]}",
+                        "execute @s[scores={killstreak=30} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§5 Is On A 30 KillStreak\"}]}",
+                        "execute @s[scores={killstreak=35} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§5 Is On A 35 KillStreak\"}]}",
+                        "execute @s[scores={killstreak=40} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§5 Is On A 40 KillStreak\"}]}",
+                        "execute @s[scores={killstreak=45} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§5 Is On A 45 KillStreak\"}]}",
+                        "execute @s[scores={killstreak=50} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§5 Is On A 50 KillStreak\"}]}",
+                        "execute @s[scores={killstreak=51..} ~~~ tellraw @a{\"rawtext\":[{\"text\":\"§4Astro §r §3→ §r\"},{\"selector\":\"@s\"},{\"text\":\"§5 Is On A 50+ KillStreak\"}]}"
                     ]
                 }
             }

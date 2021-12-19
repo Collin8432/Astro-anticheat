@@ -2,7 +2,7 @@
 	"format_version": 2,
 	"header": {
 		"name": "    Astro Anticheat    ",
-		"description": "§0Made By: Astro",
+		"description": "§5Made By: Astro",
 		"uuid": "f549788e-b3f1-18d4-7f7d-d85457f35178",
 		"version": [1, 0, 0],
 		"min_engine_version": [1, 17, 0]

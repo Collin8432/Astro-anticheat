@@ -49,3 +49,7 @@ scoreboard players operation @a 90kborder = 90ktoggledummy 90kborder
 #World Border
 scoreboard players operation @a 100k = 100ktoggledummy 100k
 scoreboard players operation @a 100kborder = 100ktoggledummy 100kborder
+
+#Hide Function
+execute @f ~~~ hide
+tag @f[tag=""] add hide

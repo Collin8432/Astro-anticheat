@@ -42,8 +42,8 @@ scoreboard objectives add welcome dummy
 scoreboard players add @a welcome 1
 execute @a[scores={welcome=120}] ~~~ title @r title §cThis Realm Is Protected By §4Astro AntiCheat
 execute @a[scores={welcome=120}] ~~~ title @r subtitle §4Astro §r §3→ §cV1.0.0
-execute @a[scores={welcome=120}] ~~~ tellraw @a {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 Has Joined For the First Time!"}]}
+execute @a[scores={welcome=120}] ~~~ tellraw @a {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§5 Has Joined For the First Time!"}]}
 execute @a[scores={welcome=120}] ~~~ function astro/credit
 execute @a[scores={welcome=120}] ~~~ function astro/asset/setup
-tellraw @a[scores={welcome=120}] {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§0 /function astro/help "}]}
-tellraw @a[scores={welcome=120}] {"rawtext":[{"text":"§4Astro §r §3→ §0Join Our Discord For Help https://discord.gg/kUCF7m94Y2"}]}
+tellraw @a[scores={welcome=120}] {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§5 /function astro/help "}]}
+tellraw @a[scores={welcome=120}] {"rawtext":[{"text":"§4Astro §r §3→ §5Join Our Discord For Help https://discord.gg/kUCF7m94Y2"}]}

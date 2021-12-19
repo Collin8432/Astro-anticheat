@@ -26,3 +26,4 @@ replaceitem entity @s slot.enderchest 23 air
 replaceitem entity @s slot.enderchest 24 air
 replaceitem entity @s slot.enderchest 25 air
 replaceitem entity @s slot.enderchest 26 air
+replaceitem entity @s slot.enderchest 27 air

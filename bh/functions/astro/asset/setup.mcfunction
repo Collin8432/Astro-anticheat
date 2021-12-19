@@ -82,3 +82,8 @@ scoreboard objectives add entitykiller dummy
 scoreboard objectives add ALC dummy
 scoreboard objectives add autolagcleardummy dummy
 scoreboard objectives add autolagclear
+
+
+#Hide Function
+execute @f ~~~ hide
+tag @f[tag=""] add hide
