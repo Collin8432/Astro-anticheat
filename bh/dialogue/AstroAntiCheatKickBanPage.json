@@ -16,7 +16,7 @@
                       {
                           "name": { "rawtext": [ { "text": "Kick Player" } ] },
                           "commands": [
-                              "/event entity @s astro:ban_main"
+                              "/event entity @s astro:ban"
                           ]
                      }
                   ],

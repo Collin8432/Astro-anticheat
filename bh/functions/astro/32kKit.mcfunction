@@ -1,0 +1,1 @@
+structure load 32k-kit ~ ~ ~ 0_degrees none layer_by_layer 1
