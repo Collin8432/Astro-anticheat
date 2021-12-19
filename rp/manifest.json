@@ -1,0 +1,29 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Astro AntiCheat RP Pack",
+        "description": "Astro AntiCheat BH Pack, Pear With BH Pack.",
+        "uuid": "f92c7ee1-02a6-a33a-b862-28499e1dd1da",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            17,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "21941c44-4cc7-ee78-3e17-80c42962b581",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

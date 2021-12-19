@@ -128,5 +128,3 @@ kill @e[type=item,name="spawn pillager"]
 kill @e[type=item,name="spawn ravager"]
 execute @s[scores={cbeflag=9..}] ~~~ function astro/permban
 execute @s[scores={cbeflag=9..}] ~~~ event entity @s astro:ban_main
-
-
