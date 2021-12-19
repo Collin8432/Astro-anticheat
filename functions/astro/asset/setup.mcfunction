@@ -60,16 +60,6 @@ scoreboard objectives add 20ktoggledummy dummy
 scoreboard objectives add 10ktoggledummy dummy
 
 
-#admin
-scoreboard objectives add 2DI3N dummy
-scoreboard objectives add 39SN230 dummy
-scoreboard objectives add GFS98 dummy
-scoreboard objectives add D98AD dummy
-scoreboard objectives add I2I02NO dummy
-scoreboard objectives add admin dummy
-scoreboard objectives add ADMINDEBUG dummy
-scoreboard objectives add staff dummy
-
 
 #ban shit
 scoreboard objectives add cbeflag dummy cbeflag

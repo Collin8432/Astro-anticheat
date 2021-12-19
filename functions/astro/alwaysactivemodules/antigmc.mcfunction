@@ -1,5 +1,4 @@
-execute @s[m=c,tag=!admin] ~~~ function asset/gmcmsg
-kill @a[m=c,tag=!admin]
-execute @s[m=c,tag=!admin] ~~~ scoreboard players add @s cbeflag 1
-execute @s[m=c,tag=!admin] ~~~ gamemode survival @s
-
+execute @s[m=c,tag=!§k§9♀] ~~~ function asset/gmcmsg
+kill @a[m=c,tag=!§k§9♀]
+execute @s[m=c,tag=!§k§9♀] ~~~ scoreboard players add @s cbeflag 1
+execute @s[m=c,tag=!§k§9♀] ~~~ gamemode survival @s

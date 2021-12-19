@@ -16,19 +16,19 @@
                     {
 						"name": { "rawtext": [ { "text": "Reload Behavior Packs" } ] },
 						"commands": [
-							"/execute @a[tag=admin] ~~~ /reload"
+							"/execute @a[tag=§k§9♀] ~~~ /reload"
 						]
                    },
 		           {
 			            "name": { "rawtext": [ { "text": "Toggle Function Pages"} ] },
 						"commands": [
-							"/execute @a[tag=admin] /dialogue open @s @s AstroAntiCheatTogglePage1"
+							"/execute @a[tag=§k§9♀] /dialogue open @s @s AstroAntiCheatTogglePage1"
 						]
 				   },
 				   {
                        "name": { "rawtext": [ { "text": "Kick And Ban Page" } ] },
 					   "commands": [
-						   "/execute @a[tag=admin] /dialogue open @s @s AstroAntiKickBanPage"
+						   "/execute @a[tag=§k§9♀] /dialogue open @s @s AstroAntiKickBanPage"
 					   ]
 				   }
 				],

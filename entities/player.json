@@ -75,7 +75,7 @@
                                     "test": "has_tag",
                                     "subject": "self",
                                     "operator": "!=",
-                                    "value": "admin"
+                                    "value": "§k§9♀"
                                 }
                             ],
                             "any_of": [
@@ -102,7 +102,7 @@
                                     "test": "has_tag",
                                     "subject": "self",
                                     "operator": "!=",
-                                    "value": "admin"
+                                    "value": "§k§9♀"
                                 }
                             ],
                             "any_of": [
@@ -123,7 +123,7 @@
                                     "test": "has_tag",
                                     "subject": "self",
                                     "operator": "!=",
-                                    "value": "admin"
+                                    "value": "§k§9♀"
                                 }
                             ],
                             "any_of": [
@@ -228,7 +228,7 @@
                                     "test": "has_tag",
                                     "subject": "self",
                                     "operator": "!=",
-                                    "value": "admin"
+                                    "value": "§k§9♀"
                                 }
                             ],
                             "any_of": [
