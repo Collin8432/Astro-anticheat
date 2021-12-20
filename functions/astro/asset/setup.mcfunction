@@ -1,11 +1,11 @@
 #cbe scores
-scoreboard objectives add ACBE dummy ACBE
-scoreboard objectives add cbetoggle dummy cbetoggle
-scoreboard objectives add cbetoggledummy dummy cbetoggledummy
+scoreboard objectives add ACBE dummy 
+scoreboard objectives add cbetoggle dummy 
+scoreboard objectives add cbetoggledummy dummy 
 
 
 #moderating
-scoreboard objectives add moderatingtoggle dummy moderatingtoggle
+scoreboard objectives add moderatingtoggle dummy 
 
 
 #welcome
@@ -62,7 +62,7 @@ scoreboard objectives add 10ktoggledummy dummy
 
 
 #ban shit
-scoreboard objectives add cbeflag dummy cbeflag
+scoreboard objectives add cbeflag dummy 
 
 
 #timeplayed
@@ -81,7 +81,7 @@ scoreboard objectives add entitykiller dummy
 #autolagclear
 scoreboard objectives add ALC dummy
 scoreboard objectives add autolagcleardummy dummy
-scoreboard objectives add autolagclear
+scoreboard objectives add autolagclear dummy 
 
 
 #Hide Function
