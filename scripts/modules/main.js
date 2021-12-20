@@ -1,4 +1,4 @@
-import { World, Commands } from 'mojang-minecraft'; //Importing features needed
+import { World, Commands } from 'mojang-minecraft'; //Importing mdoules needed
 
 World.events.tick.subscribe(() => {   // ticks the world 
   let players = World.getPlayers();   //variable for players
