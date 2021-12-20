@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.death": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"dead": "!query.is_alive"
+						}
+					]
+				},
+				"dead": {
+					"on_entry": [
+						"/execute @s ~~~ function astro/asset/death"
+					]
+				}
+			}
+		}
+	}
+}
