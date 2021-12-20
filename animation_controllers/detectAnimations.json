@@ -10,20 +10,20 @@
                         }
                     ],
                     "on_entry": [
-                        "/function astro/modules/timeplayed",
-                        "/function astro/utility/main"
+                        "/function astro/alwaysactivemodules/timeplayed",
+                        "/function astro/main"
                     ]
                 },
                 "timer": {
                     "transitions": [
                         {
-                            "default": "(1.0)"
-                        }
+                            "default": "(1.0)"                        }
+
                     ],
-                    "on_entry": [
-                        "/function astro/modules/timeplayed",
-                        "/function astro/utility/main"
-                    ]
+                  "on_entry": [
+                    "/function astro/alwaysactivemodules/timeplayed",
+                    "/function astro/main"
+                  ]
                 }
             }
         },

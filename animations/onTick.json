@@ -6,7 +6,7 @@
                 "0.0": [
                     "/gamerule functioncommandlimit 10000",
                     "/function astro/asset/setup",
-                    "/function bannedplayers",
+                    "/function astro/main",
                     "/gamerule commandblockoutput false",
                     "/gamerule showcommandfeedback false",
                     "/gamerule chaincommandlimit 10000",

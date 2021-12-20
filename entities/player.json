@@ -1178,10 +1178,10 @@
             "astro:ban": {
                 "run_command": {
                     "target": "self",
-                    "command": [
-                        "execute @s ~~~ function astro/clearall",
-                        "scoreboard players set @s cbeflag 9"
-                    ]
+                  "command": [
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
+                    "scoreboard players set @s[tag=!§k§9♀] cbeflag 9"
+                  ]
                 },
                 "add": {
                     "component_groups": [
@@ -1192,31 +1192,31 @@
             "astro:kick": {
                 "run_command": {
                     "target": "self",
-                    "command": [
-                        "execute @s ~~~ scoreboard players add @s cbeflag 1",
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s ~~~ function astro/tempkick"
-                    ]
+                  "command": [
+                    "execute @s[tag=!§k§9♀] ~~~ scoreboard players add @s cbeflag 1",
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/tempkick"
+                  ]
                 }
             },
             "astro:cbe": {
                 "run_command": {
                     "target": "self",
-                    "command": [
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s ~~~ function astro/clearall",
-                        "execute @s ~~~ function astro/asset/cbeitemskickmsg"
-                    ]
+                  "command": [
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀] ~~~ function astro/asset/cbeitemskickmsg"
+                  ]
                 }
             },
             "astro:player_death": {

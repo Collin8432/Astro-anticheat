@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\animations",
+    "\\animation_controllers",
+    "\\entities",
+    "\\functions",
+    "\\functions\\astro",
+    "\\functions\\astro\\alwaysactivemodules",
+    "\\functions\\astro\\op",
+    "\\scripts",
+    "\\scripts\\modules",
+    "\\structures"
+  ],
+  "SelectedNode": "\\animation_controllers\\anticbe.json",
+  "PreviewInSolutionExplorer": false
+}

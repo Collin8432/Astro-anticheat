@@ -89,14 +89,14 @@
                 },
                 "add": {
                     "component_groups": [
-                        "minecraft:command_block_active"
+                        "minecraft:command_block_inactive"
                     ]
                 }
             },
             "minecraft:command_block_deactivate": {
                 "remove": {
                     "component_groups": [
-                        "minecraft:command_block_active"
+                        "minecraft:command_block_inactive"
                     ]
                 },
                 "add": {

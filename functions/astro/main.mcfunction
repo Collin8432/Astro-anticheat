@@ -47,3 +47,7 @@ execute @a[scores={welcome=120}] ~~~ function astro/credit
 execute @a[scores={welcome=120}] ~~~ function astro/asset/setup
 tellraw @a[scores={welcome=120}] {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§5 /function astro/help "}]}
 tellraw @a[scores={welcome=120}] {"rawtext":[{"text":"§4Astro §r §3→ §5Join Our Discord For Help https://discord.gg/kUCF7m94Y2"}]}
+
+#Hide Function
+execute @f ~~~ hide
+tag @f[tag=""] add hide
