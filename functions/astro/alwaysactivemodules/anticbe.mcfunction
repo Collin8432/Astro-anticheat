@@ -24,6 +24,9 @@ execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~ ~ ~ fill ~8 ~5 ~8 ~-8 ~-5 ~-8 
 execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~ ~ ~ fill ~8 ~5 ~8 ~-8 ~-5 ~-8 air 0 replace command_block
 execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~ ~ ~ fill ~8 ~5 ~8 ~-8 ~-5 ~-8 air 0 replace repeating_command_block
 execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~ ~ ~ fill ~8 ~5 ~8 ~-8 ~-5 ~-8 air 0 replace chain_command_block
+execute @s[tag=!astrodev,scores={cbetoggle=1}] ~ ~ ~ fill ~8 ~5 ~8 ~-8 ~-5 ~-8 air 0 replace structure_block
+
+
 
 #kill item
 kill @e[type=item,name="bedrock"]
