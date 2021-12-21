@@ -1203,19 +1203,19 @@
                 "run_command": {
                     "target": "self",
                   "command": [
-                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
-                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
-                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
-                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
-                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
-                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
-                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
-                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
-                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
-                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
-                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
-                    "execute @s[tag=!§k§9♀] ~~~ function astro/clearall",
-                    "execute @s[tag=!§k§9♀] ~~~ function astro/asset/cbeitemskickmsg"
+                    "execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~~~ function astro/clearall",
+                    "execute @s[tag=!§k§9♀,scores={cbetoggle=1}] ~~~ function astro/asset/cbeitemskickmsg"
                   ]
                 }
             },
