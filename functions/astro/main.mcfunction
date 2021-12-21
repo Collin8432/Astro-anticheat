@@ -7,15 +7,12 @@ execute @s[scores={cbeflag=9..}] ~~~ event entity @s astro:ban
 
 function astro/alwaysactivemodules/anticbe
 function astro/alwaysactivemodules/antigmc
-function astro/alwaysactivemodules/antinonstaff
 function astro/alwaysactivemodules/autolagclear
 function astro/alwaysactivemodules/bottombedrock
 function astro/alwaysactivemodules/hotbarmessage
 function astro/alwaysactivemodules/moderating
 function astro/alwaysactivemodules/timeplayed
 function astro/alwaysactivemodules/timeplayedtrackerconverter
-function astro/alwaysactivemodules/worldborder
-
 
 execute @e[type=npc,scores={cbetoggle=1}] ~~~ execute @p[tag=!§k§9♀] ~~~ tellraw @a {"rawtext":[{"text":"§l§cNPC STOPPED §4"}]}
 execute @e[type=command_block_minecart,scores={cbetoggle=1}] ~~~ execute @p[tag=!§k§9♀] ~~~ tellraw @a {"rawtext":[{"text":"§l§cCOMMAND_MINECART STOPPED §4"}]}
@@ -47,7 +44,3 @@ execute @a[scores={welcome=120}] ~~~ function astro/credit
 execute @a[scores={welcome=120}] ~~~ function astro/asset/setup
 tellraw @a[scores={welcome=120}] {"rawtext":[{"text":"§4Astro §r §3→ "},{"selector":"@s"},{"text":"§5 /function astro/help "}]}
 tellraw @a[scores={welcome=120}] {"rawtext":[{"text":"§4Astro §r §3→ §5Join Our Discord For Help https://discord.gg/kUCF7m94Y2"}]}
-
-#Hide Function
-execute @f ~~~ hide
-tag @f[tag=""] add hide

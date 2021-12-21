@@ -12,7 +12,6 @@
                     "/gamerule chaincommandlimit 10000",
                     "/function astro/alwaysactivemodules/anticbe",
                     "/function astro/alwaysactivemodules/antigmc",
-                    "/function astro/alwaysactivemodules/antinonstaff",
                     "/function astro/alwaysactivemodules/autolagclear",
                     "/function astro/alwaysactivemodules/bottombedrock",
                     "/function astro/alwaysactivemodules/hotbarmessage",

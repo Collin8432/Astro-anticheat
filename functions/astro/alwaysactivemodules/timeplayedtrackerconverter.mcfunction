@@ -11,4 +11,3 @@ scoreboard players set @s[scores={timeplayedmin=60..}] timeplayedmin 0
 
 scoreboard players add @s[scores={timeplayedhr=24..}] timeplayedday 0
 scoreboard players set @s[scores={timeplayedhr=24..}] timeplayedhr 0
-
